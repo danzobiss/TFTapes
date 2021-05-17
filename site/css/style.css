@@ -1,0 +1,251 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+}
+
+.container {
+    width: 91.11111%;
+    margin: auto;
+}
+
+
+/* ----------------------------------- HEADER ----------------------------------- */
+
+.header {
+    position: fixed;
+    background: #172231;
+    box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    color: #FFFFFF;
+    font-weight: bold;
+    top: 0;
+}
+
+.logo {
+    float: left;
+    margin-right: 3px;
+}
+
+.header .container h1 {
+    float: left;
+    font-size: 48px;
+    font-weight: 900;
+    margin: 0;
+    margin-top: 10.5px;
+}
+
+.navbar {
+    list-style: none;
+    margin: 0;
+    float: right;
+}
+
+.navbar li {
+    float: left;
+}
+
+.destaque {
+    color: #B1925D;
+}
+
+li a,
+.dropBtn {
+    display: inline-block;
+    color: inherit;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    margin-top: 16px;
+    border-radius: 5px;
+}
+
+.dropdownConteudo a {
+    margin-top: 0;
+}
+
+li a:hover,
+.dropdown:hover .dropBtn {
+    background-color: #FFFFFF11;
+    transition: 0.3s;
+}
+
+li .dropdown {
+    display: inline-block;
+}
+
+.dropdownConteudo {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    margin-left: 8px;
+    border-radius: 0 10px 10px 10px;
+}
+
+.dropdownConteudo a {
+    color: black;
+    padding: 16px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdownConteudo a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdownConteudo {
+    display: block;
+}
+
+.separador {
+    width: 2px;
+    background-color: #FFFFFF;
+    height: 24px;
+    float: left;
+    margin: 32px 16px 0 16px;
+}
+
+
+/* ----------------------------------- HOME ----------------------------------- */
+
+.home {
+    background: url("../assets/img/background.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin-top: 86px;
+    padding-bottom: 22px;
+}
+
+.bemVindo {
+    font-size: 36px;
+    padding-top: 224px;
+    color: #FFFFFF;
+}
+
+.titulo {
+    color: #F4246F;
+}
+
+.descobrir {
+    margin-top: 71px;
+    width: 200px;
+    height: 56px;
+    background: rgba(196, 196, 196, 0.16);
+    border: 3px solid #FFFFFF;
+    border-radius: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    margin-bottom: 82px;
+}
+
+.descobrir span {
+    font-family: Noto Sans;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.divCards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0 -32px;
+}
+
+.card {
+    width: fit-content;
+    border: 2px solid #B1925D;
+    box-shadow: 0px 4px 12px 5px rgba(0, 0, 0, 0.25);
+    padding: 82px 26px 0 26px;
+    padding-bottom: 47px;
+    margin: 0 16px 32px 16px;
+}
+
+.card p {
+    color: #FFFFFF;
+    width: 360px;
+    margin: 0;
+    margin-top: 1px;
+}
+
+.card h1 {
+    margin: 0;
+}
+
+.card:nth-child(1) {
+    background: linear-gradient(180deg, rgba(23, 34, 49, 0) 0%, #172231 100%), url(../assets/img/historia.svg);
+}
+
+.card:nth-child(2) {
+    background: linear-gradient(180deg, rgba(23, 34, 49, 0) 0%, #172231 100%), url(../assets/img/game.svg);
+}
+
+.card:nth-child(3) {
+    background: linear-gradient(180deg, rgba(23, 34, 49, 0) 0%, #172231 100%), url(../assets/img/mundos.svg);
+}
+
+.card:nth-child(4) {
+    background: linear-gradient(180deg, rgba(23, 34, 49, 0) 0%, #172231 100%), url(../assets/img/arenas.svg);
+}
+
+.card:nth-child(5) {
+    background: linear-gradient(180deg, rgba(23, 34, 49, 0) 0%, #172231 100%), url(../assets/img/lendas.jpg);
+    background-size: cover;
+}
+
+.card:hover {
+    position: relative;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+
+/* ----------------------------------- FOOTER ----------------------------------- */
+
+.footer {
+    width: 100%;
+    background-color: #172231;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer .horizontal {
+    display: flex;
+    flex-direction: row;
+    width: 144px;
+    justify-content: space-between;
+    justify-self: center;
+    text-align: center;
+    margin: auto;
+}
+
+.icones {
+    border-radius: 15px;
+    height: 24px;
+    width: 24px;
+    margin-bottom: 12px;
+}
+
+.icones:hover {
+    background-color: #FFFFFF11;
+    transition: 0.5s;
+}
+
+.footer p {
+    color: #FFFFFF;
+    margin: 0;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.footer p a {
+    text-decoration: none;
+    color: inherit;
+}
