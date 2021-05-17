@@ -19,6 +19,7 @@ body {
     color: #FFFFFF;
     font-weight: bold;
     top: 0;
+    z-index: 100000;
 }
 
 .logo {
@@ -57,6 +58,10 @@ li a,
     text-decoration: none;
     margin-top: 16px;
     border-radius: 5px;
+}
+
+.dropdownConteudo a {
+    border-radius: 10px;
 }
 
 .dropdownConteudo a {
@@ -136,17 +141,39 @@ li .dropdown {
     background: rgba(196, 196, 196, 0.16);
     border: 3px solid #FFFFFF;
     border-radius: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: #FFFFFF;
     margin-bottom: 82px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.corLateral {
+    background-color: #172231CC;
+    width: 0;
+    height: 56px;
+    border-radius: 80px;
+    text-align: center;
+    transition: 0.3s;
+    vertical-align: middle;
+}
+
+.descobrir:hover .corLateral {
+    width: 100%;
+}
+
+.corLateral:hover {
+    width: 100%;
 }
 
 .descobrir span {
-    font-family: Noto Sans;
     font-weight: bold;
     font-size: 24px;
+    position: absolute;
+    left: 45px;
 }
 
 .divCards {
@@ -163,6 +190,10 @@ li .dropdown {
     padding: 82px 26px 0 26px;
     padding-bottom: 47px;
     margin: 0 16px 32px 16px;
+    bottom: 0;
+    position: relative;
+    transition: bottom 1s ease;
+    cursor: pointer;
 }
 
 .card p {
@@ -198,9 +229,7 @@ li .dropdown {
 }
 
 .card:hover {
-    position: relative;
     bottom: 20px;
-    cursor: pointer;
 }
 
 
@@ -246,6 +275,9 @@ li .dropdown {
 }
 
 .footer p a {
-    text-decoration: none;
     color: inherit;
+}
+
+.footer p a:hover {
+    color: #5A5A5A;
 }
