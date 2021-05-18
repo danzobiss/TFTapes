@@ -184,6 +184,10 @@ li .dropdown {
     margin: 0 -32px;
 }
 
+.divCards a {
+    text-decoration: none;
+}
+
 .card {
     width: fit-content;
     border: 2px solid #B1925D;
@@ -208,23 +212,23 @@ li .dropdown {
     margin: 0;
 }
 
-.card:nth-child(1) {
+#historiaCard {
     background: linear-gradient(180deg, rgba(23, 34, 49, 0) 0%, #172231 100%), url(../assets/img/historia.svg);
 }
 
-.card:nth-child(2) {
+#gameCard {
     background: linear-gradient(180deg, rgba(23, 34, 49, 0) 0%, #172231 100%), url(../assets/img/game.svg);
 }
 
-.card:nth-child(3) {
+#dicasCard {
     background: linear-gradient(180deg, rgba(23, 34, 49, 0) 0%, #172231 100%), url(../assets/img/mundos.svg);
 }
 
-.card:nth-child(4) {
+#arenasCard {
     background: linear-gradient(180deg, rgba(23, 34, 49, 0) 0%, #172231 100%), url(../assets/img/arenas.svg);
 }
 
-.card:nth-child(5) {
+#lendasCard {
     background: linear-gradient(180deg, rgba(23, 34, 49, 0) 0%, #172231 100%), url(../assets/img/lendas.jpg);
     background-size: cover;
 }
@@ -281,4 +285,57 @@ li .dropdown {
 
 .footer p a:hover {
     color: #5A5A5A;
+}
+
+
+/* ----------------------------------- FOOTER ----------------------------------- */
+
+.historia {
+    margin-top: 86px;
+    padding-top: 32px;
+}
+
+.historia h1 {
+    font-size: 36px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.sets {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 64px 0;
+}
+
+.textoDireita {
+    flex-wrap: wrap-reverse;
+}
+
+.textos {
+    min-width: 365px;
+    width: 47.5%;
+    padding-bottom: 8px;
+}
+
+.textos h3 {
+    color: #172231;
+    font-size: 22px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.textos p {
+    margin: 0;
+}
+
+.imagemSet {
+    width: 47.5%;
+    height: fit-content;
+    min-width: 400px;
+    border: 2px solid #B1925D;
+    box-shadow: 0px 4px 12px 5px rgba(0, 0, 0, 0.25);
+    height: cover;
+    display: flex;
+    align-self: center;
 }
