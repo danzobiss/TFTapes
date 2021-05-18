@@ -58,6 +58,7 @@ li a,
     text-decoration: none;
     margin-top: 16px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .dropdownConteudo a {
