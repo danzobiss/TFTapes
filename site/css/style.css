@@ -288,7 +288,7 @@ li .dropdown {
 }
 
 
-/* ----------------------------------- FOOTER ----------------------------------- */
+/* ----------------------------------- HISTÓRIA ----------------------------------- */
 
 .historia {
     margin-top: 86px;
@@ -338,4 +338,39 @@ li .dropdown {
     height: cover;
     display: flex;
     align-self: center;
+}
+
+
+/* ----------------------------------- DICAS ----------------------------------- */
+
+.dicas {
+    margin-top: 86px;
+    padding-top: 32px;
+}
+
+.dicas h1 {
+    font-size: 36px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.mundo {
+    margin: 64px 0;
+}
+
+.mundo h3 {
+    color: #172231;
+    font-size: 22px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.mundo p {
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.mundo iframe,
+.mundo img {
+    border: #B1925D 2px solid;
 }
