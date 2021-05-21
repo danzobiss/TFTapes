@@ -167,7 +167,7 @@ li .dropdown {
 }
 
 .label-float input {
-    border: 1px solid #B1925D;
+    border: 1px solid lightgray;
     background-color: #172231;
     color: white;
     border-radius: 4px;

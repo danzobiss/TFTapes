@@ -30,7 +30,7 @@
                     </div>
                 </li>
                 <div class="separador"></div>
-                <li><a href=""><span>LOGIN</span><div style="height: 22px; width: 22px; float: right; margin-left: 6px;">
+                <li><a id="lblUserNavbar"><span>LOGIN</span><div style="height: 22px; width: 22px; float: right; margin-left: 6px;">
                     <span class="iconify" data-inline="false" data-icon="simple-line-icons:login" style="color: #ffffff; font-size: 24px;"></span>
                 </div></a></li>
             </ul>
@@ -136,6 +136,83 @@
             <p style="color: #8E8E8E;">&copy; 2021 TFTapes</p>
         </div>
     </div>
+
+    <div id="modalLogin" class="modal">
+        <div class="conteudoModal">
+            <span class="fechar" id="fecharLogin">&cross;</span>
+            <form>
+                <h1 class="tituloModal titulo">Login</h1>
+                <div class="label-float">
+                    <input type="text" placeholder=" " id="txtLogin" />
+                    <label>Nome de Usuário</label>
+                </div>
+                <div class="label-float">
+                    <input type="password" placeholder=" " id="txtSenha" />
+                    <label>Senha</label>
+                </div>
+                <a href="./recuperarSenha.html"><b>Esqueceu a Senha?</b></a><br>
+                <button id="btnLoginOnLogin" class="btnModal" onclick="logar()">Entrar</button><br>
+            </form>
+            <button id="btnCadastroOnLogin" class="btnModal btnModalBranco">Não tem uma conta? Cadastre-se!</button>
+        </div>
+    </div>
+    <div id="modalCadastro" class="modal">
+        <div class="conteudoModal">
+            <span class="fechar" id="fecharCadastro">&cross;</span>
+            <form>
+                <h1 class="tituloModal titulo">Cadastro</h1>
+                <div class="label-float">
+                    <input type="text" placeholder=" " id="txtUsuario" />
+                    <label>Nome de Usuário</label>
+                </div>
+                <div class="label-float">
+                    <input type="password" placeholder=" " id="txtSenha" />
+                    <label>Senha</label>
+                </div>
+                <div class="label-float">
+                    <input type="password" placeholder=" " id="txtConfirmarSenha" />
+                    <label>Confirmar Senha</label>
+                </div>
+                <button id="btnCadastroOnCadastro" class="btnModal" onclick="cadastrar()">Cadastrar</button><br>
+            </form>
+            <button id="btnLoginOnCadastro" class="btnModal btnModalBranco">Já tem uma conta? Faça seu login!</button>
+        </div>
+    </div>
 </body>
 
 </html>
+
+<script>
+    var lbUserNavbar = document.getElementById("lblUserNavbar");
+
+    var modalLogin = document.getElementById("modalLogin");
+    var spanLogin = document.getElementById("fecharLogin");
+    var btnCadastroOnLogin = document.getElementById("btnCadastroOnLogin");
+
+    var modalCadastro = document.getElementById("modalCadastro");
+    var spanCadastro = document.getElementById("fecharCadastro");
+    var btnLoginOnCadastro = document.getElementById("btnLoginOnCadastro");
+
+    lblUserNavbar.onclick = () => modalLogin.style.display = "block";
+
+    spanLogin.onclick = () => modalLogin.style.display = "none";
+    btnCadastroOnLogin.onclick = () => {
+        modalLogin.style.display = "none";
+        modalCadastro.style.display = "block";
+    }
+
+    spanCadastro.onclick = () => modalCadastro.style.display = "none";
+    btnLoginOnCadastro.onclick = () => {
+        modalCadastro.style.display = "none";
+        modalLogin.style.display = "block";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modalLogin) {
+            modalLogin.style.display = "none";
+        }
+        if (event.target == modalCadastro) {
+            modalCadastro.style.display = "none";
+        }
+    }
+</script>
