@@ -628,3 +628,66 @@ li .dropdown {
     margin-bottom: 8px;
     text-align: center;
 }
+
+
+/* ----------------------------------- PEQUENAS LENDAS ----------------------------------- */
+
+.lendas {
+    margin-top: 86px;
+    padding-top: 32px;
+}
+
+.lendas h1 {
+    font-size: 36px;
+    font-weight: 900;
+    margin: 0;
+    border-bottom: #B1925D 2px solid;
+    width: fit-content;
+    padding-right: 32px;
+}
+
+.lendas .horizontal {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.lendas .horizontal p {
+    width: 45%;
+}
+
+.especie {
+    margin: 64px 0;
+}
+
+.lendasEspecie {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.imgLenda {
+    width: 192px;
+    height: 192px;
+    background-image: url(../assets/img/arenas.svg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 2px solid #B1925D;
+    box-shadow: 0px 4px 12px 5px rgba(0, 0, 0, 0.25);
+    margin: 0 8px 16px 8px;
+    cursor: pointer;
+}
+
+.imgLenda:hover .estrelaCheia {
+    display: block;
+}
+
+.imgLenda:hover .estrela {
+    display: none;
+}
+
+.imgLenda b {
+    color: #FFFFFF;
+    margin-bottom: 8px;
+    text-align: center;
+}
