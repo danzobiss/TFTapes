@@ -427,6 +427,9 @@ li .dropdown {
     font-size: 36px;
     font-weight: 900;
     margin: 0;
+    border-bottom: #B1925D 2px solid;
+    width: fit-content;
+    padding-right: 32px;
 }
 
 .sets {
@@ -480,6 +483,9 @@ li .dropdown {
     font-size: 36px;
     font-weight: 900;
     margin: 0;
+    border-bottom: #B1925D 2px solid;
+    width: fit-content;
+    padding-right: 32px;
 }
 
 .mundo {
