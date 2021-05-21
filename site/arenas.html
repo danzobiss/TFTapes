@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>TFTapes</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <img src="./assets/img/logo.svg" alt="Logo do TFTapes" class="logo">
+            <h1>TFTapes</h1>
+            <ul class="navbar">
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./historia.html">HISTÓRIA</a></li>
+                <li><a href="./game.html">GAME</a></li>
+                <li><a href="./dicas.html">DICAS</a></li>
+                <li class="dropdown">
+                    <p class="dropBtn"><span class="destaque">ENQUETES</span></p>
+                    <div class="dropdownConteudo">
+                        <a href="./arenas.html"><span class="destaque">ARENAS</span></a>
+                        <a href="./lendas.html">PEQUENAS LENDAS</a>
+                    </div>
+                </li>
+                <div class="separador"></div>
+                <li><a id="lblUserNavbar"><span>LOGIN</span><div style="height: 22px; width: 22px; float: right; margin-left: 6px;">
+                    <span class="iconify" data-inline="false" data-icon="simple-line-icons:login" style="color: #ffffff; font-size: 24px;"></span>
+                </div></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="arenas">
+        <div class="container">
+            <h1 class="titulo">Arenas</h1>
+            <div class="horizontal">
+                <p>Aqui estão todas as Arenas presentes no jogo até hoje, basta clicar em todas aquelas que você gosta para favoritá-las e subir suas posições de favoritismo no ranking.</p>
+                <div class="ranking">
+                    <h3>Ranking</h3>
+                    <div style="display: flex; flex-direction: row;">
+                        <div class="barrasRanking">
+                            <div style="background-color: silver; height: 120px;">
+                                <b>2</b>
+                            </div>
+                            <div style="background-color: gold; height: 160px;">
+                                <b>1</b>
+                            </div>
+                            <div style="background-color: chocolate; height: 80px;">
+                                <b>3</b>
+                            </div>
+                        </div>
+                        <div class="legendaRanking">
+                            <div style="background-color: gold;"></div> <b id="firstArena">Arena</b><br>
+                            <div style="background-color: silver;"></div> <b id="secondArena">Arena</b><br>
+                            <div style="background-color: chocolate;"></div> <b id="thirdArena">Arena</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="classe">
+                <h3 id="nmClasse">&rtrif; Base</h3>
+                <div class="arenasClasse">
+                    <div class="imgArena" class="imgArena">
+                        <span class="estrelaCheia">&starf;</span>
+                        <span class="estrela">&star;</span>
+                        <b id="nmArena" class="nmArena">Arena Padrão</b>
+                    </div>
+                    <div class="imgArena" class="imgArena">
+                        <span class="estrelaCheia">&starf;</span>
+                        <span class="estrela">&star;</span>
+                        <b id="nmArena" class="nmArena">Arena Padrão</b>
+                    </div>
+                </div>
+            </div>
+            <div class="classe">
+                <h3 id="nmClasse">&rtrif; Elemental</h3>
+                <div class="arenasClasse">
+                    <div class="imgArena" class="imgArena">
+                        <span class="estrelaCheia">&starf;</span>
+                        <span class="estrela">&star;</span>
+                        <b id="nmArena" class="nmArena">Arena das Nuvens</b>
+                    </div>
+                    <div class="imgArena" class="imgArena">
+                        <span class="estrelaCheia">&starf;</span>
+                        <span class="estrela">&star;</span>
+                        <b id="nmArena" class="nmArena">Alpendre do Festival Lunar</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="horizontal">
+                <a href="https://www.facebook.com/henrique.danzobaria" class="icones"><span class="iconify" data-inline="false" data-icon="akar-icons:facebook-fill" style="color: #b1925d; font-size: 24px;"></span></a>
+                <a href="https://www.instagram.com/danzobiss/" class="icones"><span class="iconify" data-inline="false" data-icon="akar-icons:instagram-fill" style="color: #b1925d; font-size: 24px;"></span></a>
+                <a href="https://twitter.com/danzobiss" class="icones"><span class="iconify" data-inline="false" data-icon="akar-icons:twitter-fill" style="color: #b1925d; font-size: 24px;"></span></a>
+            </div>
+            <p><a href="">Suporte</a> · <a href="">Sobre</a></p>
+            <p style="color: #8E8E8E;">&copy; 2021 TFTapes</p>
+        </div>
+    </div>
+
+    <div id="modalLogin" class="modal">
+        <div class="conteudoModal">
+            <span class="fechar" id="fecharLogin">&cross;</span>
+            <form>
+                <h1 class="tituloModal titulo">Login</h1>
+                <div class="label-float">
+                    <input type="text" placeholder=" " id="txtLogin" />
+                    <label>Nome de Usuário</label>
+                </div>
+                <div class="label-float">
+                    <input type="password" placeholder=" " id="txtSenha" />
+                    <label>Senha</label>
+                </div>
+                <a href="./recuperarSenha.html"><b>Esqueceu a Senha?</b></a><br>
+                <button id="btnLoginOnLogin" class="btnModal" onclick="logar()">Entrar</button><br>
+            </form>
+            <button id="btnCadastroOnLogin" class="btnModal btnModalBranco">Não tem uma conta? Cadastre-se!</button>
+        </div>
+    </div>
+    <div id="modalCadastro" class="modal">
+        <div class="conteudoModal">
+            <span class="fechar" id="fecharCadastro">&cross;</span>
+            <form>
+                <h1 class="tituloModal titulo">Cadastro</h1>
+                <div class="label-float">
+                    <input type="text" placeholder=" " id="txtUsuario" />
+                    <label>Nome de Usuário</label>
+                </div>
+                <div class="label-float">
+                    <input type="password" placeholder=" " id="txtSenha" />
+                    <label>Senha</label>
+                </div>
+                <div class="label-float">
+                    <input type="password" placeholder=" " id="txtConfirmarSenha" />
+                    <label>Confirmar Senha</label>
+                </div>
+                <button id="btnCadastroOnCadastro" class="btnModal" onclick="cadastrar()">Cadastrar</button><br>
+            </form>
+            <button id="btnLoginOnCadastro" class="btnModal btnModalBranco">Já tem uma conta? Faça seu login!</button>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    var lbUserNavbar = document.getElementById("lblUserNavbar");
+
+    var modalLogin = document.getElementById("modalLogin");
+    var spanLogin = document.getElementById("fecharLogin");
+    var btnCadastroOnLogin = document.getElementById("btnCadastroOnLogin");
+
+    var modalCadastro = document.getElementById("modalCadastro");
+    var spanCadastro = document.getElementById("fecharCadastro");
+    var btnLoginOnCadastro = document.getElementById("btnLoginOnCadastro");
+
+    lblUserNavbar.onclick = () => modalLogin.style.display = "block";
+
+    spanLogin.onclick = () => modalLogin.style.display = "none";
+    btnCadastroOnLogin.onclick = () => {
+        modalLogin.style.display = "none";
+        modalCadastro.style.display = "block";
+    }
+
+    spanCadastro.onclick = () => modalCadastro.style.display = "none";
+    btnLoginOnCadastro.onclick = () => {
+        modalCadastro.style.display = "none";
+        modalLogin.style.display = "block";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modalLogin) {
+            modalLogin.style.display = "none";
+        }
+        if (event.target == modalCadastro) {
+            modalCadastro.style.display = "none";
+        }
+    }
+</script>
