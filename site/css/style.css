@@ -691,3 +691,20 @@ li .dropdown {
     margin-bottom: 8px;
     text-align: center;
 }
+
+
+/* ----------------------------------- SOBRE ----------------------------------- */
+
+.sobre {
+    margin-top: 86px;
+    padding-top: 32px;
+}
+
+.sobre h1 {
+    font-size: 36px;
+    font-weight: 900;
+    margin: 0;
+    border-bottom: #B1925D 2px solid;
+    width: fit-content;
+    padding-right: 32px;
+}
