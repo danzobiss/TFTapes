@@ -230,7 +230,6 @@ li .dropdown {
     margin: 0;
     border: #B1925D 2px solid;
     border-radius: 5px;
-    font-family: 'Sora', sans-serif;
     font-weight: bold;
     color: #172231;
     margin-top: 25px;
@@ -707,4 +706,100 @@ li .dropdown {
     border-bottom: #B1925D 2px solid;
     width: fit-content;
     padding-right: 32px;
+}
+
+
+/* ----------------------------------- GAME ----------------------------------- */
+
+.game {
+    margin-top: 86px;
+    padding-top: 32px;
+}
+
+.game h1 {
+    font-size: 36px;
+    font-weight: 900;
+    margin: 0;
+    border-bottom: #B1925D 2px solid;
+    width: fit-content;
+    padding-right: 32px;
+}
+
+.jogo {
+    background: url(../assets/img/choncc.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 32px;
+    margin: 64px 0;
+}
+
+.jogo b {
+    color: #FFFFFF;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #00000066;
+}
+
+.jogo .meio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 48px;
+    margin: 64px 0;
+    height: 176px;
+}
+
+.jogo .meio button {
+    border: #B1925D 2px solid;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #172231;
+    background-color: #B1925D;
+    cursor: pointer;
+    font-size: 48px;
+    height: 76 px;
+    width: 208px;
+}
+
+.jogo .horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cardAlimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 16px;
+    background-color: #172231;
+    width: fit-content;
+    border: 2px solid #B1925D;
+    box-shadow: 0px 4px 12px 5px rgba(0, 0, 0, 0.25);
+    width: 192px;
+}
+
+.cardAlimento img {
+    height: 64px;
+}
+
+.cardAlimento b {
+    color: #F4246F;
+    background-color: transparent;
+    padding: 0;
+}
+
+.btnAlimento {
+    border: #B1925D 2px solid;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #172231;
+    background-color: #B1925D;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 8px;
 }

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>TFTapes</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <img src="./assets/img/logo.svg" alt="Logo do TFTapes" class="logo">
+            <h1>TFTapes</h1>
+            <ul class="navbar">
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./historia.html">HISTÓRIA</a></li>
+                <li><a href="./game.html"><span class="destaque">GAME</a></span>
+                </li>
+                <li><a href="./dicas.html">DICAS</a></li>
+                <li class="dropdown">
+                    <p class="dropBtn">ENQUETES</p>
+                    <div class="dropdownConteudo">
+                        <a href="./arenas.html">ARENAS</a>
+                        <a href="./lendas.html">PEQUENAS LENDAS</a>
+                    </div>
+                </li>
+                <div class="separador"></div>
+                <li><a id="lblUserNavbar"><span>LOGIN</span><div style="height: 22px; width: 22px; float: right; margin-left: 6px;">
+                    <span class="iconify" data-inline="false" data-icon="simple-line-icons:login" style="color: #ffffff; font-size: 24px;"></span>
+                </div></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="game">
+        <div class="container">
+            <h1 class="titulo">Choncc's Hungry</h1>
+            <p>O objetivo do jogo é alimentar Choncc o máximo que conseguir antes que o tempo acabe.<br><br>Clique nos botões para oferecer morangos, cenoura ou carne e assim aumentar sua pontuação. Cada alimento enche a barriga do Choncc em valores diferentes
+                (morangos: 2pts, cenoura: 15pts, carne: 50pts), mas alguns deles possuem <i>cooldown</i> para serem utilizados novamente.<br><br>Pronto para encher a barriga?</p>
+            <div class="jogo">
+                <div style="display: flex; justify-content: space-between;">
+                    <b>Maior Pontuação: <span id="lblMaxPontos">128</span></b>
+                    <b id="timer">Timer</b>
+                </div>
+                <div class="meio">
+                    <button>Jogar</button>
+                    <b id="lblPontos" style="color: #b1925d; display: none;">Pontuação:<br>1843</b>
+                </div>
+                <div class="horizontal">
+                    <div class="cardAlimento">
+                        <img src="./assets/img/morangos.png" alt="Imagem de Morangos"><br>
+                        <b>Morangos</b><br>
+                        <button class="btnAlimento" disabled>Oferecer</button>
+                    </div>
+                    <div class="cardAlimento">
+                        <img src="./assets/img/cenoura.png" alt="Imagem de Cenoura"><br>
+                        <b>Cenoura</b><br>
+                        <button class="btnAlimento" disabled>Oferecer</button>
+                    </div>
+                    <div class="cardAlimento">
+                        <img src="./assets/img/carne.png" alt="Imagem de Carne"><br>
+                        <b>Carne</b><br>
+                        <button class="btnAlimento" disabled>Oferecer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="horizontal">
+                <a href="https://www.facebook.com/henrique.danzobaria" class="icones"><span class="iconify" data-inline="false" data-icon="akar-icons:facebook-fill" style="color: #b1925d; font-size: 24px;"></span></a>
+                <a href="https://www.instagram.com/danzobiss/" class="icones"><span class="iconify" data-inline="false" data-icon="akar-icons:instagram-fill" style="color: #b1925d; font-size: 24px;"></span></a>
+                <a href="https://twitter.com/danzobiss" class="icones"><span class="iconify" data-inline="false" data-icon="akar-icons:twitter-fill" style="color: #b1925d; font-size: 24px;"></span></a>
+            </div>
+            <p><a href="">Suporte</a> · <a href="./sobre.html">Sobre</a></p>
+            <p style="color: #8E8E8E;">&copy; 2021 TFTapes</p>
+        </div>
+    </div>
+
+    <div id="modalLogin" class="modal">
+        <div class="conteudoModal">
+            <span class="fechar" id="fecharLogin">&cross;</span>
+            <form>
+                <h1 class="tituloModal titulo">Login</h1>
+                <div class="label-float">
+                    <input type="text" placeholder=" " id="txtLogin" />
+                    <label>Nome de Usuário</label>
+                </div>
+                <div class="label-float">
+                    <input type="password" placeholder=" " id="txtSenha" />
+                    <label>Senha</label>
+                </div>
+                <a href="./recuperarSenha.html"><b>Esqueceu a Senha?</b></a><br>
+                <button id="btnLoginOnLogin" class="btnModal" onclick="logar()">Entrar</button><br>
+            </form>
+            <button id="btnCadastroOnLogin" class="btnModal btnModalBranco">Não tem uma conta? Cadastre-se!</button>
+        </div>
+    </div>
+    <div id="modalCadastro" class="modal">
+        <div class="conteudoModal">
+            <span class="fechar" id="fecharCadastro">&cross;</span>
+            <form>
+                <h1 class="tituloModal titulo">Cadastro</h1>
+                <div class="label-float">
+                    <input type="text" placeholder=" " id="txtUsuario" />
+                    <label>Nome de Usuário</label>
+                </div>
+                <div class="label-float">
+                    <input type="password" placeholder=" " id="txtSenha" />
+                    <label>Senha</label>
+                </div>
+                <div class="label-float">
+                    <input type="password" placeholder=" " id="txtConfirmarSenha" />
+                    <label>Confirmar Senha</label>
+                </div>
+                <button id="btnCadastroOnCadastro" class="btnModal" onclick="cadastrar()">Cadastrar</button><br>
+            </form>
+            <button id="btnLoginOnCadastro" class="btnModal btnModalBranco">Já tem uma conta? Faça seu login!</button>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    var lbUserNavbar = document.getElementById("lblUserNavbar");
+
+    var modalLogin = document.getElementById("modalLogin");
+    var spanLogin = document.getElementById("fecharLogin");
+    var btnCadastroOnLogin = document.getElementById("btnCadastroOnLogin");
+
+    var modalCadastro = document.getElementById("modalCadastro");
+    var spanCadastro = document.getElementById("fecharCadastro");
+    var btnLoginOnCadastro = document.getElementById("btnLoginOnCadastro");
+
+    lblUserNavbar.onclick = () => modalLogin.style.display = "block";
+
+    spanLogin.onclick = () => modalLogin.style.display = "none";
+    btnCadastroOnLogin.onclick = () => {
+        modalLogin.style.display = "none";
+        modalCadastro.style.display = "block";
+    }
+
+    spanCadastro.onclick = () => modalCadastro.style.display = "none";
+    btnLoginOnCadastro.onclick = () => {
+        modalCadastro.style.display = "none";
+        modalLogin.style.display = "block";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modalLogin) {
+            modalLogin.style.display = "none";
+        }
+        if (event.target == modalCadastro) {
+            modalCadastro.style.display = "none";
+        }
+    }
+</script>
