@@ -803,3 +803,9 @@ li .dropdown {
     font-size: 14px;
     padding: 8px;
 }
+
+.btnDesativado {
+    background-color: transparent;
+    color: #B1925D;
+    cursor: wait;
+}

@@ -45,28 +45,28 @@
                 (morangos: 2pts, cenoura: 15pts, carne: 50pts), mas alguns deles possuem <i>cooldown</i> para serem utilizados novamente.<br><br>Pronto para encher a barriga?</p>
             <div class="jogo">
                 <div style="display: flex; justify-content: space-between;">
-                    <b>Maior Pontuação: <span id="lblMaxPontos">128</span></b>
-                    <b id="timer">Timer</b>
+                    <b>Maior Pontuação: <span id="lblMaxPontos">0</span></b>
+                    <b id="lblTimer">Timer</b>
                 </div>
                 <div class="meio">
-                    <button>Jogar</button>
-                    <b id="lblPontos" style="color: #b1925d; display: none;">Pontuação:<br>1843</b>
+                    <button id="btnJogar">Jogar</button>
+                    <b id="lblPontos" style="color: #b1925d; display: none;">Pontuação:<br>0</b>
                 </div>
                 <div class="horizontal">
                     <div class="cardAlimento">
                         <img src="./assets/img/morangos.png" alt="Imagem de Morangos"><br>
                         <b>Morangos</b><br>
-                        <button class="btnAlimento" disabled>Oferecer</button>
+                        <button class="btnAlimento btnDesativado" onclick="morangos()" disabled>Oferecer</button>
                     </div>
                     <div class="cardAlimento">
                         <img src="./assets/img/cenoura.png" alt="Imagem de Cenoura"><br>
                         <b>Cenoura</b><br>
-                        <button class="btnAlimento" disabled>Oferecer</button>
+                        <button class="btnAlimento btnDesativado" onclick="cenoura()" disabled>Oferecer</button>
                     </div>
                     <div class="cardAlimento">
                         <img src="./assets/img/carne.png" alt="Imagem de Carne"><br>
                         <b>Carne</b><br>
-                        <button class="btnAlimento" disabled>Oferecer</button>
+                        <button class="btnAlimento btnDesativado" onclick="carne()" disabled>Oferecer</button>
                     </div>
                 </div>
             </div>
@@ -163,5 +163,94 @@
         if (event.target == modalCadastro) {
             modalCadastro.style.display = "none";
         }
+    }
+
+
+    //Timer
+    function startTimer(duracao, elemento) {
+        var timer = duracao,
+            minutos, segundos;
+        var intervalo = setInterval(function() {
+            minutos = parseInt(timer / 60, 10);
+            segundos = parseInt(timer % 60, 10);
+
+            minutos = minutos < 10 ? "0" + minutos : minutos;
+            segundos = segundos < 10 ? "0" + segundos : segundos;
+
+            elemento.textContent = minutos + ":" + segundos;
+
+            if (--timer < 0) {
+                clearInterval(intervalo);
+                botoesAlimentos[0].disabled = true;
+                botoesAlimentos[0].classList.add("btnDesativado");
+                botoesAlimentos[1].disabled = true;
+                botoesAlimentos[1].classList.add("btnDesativado");
+                botoesAlimentos[2].disabled = true;
+                botoesAlimentos[2].classList.add("btnDesativado");
+
+                setTimeout(() => {
+                    botoesAlimentos[1].disabled = true;
+                    botoesAlimentos[1].classList.add("btnDesativado");
+                    botoesAlimentos[2].disabled = true;
+                    botoesAlimentos[2].classList.add("btnDesativado");
+                }, 5000)
+
+                maxPontos = Number(lblMaxPontos.textContent) < pontos ? pontos : maxPontos;
+
+                document.getElementById("lblMaxPontos").innerHTML = maxPontos
+            }
+        }, 1000);
+    }
+
+    var botoesAlimentos = document.getElementsByClassName("btnAlimento");
+
+    btnJogar.onclick = function() {
+        document.getElementById("btnJogar").style.display = "none";
+        document.getElementById("lblPontos").style.display = "flex";
+        document.getElementById("lblTimer").textContent = "01:00"
+
+
+        botoesAlimentos[0].disabled = false;
+        botoesAlimentos[0].classList.remove("btnDesativado");
+        botoesAlimentos[1].disabled = false;
+        botoesAlimentos[1].classList.remove("btnDesativado");
+        botoesAlimentos[2].disabled = false;
+        botoesAlimentos[2].classList.remove("btnDesativado");
+
+        var umMinuto = 59;
+        startTimer(umMinuto, document.getElementById("lblTimer"));
+    };
+
+    var pontos = 0;
+
+    function atualizarPontos() {
+        lblPontos.innerHTML = `Pontuação:<br>${pontos}`;
+    }
+
+    function morangos() {
+        pontos += 2;
+        atualizarPontos();
+    }
+
+    function cenoura() {
+        pontos += 15;
+        atualizarPontos();
+        botoesAlimentos[1].disabled = true;
+        botoesAlimentos[1].classList.add("btnDesativado");
+        setTimeout(() => {
+            botoesAlimentos[1].disabled = false
+            botoesAlimentos[1].classList.remove("btnDesativado");
+        }, 2000);
+    }
+
+    function carne() {
+        pontos += 50;
+        atualizarPontos();
+        botoesAlimentos[2].disabled = true;
+        botoesAlimentos[2].classList.add("btnDesativado");
+        setTimeout(() => {
+            botoesAlimentos[2].disabled = false
+            botoesAlimentos[2].classList.remove("btnDesativado");
+        }, 5000);
     }
 </script>
