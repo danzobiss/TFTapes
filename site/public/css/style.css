@@ -247,7 +247,7 @@ li .dropdown {
 /* ----------------------------------- HOME ----------------------------------- */
 
 .home {
-    background: url("../assets/img/background.png");
+    background: url("../img/background.png");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -343,23 +343,23 @@ li .dropdown {
 }
 
 #historiaCard {
-    background: linear-gradient(180deg, rgba(23, 34, 49, 0) 0%, #172231 100%), url(../assets/img/historia.svg);
+    background: linear-gradient(180deg, rgba(23, 34, 49, 0) 0%, #172231 100%), url(../img/historia.svg);
 }
 
 #gameCard {
-    background: linear-gradient(180deg, rgba(23, 34, 49, 0) 0%, #172231 100%), url(../assets/img/game.svg);
+    background: linear-gradient(180deg, rgba(23, 34, 49, 0) 0%, #172231 100%), url(../img/game.svg);
 }
 
 #dicasCard {
-    background: linear-gradient(180deg, rgba(23, 34, 49, 0) 0%, #172231 100%), url(../assets/img/mundos.svg);
+    background: linear-gradient(180deg, rgba(23, 34, 49, 0) 0%, #172231 100%), url(../img/mundos.svg);
 }
 
 #arenasCard {
-    background: linear-gradient(180deg, rgba(23, 34, 49, 0) 0%, #172231 100%), url(../assets/img/arenas.svg);
+    background: linear-gradient(180deg, rgba(23, 34, 49, 0) 0%, #172231 100%), url(../img/arenas.svg);
 }
 
 #lendasCard {
-    background: linear-gradient(180deg, rgba(23, 34, 49, 0) 0%, #172231 100%), url(../assets/img/lendas.jpg);
+    background: linear-gradient(180deg, rgba(23, 34, 49, 0) 0%, #172231 100%), url(../img/lendas.jpg);
     background-size: cover;
 }
 
@@ -586,7 +586,7 @@ li .dropdown {
 .imgArena {
     width: 192px;
     height: 192px;
-    background-image: url(../assets/img/arenas.svg);
+    background-image: url(../img/arenas.svg);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -666,7 +666,7 @@ li .dropdown {
 .imgLenda {
     width: 192px;
     height: 192px;
-    background-image: url(../assets/img/arenas.svg);
+    background-image: url(../img/arenas.svg);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -726,7 +726,7 @@ li .dropdown {
 }
 
 .jogo {
-    background: url(../assets/img/choncc.jpg);
+    background: url(../img/choncc.jpg);
     background-size: cover;
     background-position: center;
     padding: 32px;
