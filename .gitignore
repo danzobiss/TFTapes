@@ -74,3 +74,9 @@ typings/
 
 # FuseBox cache
 .fusebox/
+
+.directory
+package-lock.json
+
+.directory
+config.js
