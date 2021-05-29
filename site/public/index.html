@@ -97,7 +97,7 @@
     <div id="modalLogin" class="modal">
         <div class="conteudoModal">
             <span class="fechar" id="fecharLogin">&cross;</span>
-            <form id="formLogin" method="POST" onsubmit="return cadastrar()">
+            <form id="formLogin" method="POST" onsubmit="return entrar()">
                 <h1 class="tituloModal titulo">Login</h1>
                 <div class="label-float">
                     <input type="text" placeholder=" " id="txtLogin" name="loginHTML" />
@@ -147,20 +147,20 @@
 </html>
 
 <script>
-    var lblLoginNavbar = document.getElementById("lblLoginNavbar");
-    var lblUsuarioNavbar = document.getElementById("lblUsuarioNavbar");
+    let lblLoginNavbar = document.getElementById("lblLoginNavbar");
+    let lblUsuarioNavbar = document.getElementById("lblUsuarioNavbar");
 
-    var modalLogin = document.getElementById("modalLogin");
-    var spanLogin = document.getElementById("fecharLogin");
-    var btnCadastroOnLogin = document.getElementById("btnCadastroOnLogin");
+    let modalLogin = document.getElementById("modalLogin");
+    let spanLogin = document.getElementById("fecharLogin");
+    let btnCadastroOnLogin = document.getElementById("btnCadastroOnLogin");
 
-    var modalCadastro = document.getElementById("modalCadastro");
-    var spanCadastro = document.getElementById("fecharCadastro");
-    var btnLoginOnCadastro = document.getElementById("btnLoginOnCadastro");
+    let modalCadastro = document.getElementById("modalCadastro");
+    let spanCadastro = document.getElementById("fecharCadastro");
+    let btnLoginOnCadastro = document.getElementById("btnLoginOnCadastro");
 
-    var modalUsuario = document.getElementById("modalUsuario");
-    var spanUsuario = document.getElementById("fecharUsuario");
-    var btnSair = document.getElementById("btnSair");
+    let modalUsuario = document.getElementById("modalUsuario");
+    let spanUsuario = document.getElementById("fecharUsuario");
+    let btnSair = document.getElementById("btnSair");
 
     lblLoginNavbar.onclick = () => modalLogin.style.display = "block";
     lblUsuarioNavbar.onclick = () => modalUsuario.style.display = "block";

@@ -30,7 +30,7 @@
                     </div>
                 </li>
                 <div class="separador"></div>
-                <li id="liLogin"><a id="lblUserNavbar"><span>LOGIN</span><div style="height: 22px; width: 22px; float: right; margin-left: 6px;">
+                <li id="liLogin"><a id="lblLoginNavbar"><span>LOGIN</span><div style="height: 22px; width: 22px; float: right; margin-left: 6px;">
                     <span class="iconify" data-inline="false" data-icon="simple-line-icons:login" style="color: #ffffff; font-size: 24px;"></span>
                 </div></a></li>
                 <li id="liUsuario" style="display: none;"><a id="lblUsuarioNavbar">USER</a></li>
@@ -71,7 +71,7 @@
     <div id="modalLogin" class="modal">
         <div class="conteudoModal">
             <span class="fechar" id="fecharLogin">&cross;</span>
-            <form id="formLogin" method="POST" onsubmit="return cadastrar()">
+            <form id="formLogin" method="POST" onsubmit="return entrar()">
                 <h1 class="tituloModal titulo">Login</h1>
                 <div class="label-float">
                     <input type="text" placeholder=" " id="txtLogin" name="loginHTML" />
