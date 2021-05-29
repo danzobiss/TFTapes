@@ -255,4 +255,27 @@
 
         return false;
     }
+
+    function cadastrarClasse() {
+        fetch("/arenas/cadastrarClasse", {
+            method: "POST",
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                alert("Classes de arenas cadastradas com sucesso")
+
+            } else {
+
+                console.log('Erro de login!');
+                alert('Erro de login! Tente novamente.');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                });
+            }
+        });
+
+        return false;
+    }
 </script>

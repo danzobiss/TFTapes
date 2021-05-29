@@ -1,0 +1,1777 @@
+[{
+        "itemId": 13012,
+        "name": "Ossia Compositora",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_AkaliDragon_Beatmaker_Tier3.9_22_Little_Legends.png",
+        "description": "Ossia é a personificação de descolada. Ela comanda rimas e ritmos de forma tão natural que faz com que até as maiores e melhores Pequenas Lendas sintam inveja.",
+        "speciesName": "Ossia",
+        "speciesId": 13
+    },
+    {
+        "itemId": 13003,
+        "name": "Ossia",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_AkaliDragon_Ossia_Tier3.9_22_Little_Legends.png",
+        "description": "Ossia é a personificação de descolada. Ela comanda rimas e ritmos de forma tão natural que faz com que até as maiores e melhores Pequenas Lendas sintam inveja.",
+        "speciesName": "Ossia",
+        "speciesId": 13
+    },
+    {
+        "itemId": 13009,
+        "name": "Ossia Rainha do Pop",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_AkaliDragon_Popqueen_Tier3.9_22_Little_Legends.png",
+        "description": "Ossia é a personificação de descolada. Ela comanda rimas e ritmos de forma tão natural que faz com que até as maiores e melhores Pequenas Lendas sintam inveja.",
+        "speciesName": "Ossia",
+        "speciesId": 13
+    },
+    {
+        "itemId": 13015,
+        "name": "Ossia Prodígio",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_AkaliDragon_Prodigy_Tier3.9_22_Little_Legends.png",
+        "description": "Ossia é a personificação de descolada. Ela comanda rimas e ritmos de forma tão natural que faz com que até as maiores e melhores Pequenas Lendas sintam inveja.",
+        "speciesName": "Ossia",
+        "speciesId": 13
+    },
+    {
+        "itemId": 13018,
+        "name": "Ossia Empolgada",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_AkaliDragon_PumpedUp_Tier3.9_22_Little_Legends.png",
+        "description": "Ossia é a personificação de descolada. Ela comanda rimas e ritmos de forma tão natural que faz com que até as maiores e melhores Pequenas Lendas sintam inveja.",
+        "speciesName": "Ossia",
+        "speciesId": 13
+    },
+    {
+        "itemId": 13006,
+        "name": "Ossia Solista",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_AkaliDragon_Soloist_Tier3.9_22_Little_Legends.png",
+        "description": "Ossia é a personificação de descolada. Ela comanda rimas e ritmos de forma tão natural que faz com que até as maiores e melhores Pequenas Lendas sintam inveja.",
+        "speciesName": "Ossia",
+        "speciesId": 13
+    },
+    {
+        "itemId": 25003,
+        "name": "Ao Shin",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_AoShin_Base_Classic_Tier3.LittleLegends_10_19.png",
+        "description": "Ao Shin é descendente da linhagem do Dragão da Tormenta. Guardião da tempestade, ele carrega a dualidade das chuvas gentis e a fúria dos raios e trovões.",
+        "speciesName": "Ao Shin",
+        "speciesId": 25
+    },
+    {
+        "itemId": 25012,
+        "name": "Ao Shin Estrela Negra",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_AoShin_Base_DarkStar_Tier3.LittleLegends_10_19.png",
+        "description": "Ao Shin é descendente da linhagem do Dragão da Tormenta. Guardião da tempestade, ele carrega a dualidade das chuvas gentis e a fúria dos raios e trovões.",
+        "speciesName": "Ao Shin",
+        "speciesId": 25
+    },
+    {
+        "itemId": 25015,
+        "name": "Ao Shin Divino",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_AoShin_Base_Divine_Tier3.LittleLegends_10_19.png",
+        "description": "Ao Shin é descendente da linhagem do Dragão da Tormenta. Guardião da tempestade, ele carrega a dualidade das chuvas gentis e a fúria dos raios e trovões.",
+        "speciesName": "Ao Shin",
+        "speciesId": 25
+    },
+    {
+        "itemId": 25006,
+        "name": "Ao Shin Ancião",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_AoShin_Base_Elder_Tier3.LittleLegends_10_19.png",
+        "description": "Ao Shin é descendente da linhagem do Dragão da Tormenta. Guardião da tempestade, ele carrega a dualidade das chuvas gentis e a fúria dos raios e trovões.",
+        "speciesName": "Ao Shin",
+        "speciesId": 25
+    },
+    {
+        "itemId": 25009,
+        "name": "Ao Shin Fogos de Artifício",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_AoShin_Base_Firecracker_Tier3.LittleLegends_10_19.png",
+        "description": "Ao Shin é descendente da linhagem do Dragão da Tormenta. Guardião da tempestade, ele carrega a dualidade das chuvas gentis e a fúria dos raios e trovões.",
+        "speciesName": "Ao Shin",
+        "speciesId": 25
+    },
+    {
+        "itemId": 25018,
+        "name": "Ao Shin Forjador de Estrelas",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_AoShin_Base_StarForger_Tier3.LittleLegends_10_19.png",
+        "description": "Ao Shin é descendente da linhagem do Dragão da Tormenta. Guardião da tempestade, ele carrega a dualidade das chuvas gentis e a fúria dos raios e trovões.",
+        "speciesName": "Ao Shin",
+        "speciesId": 25
+    },
+    {
+        "itemId": 24015,
+        "name": "Tintilantus Névoa Negra",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Bellswayer_BlackMist_Tier3.LittleLegends_10_10.png",
+        "description": "Um ser celestial e orgulhoso encontrado nas Montanhas Prateadas. Com o belo tintilar de seu sino, ele inspira e obriga outros espíritos a acompanhá-lo e servi-lo. Embora se assuste com facilidade, Tintilantus logo retoma sua postura altiva e majestosa.",
+        "speciesName": "Tintilantus",
+        "speciesId": 24
+    },
+    {
+        "itemId": 24018,
+        "name": "Tintilantus Lua Sangrenta",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Bellswayer_BloodMoon_Tier3.LittleLegends_10_10.png",
+        "description": "Um ser celestial e orgulhoso encontrado nas Montanhas Prateadas. Com o belo tintilar de seu sino, ele inspira e obriga outros espíritos a acompanhá-lo e servi-lo. Embora se assuste com facilidade, Tintilantus logo retoma sua postura altiva e majestosa.",
+        "speciesName": "Tintilantus",
+        "speciesId": 24
+    },
+    {
+        "itemId": 24003,
+        "name": "Tintilantus",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Bellswayer_Classic_Tier3.LittleLegends_10_10.png",
+        "description": "Um ser celestial e orgulhoso encontrado nas Montanhas Prateadas. Com o belo tintilar de seu sino, ele inspira e obriga outros espíritos a acompanhá-lo e servi-lo. Embora se assuste com facilidade, Tintilantus logo retoma sua postura altiva e majestosa.",
+        "speciesName": "Tintilantus",
+        "speciesId": 24
+    },
+    {
+        "itemId": 24021,
+        "name": "Tintilantus de Porcelana",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Bellswayer_Set4UpdateBattlePass_LunarRevel2021_Tier3.LittleLegends_11_2.png",
+        "description": "Feita de porcelana da mais fina qualidade, esta relíquia de cerâmica exibe orgulhosamente sua beleza para a apreciação de todas as pessoas. Caso tenha a sorte de cair em suas boas graças, a peça pode até lhe servir uma xícara de seu chá mágico.",
+        "speciesName": "Tintilantus",
+        "speciesId": 24
+    },
+    {
+        "itemId": 24009,
+        "name": "Tintilantus Frenesi Açucarado",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Bellswayer_SugarRush_Tier3.LittleLegends_10_10.png",
+        "description": "Um ser celestial e orgulhoso encontrado nas Montanhas Prateadas. Com o belo tintilar de seu sino, ele inspira e obriga outros espíritos a acompanhá-lo e servi-lo. Embora se assuste com facilidade, Tintilantus logo retoma sua postura altiva e majestosa.",
+        "speciesName": "Tintilantus",
+        "speciesId": 24
+    },
+    {
+        "itemId": 24006,
+        "name": "Tintilantus Tempestuoso",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Bellswayer_Thunderstorm_Tier3.LittleLegends_10_10.png",
+        "description": "Um ser celestial e orgulhoso encontrado nas Montanhas Prateadas. Com o belo tintilar de seu sino, ele inspira e obriga outros espíritos a acompanhá-lo e servi-lo. Embora se assuste com facilidade, Tintilantus logo retoma sua postura altiva e majestosa.",
+        "speciesName": "Tintilantus",
+        "speciesId": 24
+    },
+    {
+        "itemId": 24012,
+        "name": "Tintilantus Reninha",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Bellswayer_Yuletide_Tier3.LittleLegends_10_10.png",
+        "description": "Um ser celestial e orgulhoso encontrado nas Montanhas Prateadas. Com o belo tintilar de seu sino, ele inspira e obriga outros espíritos a acompanhá-lo e servi-lo. Embora se assuste com facilidade, Tintilantus logo retoma sua postura altiva e majestosa.",
+        "speciesName": "Tintilantus",
+        "speciesId": 24
+    },
+    {
+        "itemId": 17018,
+        "name": "Besouríneo Maligno",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Buglet_Beevil_Tier3.LittleLegends_10_01.png",
+        "description": "Besouríneo quer dominar o mundo – e comer todas as comidíneas gostosas que existem nele. No entanto, ele é muito pequenininho. Geralmente, precisa se esconder embaixo de objetos para não ser pisoteado. Enquanto se esconde, Besouríneo traça planos complexos para dominar o mundo.",
+        "speciesName": "Besouríneo",
+        "speciesId": 17
+    },
+    {
+        "itemId": 17003,
+        "name": "Besouríneo",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Buglet_Flutterbug_Tier3.LittleLegends_10_01.png",
+        "description": "Besouríneo quer dominar o mundo – e comer todas as comidíneas gostosas que existem nele. No entanto, ele é muito pequenininho. Geralmente, precisa se esconder embaixo de objetos para não ser pisoteado. Enquanto se esconde, Besouríneo traça planos complexos para dominar o mundo.",
+        "speciesName": "Besouríneo",
+        "speciesId": 17
+    },
+    {
+        "itemId": 17015,
+        "name": "Besouríneo Ixtalense",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Buglet_Ixtali_Tier3.LittleLegends_10_01.png",
+        "description": "Besouríneo quer dominar o mundo – e comer todas as comidíneas gostosas que existem nele. No entanto, ele é muito pequenininho. Geralmente, precisa se esconder embaixo de objetos para não ser pisoteado. Enquanto se esconde, Besouríneo traça planos complexos para dominar o mundo.",
+        "speciesName": "Besouríneo",
+        "speciesId": 17
+    },
+    {
+        "itemId": 17012,
+        "name": "Besouríneo da Legião",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Buglet_Legionnaire_Tier3.LittleLegends_10_01.png",
+        "description": "Besouríneo quer dominar o mundo – e comer todas as comidíneas gostosas que existem nele. No entanto, ele é muito pequenininho. Geralmente, precisa se esconder embaixo de objetos para não ser pisoteado. Enquanto se esconde, Besouríneo traça planos complexos para dominar o mundo.",
+        "speciesName": "Besouríneo",
+        "speciesId": 17
+    },
+    {
+        "itemId": 17009,
+        "name": "Besouríneo Arenoso",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Buglet_Sandbringer_Tier3.LittleLegends_10_01.png",
+        "description": "Besouríneo quer dominar o mundo – e comer todas as comidíneas gostosas que existem nele. No entanto, ele é muito pequenininho. Geralmente, precisa se esconder embaixo de objetos para não ser pisoteado. Enquanto se esconde, Besouríneo traça planos complexos para dominar o mundo.",
+        "speciesName": "Besouríneo",
+        "speciesId": 17
+    },
+    {
+        "itemId": 17006,
+        "name": "Besouríneo Gelo Verdadeiro",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Buglet_TrueIce_Tier3.LittleLegends_10_01.png",
+        "description": "Besouríneo quer dominar o mundo – e comer todas as comidíneas gostosas que existem nele. No entanto, ele é muito pequenininho. Geralmente, precisa se esconder embaixo de objetos para não ser pisoteado. Enquanto se esconde, Besouríneo traça planos complexos para dominar o mundo.",
+        "speciesName": "Besouríneo",
+        "speciesId": 17
+    },
+    {
+        "itemId": 27006,
+        "name": "Choncc Atlante",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Choncc_Atlantean_Tier3.LittleLegends_10_19.png",
+        "description": "Por ser um filhote, Choncc está sempre faminto e sonolento. Embora tenha uma personalidade doce, ele pode se mostrar muito poderoso e voraz quando provocado – ou persuadido com o aperitivo certo.",
+        "speciesName": "Choncc",
+        "speciesId": 27
+    },
+    {
+        "itemId": 27003,
+        "name": "Choncc",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Choncc_Classic_Tier3.LittleLegends_10_19.png",
+        "description": "Por ser um filhote, Choncc está sempre faminto e sonolento. Embora tenha uma personalidade doce, ele pode se mostrar muito poderoso e voraz quando provocado – ou persuadido com o aperitivo certo.",
+        "speciesName": "Choncc",
+        "speciesId": 27
+    },
+    {
+        "itemId": 27009,
+        "name": "Choncc Titã Terrestre",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Choncc_EarthTitan_Tier3.LittleLegends_10_19.png",
+        "description": "Por ser um filhote, Choncc está sempre faminto e sonolento. Embora tenha uma personalidade doce, ele pode se mostrar muito poderoso e voraz quando provocado – ou persuadido com o aperitivo certo.",
+        "speciesName": "Choncc",
+        "speciesId": 27
+    },
+    {
+        "itemId": 27012,
+        "name": "Choncc Labareda",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Choncc_Fireborn_Tier3.LittleLegends_10_19.png",
+        "description": "Por ser um filhote, Choncc está sempre faminto e sonolento. Embora tenha uma personalidade doce, ele pode se mostrar muito poderoso e voraz quando provocado – ou persuadido com o aperitivo certo.",
+        "speciesName": "Choncc",
+        "speciesId": 27
+    },
+    {
+        "itemId": 27018,
+        "name": "Choncc Abelhinha",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Choncc_Honeybuzz_Tier3.LittleLegends_10_19.png",
+        "description": "Por ser um filhote, Choncc está sempre faminto e sonolento. Embora tenha uma personalidade doce, ele pode se mostrar muito poderoso e voraz quando provocado – ou persuadido com o aperitivo certo.",
+        "speciesName": "Choncc",
+        "speciesId": 27
+    },
+    {
+        "itemId": 27024,
+        "name": "Choncc Fera Lunar",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Choncc_Set4Update_LunarBeast_Tier3.LittleLegends_11_2.png",
+        "description": "O amor de Choncc por tanghulu só se compara à sua empolgação quando assiste aos hologramas da dança do leão nos desfiles lotados da Cidade Lunar durante o Festival das Feras.",
+        "speciesName": "Choncc",
+        "speciesId": 27
+    },
+    {
+        "itemId": 27021,
+        "name": "Choncc Festival Lunar",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Choncc_Set4Update_LunarRevel2021_Tier3.LittleLegends_11_2.png",
+        "description": "Choncc Festival Lunar ficou famoso por roubar a receita ancestral de bolinhos do Shisa. Quem conseguir pôr as mãos em um desses receberá um maravilhoso pedaço comestível de puro deleite.",
+        "speciesName": "Choncc",
+        "speciesId": 27
+    },
+    {
+        "itemId": 27015,
+        "name": "Choncc Pandinha",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Choncc_PreciousPanda_Tier3.LittleLegends_10_19.png",
+        "description": "Por ser um filhote, Choncc está sempre faminto e sonolento. Embora tenha uma personalidade doce, ele pode se mostrar muito poderoso e voraz quando provocado – ou persuadido com o aperitivo certo.",
+        "speciesName": "Choncc",
+        "speciesId": 27
+    },
+    {
+        "itemId": 27027,
+        "name": "Choncc Cidade Tchibum",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Choncc_PoolParty_Swimmer1_Tier3.LittleLegends_11_9.png",
+        "description": "O sonho do Choncc Cidade Tchibum é vencer a competição de surfe da Festa Tchibum. E, com o tanto de sonecas que ele tira, é bem capaz que ele continue só sonhando mesmo.",
+        "speciesName": "Choncc",
+        "speciesId": 27
+    },
+    {
+        "itemId": 27030,
+        "name": "Choncc Salva-vidas",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Choncc_PoolParty_Swimmer2_Tier3.LittleLegends_11_9.png",
+        "description": "Os habitantes e turistas da Cidade Tchibum podem ficar tranquilos sabendo que Choncc Salva-vidas está de olho. De olho nas ondas mais iradas e nas vibes mais Chonccásticas, é claro.",
+        "speciesName": "Choncc",
+        "speciesId": 27
+    },
+    {
+        "itemId": 27033,
+        "name": "Choncc Bronzeado",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Choncc_PoolParty_Swimmer3_Tier3.LittleLegends_11_9.png",
+        "description": "Choncc Salva-vidas pode ser o melhor nadador, surfista e praticante de bodyboard, mas o Choncc Bronzeado também é o melhor em um montão de coisas importantes, como cantarolar por aí, fazer tamborzinho na barriga, tocar ukulele e dançar hula-hula!",
+        "speciesName": "Choncc",
+        "speciesId": 27
+    },
+    {
+        "itemId": 19018,
+        "name": "Molula Cósmica",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_DSSquid_Base_Cosmic_Tier3.LittleLegends_DarkStar.png",
+        "description": "Às vezes, Molula fica tão assustada que se cobre de tinta. Em suas tentativas desesperadas de fugir, ela acaba manchando galáxias inteiras sem querer.",
+        "speciesName": "Molula",
+        "speciesId": 19
+    },
+    {
+        "itemId": 19009,
+        "name": "Molula Nova Temível",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_DSSquid_Base_Dreadnova_Tier3.LittleLegends_DarkStar.png",
+        "description": "Molula Nova Temível",
+        "speciesName": "Molula",
+        "speciesId": 19
+    },
+    {
+        "itemId": 19012,
+        "name": "Molula Tutti-frutti",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_DSSquid_Base_Fruitytooty_Tier3.LittleLegends_DarkStar.png",
+        "description": "Às vezes, Molula fica tão assustada que se cobre de tinta. Em suas tentativas desesperadas de fugir, ela acaba manchando galáxias inteiras sem querer.",
+        "speciesName": "Molula",
+        "speciesId": 19
+    },
+    {
+        "itemId": 19021,
+        "name": "Molula K/DA ALL OUT",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_DSSquid_KDAEvelynn_KDA1_Tier3.LittleLegends_10_23.png",
+        "description": "Molula está canalizando a ousadia dramática da Evelynn e arrasando na fantasia ALL OUT.",
+        "speciesName": "Molula",
+        "speciesId": 19
+    },
+    {
+        "itemId": 19024,
+        "name": "Molula K/DA POP/STARS",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_DSSquid_KDAEvelynn_KDA2_Tier3.LittleLegends_10_23.png",
+        "description": "A energia poderosíssima da Evelynn influenciou essa Molula medrosa a adotar o visual arrasador da patroa pra ganhar mais autoconfiança.",
+        "speciesName": "Molula",
+        "speciesId": 19
+    },
+    {
+        "itemId": 19006,
+        "name": "Molula Odisseia",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_DSSquid_Base_Odyssey_Tier3.LittleLegends_DarkStar.png",
+        "description": "Às vezes, Molula fica tão assustada que se cobre de tinta. Em suas tentativas desesperadas de fugir, ela acaba manchando galáxias inteiras sem querer.",
+        "speciesName": "Molula",
+        "speciesId": 19
+    },
+    {
+        "itemId": 19003,
+        "name": "Molula",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_DSSquid_Base_Squink_Tier3.LittleLegends_DarkStar.png",
+        "description": "Às vezes, Molula fica tão assustada que se cobre de tinta. Em suas tentativas desesperadas de fugir, ela acaba manchando galáxias inteiras sem querer.",
+        "speciesName": "Molula",
+        "speciesId": 19
+    },
+    {
+        "itemId": 19015,
+        "name": "Molula Sorvetinho",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_DSSquid_Base_Sugarcone_Tier3.LittleLegends_DarkStar.png",
+        "description": "Às vezes, Molula fica tão assustada que se cobre de tinta. Em suas tentativas desesperadas de fugir, ela acaba manchando galáxias inteiras sem querer.",
+        "speciesName": "Molula",
+        "speciesId": 19
+    },
+    {
+        "itemId": 20003,
+        "name": "Abyssia",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_DSSwordGuy_Abyssia_Tier3.LittleLegends_DarkStar.png",
+        "description": "Abyssia",
+        "speciesName": "Abyssia",
+        "speciesId": 20
+    },
+    {
+        "itemId": 20015,
+        "name": "Abyssia Calcário",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_DSSwordGuy_Calcite_Tier3.LittleLegends_DarkStar.png",
+        "description": "Abyssia empunha uma espada imbuída do poder de abrir fendas entre o espaço e o tempo. Ninguém conhece seu verdadeiro rosto. Sua verdadeira forma permanece escondida por trás de sua máscara.",
+        "speciesName": "Abyssia",
+        "speciesId": 20
+    },
+    {
+        "itemId": 20018,
+        "name": "Abyssia Cósmica",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_DSSwordGuy_Cosmic_Tier3.LittleLegends_DarkStar.png",
+        "description": "Abyssia empunha uma espada imbuída do poder de abrir fendas entre o espaço e o tempo. Ninguém conhece seu verdadeiro rosto. Sua verdadeira forma permanece escondida por trás de sua máscara.",
+        "speciesName": "Abyssia",
+        "speciesId": 20
+    },
+    {
+        "itemId": 20006,
+        "name": "Abyssia Darkin",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_DSSwordGuy_Darkin_Tier3.LittleLegends_DarkStar.png",
+        "description": "Abyssia empunha uma espada imbuída do poder de abrir fendas entre o espaço e o tempo. Ninguém conhece seu verdadeiro rosto. Sua verdadeira forma permanece escondida por trás de sua máscara.",
+        "speciesName": "Abyssia",
+        "speciesId": 20
+    },
+    {
+        "itemId": 20009,
+        "name": "Abyssia Dizimadora de Galáxias",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_DSSwordGuy_GalaxySlayer_Tier3.LittleLegends_DarkStar.png",
+        "description": "Abyssia empunha uma espada imbuída do poder de abrir fendas entre o espaço e o tempo. Ninguém conhece seu verdadeiro rosto. Sua verdadeira forma permanece escondida por trás de sua máscara.",
+        "speciesName": "Abyssia",
+        "speciesId": 20
+    },
+    {
+        "itemId": 20012,
+        "name": "Abyssia Silvestre",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_DSSwordGuy_Willowbark_Tier3.LittleLegends_DarkStar.png",
+        "description": "Abyssia empunha uma espada imbuída do poder de abrir fendas entre o espaço e o tempo. Ninguém conhece seu verdadeiro rosto. Sua verdadeira forma permanece escondida por trás de sua máscara.",
+        "speciesName": "Abyssia",
+        "speciesId": 20
+    },
+    {
+        "itemId": 21018,
+        "name": "Guláxia Cósmica",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_DSWhale_Cosmic_Tier3.LittleLegends_DarkStar.png",
+        "description": "Guláxia nada pacificamente pelas galáxias, alheia a todas as outras vidas ao seu redor. Ela é conhecida como uma devoradora de mundos, mas a verdade é que ela só engole um planeta ou dois quando boceja.",
+        "speciesName": "Guláxia",
+        "speciesId": 21
+    },
+    {
+        "itemId": 21006,
+        "name": "Guláxia Nova Temível",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_DSWhale_Dreadnova_Tier3.LittleLegends_DarkStar.png",
+        "description": "Guláxia nada pacificamente pelas galáxias, alheia a todas as outras vidas ao seu redor. Ela é conhecida como uma devoradora de mundos, mas a verdade é que ela só engole um planeta ou dois quando boceja.",
+        "speciesName": "Guláxia",
+        "speciesId": 21
+    },
+    {
+        "itemId": 21009,
+        "name": "Guláxia Dizimadora de Galáxias",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_DSWhale_GalaxySlayer_Tier3.LittleLegends_DarkStar.png",
+        "description": "Guláxia nada pacificamente pelas galáxias, alheia a todas as outras vidas ao seu redor. Ela é conhecida como uma devoradora de mundos, mas a verdade é que ela só engole um planeta ou dois quando boceja.",
+        "speciesName": "Guláxia",
+        "speciesId": 21
+    },
+    {
+        "itemId": 21012,
+        "name": "Guláxia Gosmenta",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_DSWhale_Goo_Tier3.LittleLegends_DarkStar.png",
+        "description": "Guláxia nada pacificamente pelas galáxias, alheia a todas as outras vidas ao seu redor. Ela é conhecida como uma devoradora de mundos, mas a verdade é que ela só engole um planeta ou dois quando boceja.",
+        "speciesName": "Guláxia",
+        "speciesId": 21
+    },
+    {
+        "itemId": 21015,
+        "name": "Guláxia Orco",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_DSWhale_Orcus_Tier3.LittleLegends_DarkStar.png",
+        "description": "Guláxia nada pacificamente pelas galáxias, alheia a todas as outras vidas ao seu redor. Ela é conhecida como uma devoradora de mundos, mas a verdade é que ela só engole um planeta ou dois quando boceja.",
+        "speciesName": "Guláxia",
+        "speciesId": 21
+    },
+    {
+        "itemId": 21003,
+        "name": "Guláxia",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_DSWhale_Starmaw_Tier3.LittleLegends_DarkStar.png",
+        "description": "Guláxia nada pacificamente pelas galáxias, alheia a todas as outras vidas ao seu redor. Ela é conhecida como uma devoradora de mundos, mas a verdade é que ela só engole um planeta ou dois quando boceja.",
+        "speciesName": "Guláxia",
+        "speciesId": 21
+    },
+    {
+        "itemId": 29003,
+        "name": "Feitissereia",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Dowsie_Base_Classic_Tier3.LittleLegends_11_9.png",
+        "description": "Quer magia aquática na sua equipe? É pra já! Mas cadê ela? Ah, é! Feitissereias se adaptam facilmente, então você vai ter que usar uma isca. Para pegá-las, tenha calma e lembre-se de que elas só são tímidas até se irritarem – nesse caso, elas não terão vergonha alguma de acabar com você.",
+        "speciesName": "Feitissereia",
+        "speciesId": 29
+    },
+    {
+        "itemId": 29006,
+        "name": "Feitissereia Koi",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Dowsie_Base_Variant1_Tier3.LittleLegends_11_9.png",
+        "description": "Quer magia aquática na sua equipe? É pra já! Mas cadê ela? Ah, é! Feitissereias se adaptam facilmente, então você vai ter que usar uma isca. Para pegá-las, tenha calma e lembre-se de que elas só são tímidas até se irritarem – nesse caso, elas não terão vergonha alguma de acabar com você.",
+        "speciesName": "Feitissereia",
+        "speciesId": 29
+    },
+    {
+        "itemId": 29009,
+        "name": "Feitissereia Geleia",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Dowsie_Base_Variant2_Tier3.LittleLegends_11_9.png",
+        "description": "Quer magia aquática na sua equipe? É pra já! Mas cadê ela? Ah, é! Feitissereias se adaptam facilmente, então você vai ter que usar uma isca. Para pegá-las, tenha calma e lembre-se de que elas só são tímidas até se irritarem – nesse caso, elas não terão vergonha alguma de acabar com você.",
+        "speciesName": "Feitissereia",
+        "speciesId": 29
+    },
+    {
+        "itemId": 29012,
+        "name": "Feitissereia Waffle",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Dowsie_Base_Variant3_Tier3.LittleLegends_11_9.png",
+        "description": "Quer magia aquática na sua equipe? É pra já! Mas cadê ela? Ah, é! Feitissereias se adaptam facilmente, então você vai ter que usar uma isca. Para pegá-las, tenha calma e lembre-se de que elas só são tímidas até se irritarem – nesse caso, elas não terão vergonha alguma de acabar com você.",
+        "speciesName": "Feitissereia",
+        "speciesId": 29
+    },
+    {
+        "itemId": 29015,
+        "name": "Feitissereia Iridescente",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Dowsie_Base_Variant4_Tier3.LittleLegends_11_9.png",
+        "description": "Quer magia aquática na sua equipe? É pra já! Mas cadê ela? Ah, é! Feitissereias se adaptam facilmente, então você vai ter que usar uma isca. Para pegá-las, tenha calma e lembre-se de que elas só são tímidas até se irritarem – nesse caso, elas não terão vergonha alguma de acabar com você.",
+        "speciesName": "Feitissereia",
+        "speciesId": 29
+    },
+    {
+        "itemId": 29018,
+        "name": "Feitissereia Emissária da Escuridão",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Dowsie_Base_Variant5_Tier3.LittleLegends_11_9.png",
+        "description": "Quer magia aquática na sua equipe? É pra já! Mas cadê ela? Ah, é! Feitissereias se adaptam facilmente, então você vai ter que usar uma isca. Para pegá-las, tenha calma e lembre-se de que elas só são tímidas até se irritarem – nesse caso, elas não terão vergonha alguma de acabar com você.",
+        "speciesName": "Feitissereia",
+        "speciesId": 29
+    },
+    {
+        "itemId": 23018,
+        "name": "Neexie",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Fairy_Base_Chameleon_Tier3.LittleLegends_10_10.png",
+        "description": "Travessa e brincalhona, essa criatura do reino espiritual gosta de pregar peças nos pobres mortais que têm a infelicidade de cruzar o seu caminho. De adoráveis a letais em poucos instantes, as travessuras de Nixie muitas vezes saem do controle!",
+        "speciesName": "Nixie",
+        "speciesId": 23
+    },
+    {
+        "itemId": 23003,
+        "name": "Nixie",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Fairy_Base_Classic_Tier3.LittleLegends_10_10.png",
+        "description": "Travessa e brincalhona, essa criatura do reino espiritual gosta de pregar peças nos pobres mortais que têm a infelicidade de cruzar o seu caminho. De adoráveis a letais em poucos instantes, as travessuras de Nixie muitas vezes saem do controle!",
+        "speciesName": "Nixie",
+        "speciesId": 23
+    },
+    {
+        "itemId": 23015,
+        "name": "Nixie Galinho",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Fairy_Base_ExtraSpicy_Tier3.LittleLegends_10_10.png",
+        "description": "Travessa e brincalhona, essa criatura do reino espiritual gosta de pregar peças nos pobres mortais que têm a infelicidade de cruzar o seu caminho. De adoráveis a letais em poucos instantes, as travessuras de Nixie muitas vezes saem do controle!",
+        "speciesName": "Nixie",
+        "speciesId": 23
+    },
+    {
+        "itemId": 23009,
+        "name": "Nixie Sereia",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Fairy_Base_Mermaid_Tier3.LittleLegends_10_10.png",
+        "description": "Travessa e brincalhona, essa criatura do reino espiritual gosta de pregar peças nos pobres mortais que têm a infelicidade de cruzar o seu caminho. De adoráveis a letais em poucos instantes, as travessuras de Nixie muitas vezes saem do controle!",
+        "speciesName": "Nixie",
+        "speciesId": 23
+    },
+    {
+        "itemId": 23006,
+        "name": "Nixie Flora",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Fairy_Base_Rosebloom_Tier3.LittleLegends_10_10.png",
+        "description": "Travessa e brincalhona, essa criatura do reino espiritual gosta de pregar peças nos pobres mortais que têm a infelicidade de cruzar o seu caminho. De adoráveis a letais em poucos instantes, as travessuras de Nixie muitas vezes saem do controle!",
+        "speciesName": "Nixie",
+        "speciesId": 23
+    },
+    {
+        "itemId": 23012,
+        "name": "Nixie Vampira",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Fairy_Base_Vampire_Tier3.LittleLegends_10_10.png",
+        "description": "Travessa e brincalhona, essa criatura do reino espiritual gosta de pregar peças nos pobres mortais que têm a infelicidade de cruzar o seu caminho. De adoráveis a letais em poucos instantes, as travessuras de Nixie muitas vezes saem do controle!",
+        "speciesName": "Nixie",
+        "speciesId": 23
+    },
+    {
+        "itemId": 30003,
+        "name": "Fenroz",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Fenroar_Base_Classic_Tier3.LittleLegends_11_9.png",
+        "description": "Ah, então você quer o lobo fantasma, Fenroz, no seu grupo. Os Fenrozes são guerreiros obstinados e leais. Mas não se deixe intimidar pela espada. Eles se mantêm fiéis aos Fenrozinhos, assim como aos amigos, por toda a eternidade. Essas amizades podem florescer facilmente depois de jogar um ou dois orbezinhos pra que eles corram atrás. ",
+        "speciesName": "Fenroz",
+        "speciesId": 30
+    },
+    {
+        "itemId": 30006,
+        "name": "Fenroz Shurimane",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Fenroar_Base_Variant1_Tier3.LittleLegends_11_9.png",
+        "description": "Ah, então você quer o lobo fantasma, Fenroz, no seu grupo. Os Fenrozes são guerreiros obstinados e leais. Mas não se deixe intimidar pela espada. Eles se mantêm fiéis aos Fenrozinhos, assim como aos amigos, por toda a eternidade. Essas amizades podem florescer facilmente depois de jogar um ou dois orbezinhos pra que eles corram atrás. ",
+        "speciesName": "Fenroz",
+        "speciesId": 30
+    },
+    {
+        "itemId": 30009,
+        "name": "Fenroz Dourado",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Fenroar_Base_Variant2_Tier3.LittleLegends_11_9.png",
+        "description": "Ah, então você quer o lobo fantasma, Fenroz, no seu grupo. Os Fenrozes são guerreiros obstinados e leais. Mas não se deixe intimidar pela espada. Eles se mantêm fiéis aos Fenrozinhos, assim como aos amigos, por toda a eternidade. Essas amizades podem florescer facilmente depois de jogar um ou dois orbezinhos pra que eles corram atrás. ",
+        "speciesName": "Fenroz",
+        "speciesId": 30
+    },
+    {
+        "itemId": 30012,
+        "name": "Fenroz Celeste",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Fenroar_Base_Variant3_Tier3.LittleLegends_11_9.png",
+        "description": "Ah, então você quer o lobo fantasma, Fenroz, no seu grupo. Os Fenrozes são guerreiros obstinados e leais. Mas não se deixe intimidar pela espada. Eles se mantêm fiéis aos Fenrozinhos, assim como aos amigos, por toda a eternidade. Essas amizades podem florescer facilmente depois de jogar um ou dois orbezinhos pra que eles corram atrás. ",
+        "speciesName": "Fenroz",
+        "speciesId": 30
+    },
+    {
+        "itemId": 30015,
+        "name": "Fenroz Emissário da Escuridão",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Fenroar_Base_Variant4_Tier3.LittleLegends_11_9.png",
+        "description": "Ah, então você quer o lobo fantasma, Fenroz, no seu grupo. Os Fenrozes são guerreiros obstinados e leais. Mas não se deixe intimidar pela espada. Eles se mantêm fiéis aos Fenrozinhos, assim como aos amigos, por toda a eternidade. Essas amizades podem florescer facilmente depois de jogar um ou dois orbezinhos pra que eles corram atrás. ",
+        "speciesName": "Fenroz",
+        "speciesId": 30
+    },
+    {
+        "itemId": 30018,
+        "name": "Fenroz Kanmei",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Fenroar_Base_Variant5_Tier3.LittleLegends_11_9.png",
+        "description": "Ah, então você quer o lobo fantasma, Fenroz, no seu grupo. Os Fenrozes são guerreiros obstinados e leais. Mas não se deixe intimidar pela espada. Eles se mantêm fiéis aos Fenrozinhos, assim como aos amigos, por toda a eternidade. Essas amizades podem florescer facilmente depois de jogar um ou dois orbezinhos pra que eles corram atrás. ",
+        "speciesName": "Fenroz",
+        "speciesId": 30
+    },
+    {
+        "itemId": 18012,
+        "name": "Pedrito Névoa Negra",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Gargoyle_BlackMist_Tier3.LittleLegends_10_01.png",
+        "description": "Pedrito tem muito carinho por criaturas vulneráveis e tenta protegê-las com toda a sua força como se fosse um colosso gigante – mesmo que ainda esteja em fase de crescimento. ",
+        "speciesName": "Pedrito",
+        "speciesId": 18
+    },
+    {
+        "itemId": 18003,
+        "name": "Pedrito",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Gargoyle_Craggle_Tier3.LittleLegends_10_01.png",
+        "description": "Pedrito tem muito carinho por criaturas vulneráveis e tenta protegê-las com toda a sua força como se fosse um colosso gigante – mesmo que ainda esteja em fase de crescimento. ",
+        "speciesName": "Pedrito",
+        "speciesId": 18
+    },
+    {
+        "itemId": 18018,
+        "name": "Pedrito Hextec",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Gargoyle_Hextech_Tier3.LittleLegends_10_01.png",
+        "description": "Pedrito tem muito carinho por criaturas vulneráveis e tenta protegê-las com toda a sua força como se fosse um colosso gigante – mesmo que ainda esteja em fase de crescimento. ",
+        "speciesName": "Pedrito",
+        "speciesId": 18
+    },
+    {
+        "itemId": 18015,
+        "name": "Pedrito da Legião",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Gargoyle_Legionnaire_Tier3.LittleLegends_10_01.png",
+        "description": "Pedrito tem muito carinho por criaturas vulneráveis e tenta protegê-las com toda a sua força como se fosse um colosso gigante – mesmo que ainda esteja em fase de crescimento. ",
+        "speciesName": "Pedrito",
+        "speciesId": 18
+    },
+    {
+        "itemId": 18009,
+        "name": "Pedrito Arenoso",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Gargoyle_Sandbringer_Tier3.LittleLegends_10_01.png",
+        "description": "Pedrito tem muito carinho por criaturas vulneráveis e tenta protegê-las com toda a sua força como se fosse um colosso gigante – mesmo que ainda esteja em fase de crescimento. ",
+        "speciesName": "Pedrito",
+        "speciesId": 18
+    },
+    {
+        "itemId": 18006,
+        "name": "Pedrito Gelo Verdadeiro",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Gargoyle_TrueIce_Tier3.LittleLegends_10_01.png",
+        "description": "Pedrito tem muito carinho por criaturas vulneráveis e tenta protegê-las com toda a sua força como se fosse um colosso gigante – mesmo que ainda esteja em fase de crescimento. ",
+        "speciesName": "Pedrito",
+        "speciesId": 18
+    },
+    {
+        "itemId": 7006,
+        "name": "Protetor Ferino",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_GemTiger_Fierce_Tier3.png",
+        "description": "Um jovem e gracioso Protetor.",
+        "speciesName": "Protetor",
+        "speciesId": 7
+    },
+    {
+        "itemId": 7003,
+        "name": "Protetor Adornado",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_GemTiger_Jeweled_Tier3.png",
+        "description": "Um jovem e gracioso Protetor.",
+        "speciesName": "Protetor",
+        "speciesId": 7
+    },
+    {
+        "itemId": 7015,
+        "name": "Protetor Majestoso",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_GemTiger_Reigning_Tier3.png",
+        "description": "Um jovem e gracioso Protetor.",
+        "speciesName": "Protetor",
+        "speciesId": 7
+    },
+    {
+        "itemId": 7009,
+        "name": "Protetor Sombrio",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_GemTiger_Shadowgem_Tier3.png",
+        "description": "Um jovem e gracioso Protetor.",
+        "speciesName": "Protetor",
+        "speciesId": 7
+    },
+    {
+        "itemId": 7012,
+        "name": "Protetor Celeste",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_GemTiger_Skygem_Tier3.png",
+        "description": "Um jovem e gracioso Protetor.",
+        "speciesName": "Protetor",
+        "speciesId": 7
+    },
+    {
+        "itemId": 7018,
+        "name": "Protetor Solnato",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_GemTiger_Sunborne_Tier3.png",
+        "description": "Um jovem e gracioso Protetor.",
+        "speciesName": "Protetor",
+        "speciesId": 7
+    },
+    {
+        "itemId": 7020,
+        "name": "Protetor Triunfante",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_GemTiger_Set4RankedRewards_Triumphant_Tier3.LittleLegends_11_10.png",
+        "description": "O Protetor Vitorioso foi concedido a quem atingiu Ouro ou superior em pelo menos uma das fases ranqueadas do Conjunto 4 – Destinos. O Protetor Triunfante foi concedido a quem atingiu Ouro ou superior em todas as fases ranqueadas do Conjunto 4 – Destinos.",
+        "speciesName": "Protetor",
+        "speciesId": 7
+    },
+    {
+        "itemId": 7019,
+        "name": "Protetor Vitorioso",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_GemTiger_Set4RankedRewards_Victorious_Tier3.LittleLegends_11_10.png",
+        "description": "O Protetor Vitorioso foi concedido a quem atingiu Ouro ou superior em pelo menos uma das fases ranqueadas do Conjunto 4 – Destinos. O Protetor Triunfante foi concedido a quem atingiu Ouro ou superior em todas as fases ranqueadas do Conjunto 4 – Destinos.",
+        "speciesName": "Protetor",
+        "speciesId": 7
+    },
+    {
+        "itemId": 1018,
+        "name": "Assombrim Máscara Fantasma",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Ghosty_Black_Tier3.png",
+        "description": "O mais tenebroso entre as Pequenas Lendas.",
+        "speciesName": "Assombrim",
+        "speciesId": 1
+    },
+    {
+        "itemId": 1009,
+        "name": "Assombrim Garra Lunar",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Ghosty_Blue_Tier3.png",
+        "description": "O mais tenebroso entre as Pequenas Lendas.",
+        "speciesName": "Assombrim",
+        "speciesId": 1
+    },
+    {
+        "itemId": 1006,
+        "name": "Assombrim Labareda",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Ghosty_Fire_Tier3.png",
+        "description": "O mais tenebroso entre as Pequenas Lendas.",
+        "speciesName": "Assombrim",
+        "speciesId": 1
+    },
+    {
+        "itemId": 1020,
+        "name": "Assombrim Triunfante",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Ghosty_GalaxiesVictorious_Tier3.LittleLegends_10_20.png",
+        "description": "O Assombrim Triunfante foi concedido a jogadores que atingiram Ouro ou superior nas duas fases ranqueadas do Conjunto 3 – Galáxias. As galáxias mais assustadoras se misturaram para formar esses espectros espaciais terrivelmente fofos. Eles vagam pelos vastos confins do universo em busca de Espátulas Douradas e novas amizades.",
+        "speciesName": "Assombrim",
+        "speciesId": 1
+    },
+    {
+        "itemId": 1012,
+        "name": "Assombrim Venenoso",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Ghosty_Green_Tier3.png",
+        "description": "O mais tenebroso entre as Pequenas Lendas.",
+        "speciesName": "Assombrim",
+        "speciesId": 1
+    },
+    {
+        "itemId": 1015,
+        "name": "Assombrim Matéria Escura",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Ghosty_Purple_Tier3.png",
+        "description": "O mais tenebroso entre as Pequenas Lendas.",
+        "speciesName": "Assombrim",
+        "speciesId": 1
+    },
+    {
+        "itemId": 1003,
+        "name": "Assombrim Ilhas das Sombras",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Ghosty_Spooky_Tier3.png",
+        "description": "O mais tenebroso entre as Pequenas Lendas.",
+        "speciesName": "Assombrim",
+        "speciesId": 1
+    },
+    {
+        "itemId": 1019,
+        "name": "Assombrim Vitorioso",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Ghosty_Victorious_Tier3.LittleLegends_10_20.png",
+        "description": "O Assombrim Vitorioso foi concedido a jogadores que atingiram Ouro ou superior em pelo menos uma das fases ranqueadas do Conjunto 3 – Galáxias. As galáxias mais assustadoras se misturaram para formar esses espectros espaciais terrivelmente fofos. Eles vagam pelos vastos confins do universo em busca de Espátulas Douradas e novas amizades.",
+        "speciesName": "Assombrim",
+        "speciesId": 1
+    },
+    {
+        "itemId": 2003,
+        "name": "Rapininha Demaciana",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Griffin_Cream_Tier3.png",
+        "description": "Filhote de rapina demaciana.",
+        "speciesName": "Rapininha",
+        "speciesId": 2
+    },
+    {
+        "itemId": 2018,
+        "name": "Rapininha Perdida",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Griffin_Dark_Tier3.png",
+        "description": "Filhote de rapina demaciana.",
+        "speciesName": "Rapininha",
+        "speciesId": 2
+    },
+    {
+        "itemId": 2006,
+        "name": "Rapininha Flor de Inverno",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Griffin_Hawk_Tier3.png",
+        "description": "Filhote de rapina demaciana.",
+        "speciesName": "Rapininha",
+        "speciesId": 2
+    },
+    {
+        "itemId": 2015,
+        "name": "Rapininha Tropical",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Griffin_Parrot_Tier3.png",
+        "description": "Filhote de rapina demaciana.",
+        "speciesName": "Rapininha",
+        "speciesId": 2
+    },
+    {
+        "itemId": 2012,
+        "name": "Rapininha Flora",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Griffin_Pink_Tier3.png",
+        "description": "Filhote de rapina demaciana.",
+        "speciesName": "Rapininha",
+        "speciesId": 2
+    },
+    {
+        "itemId": 2021,
+        "name": "Rapininha Guardiã Estelar",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Griffin_StarGuardian_Tier3.LittleLegends_Battlepass_10_12.png",
+        "description": "Filhote de rapina demaciana.",
+        "speciesName": "Rapininha",
+        "speciesId": 2
+    },
+    {
+        "itemId": 2022,
+        "name": "Rapininha Vitoriosa",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Griffin_Victorious.LittleLegends_Victorious_10_13.png",
+        "description": "Filhote de rapina demaciana.",
+        "speciesName": "Rapininha",
+        "speciesId": 2
+    },
+    {
+        "itemId": 2009,
+        "name": "Rapininha da Alvorada",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Griffin_Yellow_Tier3.png",
+        "description": "Filhote de rapina demaciana.",
+        "speciesName": "Rapininha",
+        "speciesId": 2
+    },
+    {
+        "itemId": 3018,
+        "name": "Ranzinzim da Tundra",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_GrumpyLion_Dark_Tier3.png",
+        "description": "Uma ferinha ranzinza, furiosa e com chifres.",
+        "speciesName": "Ranzinzim",
+        "speciesId": 3
+    },
+    {
+        "itemId": 3009,
+        "name": "Ranzinzim Silvestre",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_GrumpyLion_Green_Tier3.png",
+        "description": "Uma ferinha ranzinza, furiosa e com chifres.",
+        "speciesName": "Ranzinzim",
+        "speciesId": 3
+    },
+    {
+        "itemId": 3015,
+        "name": "Ranzinzim Sorvetinho",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_GrumpyLion_IceCream_Tier3.png",
+        "description": "Uma ferinha ranzinza, furiosa e com chifres.",
+        "speciesName": "Ranzinzim",
+        "speciesId": 3
+    },
+    {
+        "itemId": 3022,
+        "name": "Ranzinzim K/DA ALL OUT",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_GrumpyLion_KDAKaiSa_KDA1_Tier3.LittleLegends_10_23.png",
+        "description": "O novo visual da Kai'Sa inspirou esse Ranzinzim a exibir não só sua força, mas também seu estilo.",
+        "speciesName": "Ranzinzim",
+        "speciesId": 3
+    },
+    {
+        "itemId": 3025,
+        "name": "Ranzinzim K/DA POP/STARS",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_GrumpyLion_KDAKaiSa_KDA2_Tier3.LittleLegends_10_23.png",
+        "description": "Esse discreto Ranzinzim adora os passos de dança precisos e expressivos da Kai'Sa e espera ser tão refinado quanto ela algum dia.",
+        "speciesName": "Ranzinzim",
+        "speciesId": 3
+    },
+    {
+        "itemId": 3028,
+        "name": "Ranzinzim Fera Lunar",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_GrumpyLion_Set4Update_LunarBeast_Tier3.LittleLegends_11_2.png",
+        "description": "Os passos do Ranzinzim, o fera da pista de dança, são alguns dos melhores da Cidade Lunar. Para o azar de quem está ao redor, arrasar na pista de dança significa literalmente arrasar a própria pista de dança.",
+        "speciesName": "Ranzinzim",
+        "speciesId": 3
+    },
+    {
+        "itemId": 3031,
+        "name": "Ranzinzim Festival Lunar",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_GrumpyLion_Set4Update_LunarRevel2021_Tier3.LittleLegends_11_2.png",
+        "description": "As pessoas acham que este pequeno Ranzinzim é uma ameaça, mas ele é só mal compreendido. Tudo que ele quer é participar das festividades e comemorar o ano novo, mas se assusta facilmente com os fogos de artifício e com as lanternas vermelhas brilhantes.",
+        "speciesName": "Ranzinzim",
+        "speciesId": 3
+    },
+    {
+        "itemId": 3012,
+        "name": "Ranzinzim Coração de Leão",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_GrumpyLion_Orange_Tier3.png",
+        "description": "Uma ferinha ranzinza, furiosa e com chifres.",
+        "speciesName": "Ranzinzim",
+        "speciesId": 3
+    },
+    {
+        "itemId": 3003,
+        "name": "Ranzinzim de Lava",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_GrumpyLion_Red_Tier3.png",
+        "description": "Uma ferinha ranzinza, furiosa e com chifres.",
+        "speciesName": "Ranzinzim",
+        "speciesId": 3
+    },
+    {
+        "itemId": 3019,
+        "name": "Ranzinzim Vitorioso",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_GrumpyLion_Victorious.LittleLegends_Victorious_10_13.png",
+        "description": "Uma ferinha ranzinza, furiosa e com chifres.",
+        "speciesName": "Ranzinzim",
+        "speciesId": 3
+    },
+    {
+        "itemId": 3006,
+        "name": "Ranzinzim Vastinata",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_GrumpyLion_Void_Tier3.png",
+        "description": "Uma ferinha ranzinza, furiosa e com chifres.",
+        "speciesName": "Ranzinzim",
+        "speciesId": 3
+    },
+    {
+        "itemId": 16012,
+        "name": "Horuja Névoa Negra",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_HextechBirb_BlackMist_Tier3.LittleLegends_10_01.png",
+        "description": "Horuja está sempre mexendo em tudo, querendo aprimorar cada coisinha, e seu próprio corpo não é exceção!",
+        "speciesName": "Horuja",
+        "speciesId": 16
+    },
+    {
+        "itemId": 16009,
+        "name": "Horuja Quimtec",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_HextechBirb_Chemtech_Tier3.LittleLegends_10_01.png",
+        "description": "Horuja está sempre mexendo em tudo, querendo aprimorar cada coisinha, e seu próprio corpo não é exceção!",
+        "speciesName": "Horuja",
+        "speciesId": 16
+    },
+    {
+        "itemId": 16015,
+        "name": "Horuja da Legião",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_HextechBirb_Legionnaire_Tier3.LittleLegends_10_01.png",
+        "description": "Horuja está sempre mexendo em tudo, querendo aprimorar cada coisinha, e seu próprio corpo não é exceção!",
+        "speciesName": "Horuja",
+        "speciesId": 16
+    },
+    {
+        "itemId": 16018,
+        "name": "Horuja das Pétalas",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_HextechBirb_PetalDancer_Tier3.LittleLegends_10_01.png",
+        "description": "Horuja está sempre mexendo em tudo, querendo aprimorar cada coisinha, e seu próprio corpo não é exceção!",
+        "speciesName": "Horuja",
+        "speciesId": 16
+    },
+    {
+        "itemId": 16006,
+        "name": "Horuja Petricita",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_HextechBirb_Petricite_Tier3.LittleLegends_10_01.png",
+        "description": "Horuja está sempre mexendo em tudo, querendo aprimorar cada coisinha, e seu próprio corpo não é exceção!",
+        "speciesName": "Horuja",
+        "speciesId": 16
+    },
+    {
+        "itemId": 16003,
+        "name": "Horuja",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_HextechBirb_Tocker_Tier3.LittleLegends_10_01.png",
+        "description": "Horuja está sempre mexendo em tudo, querendo aprimorar cada coisinha, e seu próprio corpo não é exceção!",
+        "speciesName": "Horuja",
+        "speciesId": 16
+    },
+    {
+        "itemId": 4021,
+        "name": "Territo Astronauta",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loot/Companions/Miner/Loot_Miner_Astronaut_Tier3.LittleLegends_DarkStar.png",
+        "description": "Ele cava muito bem.",
+        "speciesName": "Territo",
+        "speciesId": 4
+    },
+    {
+        "itemId": 4015,
+        "name": "Territo Desastrado",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Miner_Dark_Tier3.png",
+        "description": "Ele cava muito bem.",
+        "speciesName": "Territo",
+        "speciesId": 4
+    },
+    {
+        "itemId": 4012,
+        "name": "Territo Ribeirinho",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Miner_Green_Tier3.png",
+        "description": "Ele cava muito bem.",
+        "speciesName": "Territo",
+        "speciesId": 4
+    },
+    {
+        "itemId": 4003,
+        "name": "Territo Blindado",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Miner_Grey_Tier3.png",
+        "description": "Ele cava muito bem.",
+        "speciesName": "Territo",
+        "speciesId": 4
+    },
+    {
+        "itemId": 4009,
+        "name": "Territo Colorido",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Miner_Rainbow_Tier3.png",
+        "description": "Ele cava muito bem.",
+        "speciesName": "Territo",
+        "speciesId": 4
+    },
+    {
+        "itemId": 4006,
+        "name": "Territo Bombeiro",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Miner_Red_Tier3.png",
+        "description": "Ele cava muito bem.",
+        "speciesName": "Territo",
+        "speciesId": 4
+    },
+    {
+        "itemId": 4018,
+        "name": "Territo Venenoso",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Miner_Yellow_Tier3.png",
+        "description": "Ele cava muito bem.",
+        "speciesName": "Territo",
+        "speciesId": 4
+    },
+    {
+        "itemId": 5012,
+        "name": "Runirim Névoa Negra",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_MiniGolem_Dark_Tier3.png",
+        "description": "Um Runirim misterioso e travesso.",
+        "speciesName": "Runirim",
+        "speciesId": 5
+    },
+    {
+        "itemId": 5003,
+        "name": "Runirim Azuporã",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_MiniGolem_Grey_Tier3.png",
+        "description": "Um Runirim misterioso e travesso.",
+        "speciesName": "Runirim",
+        "speciesId": 5
+    },
+    {
+        "itemId": 5015,
+        "name": "Runirim Glacial",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_MiniGolem_Ice_Tier3.png",
+        "description": "Um Runirim misterioso e travesso.",
+        "speciesName": "Runirim",
+        "speciesId": 5
+    },
+    {
+        "itemId": 5006,
+        "name": "Runirim Rubrivira",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_MiniGolem_Lava_Tier3.png",
+        "description": "Um Runirim misterioso e travesso.",
+        "speciesName": "Runirim",
+        "speciesId": 5
+    },
+    {
+        "itemId": 5009,
+        "name": "Runirim Plantinha",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_MiniGolem_Moss_Tier3.png",
+        "description": "Um Runirim misterioso e travesso.",
+        "speciesName": "Runirim",
+        "speciesId": 5
+    },
+    {
+        "itemId": 5018,
+        "name": "Runirim Sakura",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_MiniGolem_Spring_Tier3.png",
+        "description": "Um Runirim misterioso e travesso.",
+        "speciesName": "Runirim",
+        "speciesId": 5
+    },
+    {
+        "itemId": 31003,
+        "name": "Ratuninho",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Nimblefoot_Base_Classic_Tier3.LittleLegends_11_9.png",
+        "description": "Especialistas em velocidade, armadilhas e roubos em geral, os Ratuninhos transformam qualquer jornada numa desventura cheia de malandragem. As bolsinhas vermelhas encantadas que eles usam podem carregar toda e qualquer coisa, de ouro e orbes até... calma lá, aquilo ali é queijo? ",
+        "speciesName": "Ratuninho",
+        "speciesId": 31
+    },
+    {
+        "itemId": 31006,
+        "name": "Ratuninho Emissário da Escuridão",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Nimblefoot_Base_Variant1_Tier3.LittleLegends_11_9.png",
+        "description": "Especialistas em velocidade, armadilhas e roubos em geral, os Ratuninhos transformam qualquer jornada numa desventura cheia de malandragem. As bolsinhas vermelhas encantadas que eles usam podem carregar toda e qualquer coisa, de ouro e orbes até... calma lá, aquilo ali é queijo? ",
+        "speciesName": "Ratuninho",
+        "speciesId": 31
+    },
+    {
+        "itemId": 31009,
+        "name": "Ratuninho Redimido",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Nimblefoot_Base_Variant2_Tier3.LittleLegends_11_9.png",
+        "description": "Especialistas em velocidade, armadilhas e roubos em geral, os Ratuninhos transformam qualquer jornada numa desventura cheia de malandragem. As bolsinhas vermelhas encantadas que eles usam podem carregar toda e qualquer coisa, de ouro e orbes até... calma lá, aquilo ali é queijo? ",
+        "speciesName": "Ratuninho",
+        "speciesId": 31
+    },
+    {
+        "itemId": 31012,
+        "name": "Ratuninho Kinkou",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Nimblefoot_Base_Variant3_Tier3.LittleLegends_11_9.png",
+        "description": "Especialistas em velocidade, armadilhas e roubos em geral, os Ratuninhos transformam qualquer jornada numa desventura cheia de malandragem. As bolsinhas vermelhas encantadas que eles usam podem carregar toda e qualquer coisa, de ouro e orbes até... calma lá, aquilo ali é queijo? ",
+        "speciesName": "Ratuninho",
+        "speciesId": 31
+    },
+    {
+        "itemId": 31015,
+        "name": "Ratuninho Verdejante",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Nimblefoot_Base_Variant4_Tier3.LittleLegends_11_9.png",
+        "description": "Especialistas em velocidade, armadilhas e roubos em geral, os Ratuninhos transformam qualquer jornada numa desventura cheia de malandragem. As bolsinhas vermelhas encantadas que eles usam podem carregar toda e qualquer coisa, de ouro e orbes até... calma lá, aquilo ali é queijo? ",
+        "speciesName": "Ratuninho",
+        "speciesId": 31
+    },
+    {
+        "itemId": 31018,
+        "name": "Ratuninho Esquecido",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Nimblefoot_Base_Variant5_Tier3.LittleLegends_11_9.png",
+        "description": "Especialistas em velocidade, armadilhas e roubos em geral, os Ratuninhos transformam qualquer jornada numa desventura cheia de malandragem. As bolsinhas vermelhas encantadas que eles usam podem carregar toda e qualquer coisa, de ouro e orbes até... calma lá, aquilo ali é queijo? ",
+        "speciesName": "Ratuninho",
+        "speciesId": 31
+    },
+    {
+        "itemId": 22018,
+        "name": "Corceluz Fliperama",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Pegasus_Arcade_Tier3.LittleLegends_10_10.png",
+        "description": "Considerado a resplandecência encarnada, Corceluz costuma ser visto planando pelos céus de Targon ao anoitecer. Ele se banha no brilho mais radiante da lua, galopando nobremente de leste a oeste e protegendo o mundo da escuridão eterna.",
+        "speciesName": "Corceluz",
+        "speciesId": 22
+    },
+    {
+        "itemId": 22015,
+        "name": "Corceluz Névoa Negra",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Pegasus_BlackMist_Tier3.LittleLegends_10_10.png",
+        "description": "Considerado a resplandecência encarnada, Corceluz costuma ser visto planando pelos céus de Targon ao anoitecer. Ele se banha no brilho mais radiante da lua, galopando nobremente de leste a oeste e protegendo o mundo da escuridão eterna.",
+        "speciesName": "Corceluz",
+        "speciesId": 22
+    },
+    {
+        "itemId": 22003,
+        "name": "Corceluz",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Pegasus_Classic_Tier3.LittleLegends_10_10.png",
+        "description": "Considerado a resplandecência encarnada, Corceluz costuma ser visto planando pelos céus de Targon ao anoitecer. Ele se banha no brilho mais radiante da lua, galopando nobremente de leste a oeste e protegendo o mundo da escuridão eterna.",
+        "speciesName": "Corceluz",
+        "speciesId": 22
+    },
+    {
+        "itemId": 22006,
+        "name": "Corceluz de Cristal",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Pegasus_Crystal_Tier3.LittleLegends_10_10.png",
+        "description": "Considerado a resplandecência encarnada, Corceluz costuma ser visto planando pelos céus de Targon ao anoitecer. Ele se banha no brilho mais radiante da lua, galopando nobremente de leste a oeste e protegendo o mundo da escuridão eterna.",
+        "speciesName": "Corceluz",
+        "speciesId": 22
+    },
+    {
+        "itemId": 22012,
+        "name": "Corceluz Velho Oeste",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Pegasus_HighNoon_Tier3.LittleLegends_10_10.png",
+        "description": "Considerado a resplandecência encarnada, Corceluz costuma ser visto planando pelos céus de Targon ao anoitecer. Ele se banha no brilho mais radiante da lua, galopando nobremente de leste a oeste e protegendo o mundo da escuridão eterna.",
+        "speciesName": "Corceluz",
+        "speciesId": 22
+    },
+    {
+        "itemId": 22021,
+        "name": "Corceluz K/DA ALL OUT",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Pegasus_KDASeraphine_KDA1_Tier3.LittleLegends_10_23.png",
+        "description": "Corceluz adora a nova colaboradora do K/DA por completo: das longas e fabulosas madeixas à música sensível e comovente. Porém, enquanto defende o mundo da escuridão eterna, ele é incentivado pelo otimismo inabalável da sonhadora Seraphine.",
+        "speciesName": "Corceluz",
+        "speciesId": 22
+    },
+    {
+        "itemId": 22024,
+        "name": "Corceluz K/DA POP/STARS",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Pegasus_KDASeraphine_KDA2_Tier3.LittleLegends_10_23.png",
+        "description": "Esse Corceluz sempre teve um sonho: saber como seria o look da Seraphine se ela tivesse participado de POP/STARS. Então, ele resolveu realizar esse sonho!",
+        "speciesName": "Corceluz",
+        "speciesId": 22
+    },
+    {
+        "itemId": 22009,
+        "name": "Corceluz Sorvetinho",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Pegasus_SugarCone_Tier3.LittleLegends_10_10.png",
+        "description": "Considerado a resplandecência encarnada, Corceluz costuma ser visto planando pelos céus de Targon ao anoitecer. Ele se banha no brilho mais radiante da lua, galopando nobremente de leste a oeste e protegendo o mundo da escuridão eterna.",
+        "speciesName": "Corceluz",
+        "speciesId": 22
+    },
+    {
+        "itemId": 6034,
+        "name": "Pingu Caótico",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_PenguKnight_Set5LaunchBattlePass_Chaos_Tier3.LittleLegends_11_9.png",
+        "description": "Quando Pingu entrou em contato com as forças corruptas da Névoa Negra, foi o Pingu Caótico que emergiu do nosso amado Plumário. Embora o Pingu Caótico tenha o cabelo mais irado, os passos de dança mais incríveis e um tema de rap superior, ele é apenas isso... superior.",
+        "speciesName": "Plumário",
+        "speciesId": 6
+    },
+    {
+        "itemId": 6003,
+        "name": "Pingu Plumário",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_PenguKnight_Classic_Tier3.png",
+        "description": "Um nobre Plumário.",
+        "speciesName": "Plumário",
+        "speciesId": 6
+    },
+    {
+        "itemId": 6006,
+        "name": "Plumário Senhor dos Corvos",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_PenguKnight_Dark_Tier3.png",
+        "description": "Um nobre Plumário.",
+        "speciesName": "Plumário",
+        "speciesId": 6
+    },
+    {
+        "itemId": 6009,
+        "name": "Plumário Gelo Verdadeiro",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_PenguKnight_Ice_Tier3.png",
+        "description": "Um nobre Plumário.",
+        "speciesName": "Plumário",
+        "speciesId": 6
+    },
+    {
+        "itemId": 6027,
+        "name": "Plumário K/DA ALL OUT",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_PenguKnight_KDAAkali_KDA1_Tier3.LittleLegends_10_23.png",
+        "description": "Esse Plumário se inspirou nas batidas destruidoras da Akali e está determinado a canalizar a energia dela em sua performance, mesmo com a coreografia um pouco mais desajeitada.",
+        "speciesName": "Plumário",
+        "speciesId": 6
+    },
+    {
+        "itemId": 6030,
+        "name": "Plumário K/DA POP/STARS",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_PenguKnight_KDAAkali_KDA2_Tier3.LittleLegends_10_23.png",
+        "description": "A originalidade intensa da Akali cativou completamente esse Plumário. Agora que conseguiu o boné emblemático da sua estrela favorita, nada pode impedi-lo de realizar seu sonho: ser o primeiro Plumário a brilhar nos palcos!",
+        "speciesName": "Plumário",
+        "speciesId": 6
+    },
+    {
+        "itemId": 6018,
+        "name": "Plumário Sakura",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_PenguKnight_Owl_Tier3.png",
+        "description": "Um nobre Plumário.",
+        "speciesName": "Plumário",
+        "speciesId": 6
+    },
+    {
+        "itemId": 6012,
+        "name": "Plumário Galinho",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_PenguKnight_Rooster_Tier3.png",
+        "description": "Um nobre Plumário.",
+        "speciesName": "Plumário",
+        "speciesId": 6
+    },
+    {
+        "itemId": 6021,
+        "name": "Plumário Kanmei",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_PenguKnight_SpiritBlossomKami_Tier3.LittleLegends_SpiritBlossom_10_16.png",
+        "description": "Um nobre Plumário.",
+        "speciesName": "Plumário",
+        "speciesId": 6
+    },
+    {
+        "itemId": 6024,
+        "name": "Plumário Akana",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_PenguKnight_SpiritBlossomYokai_Tier3.LittleLegends_SpiritBlossom_10_16.png",
+        "description": "Um nobre Plumário.",
+        "speciesName": "Plumário",
+        "speciesId": 6
+    },
+    {
+        "itemId": 6015,
+        "name": "Plumário Canarinho",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_PenguKnight_Yellow_Tier3.png",
+        "description": "Um nobre Plumário.",
+        "speciesName": "Plumário",
+        "speciesId": 6
+    },
+    {
+        "itemId": 14018,
+        "name": "QiQi Rainha do Baixo",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_QiyanaDog_BassQueen_Tier3.9_22_Little_Legends.png",
+        "description": "Os hobbies de QiQi incluem ser linda e chamar a atenção para si. Quando o assunto é música, moda ou enfrentar poderosos inimigos, QiQi sempre está no centro dos holofotes.",
+        "speciesName": "QiQi",
+        "speciesId": 14
+    },
+    {
+        "itemId": 14012,
+        "name": "QiQi Compositora",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_QiyanaDog_Beatmaker_Tier3.9_22_Little_Legends.png",
+        "description": "Os hobbies de QiQi incluem ser linda e chamar a atenção para si. Quando o assunto é música, moda ou enfrentar poderosos inimigos, QiQi sempre está no centro dos holofotes.",
+        "speciesName": "QiQi",
+        "speciesId": 14
+    },
+    {
+        "itemId": 14006,
+        "name": "QiQi Batidão",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_QiyanaDog_Hardhitter_Tier3.9_22_Little_Legends.png",
+        "description": "Os hobbies de QiQi incluem ser linda e chamar a atenção para si. Quando o assunto é música, moda ou enfrentar poderosos inimigos, QiQi sempre está no centro dos holofotes.",
+        "speciesName": "QiQi",
+        "speciesId": 14
+    },
+    {
+        "itemId": 14015,
+        "name": "QiQi Prodígio",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_QiyanaDog_Prodigy_Tier3.9_22_Little_Legends.png",
+        "description": "Os hobbies de QiQi incluem ser linda e chamar a atenção para si. Quando o assunto é música, moda ou enfrentar poderosos inimigos, QiQi sempre está no centro dos holofotes.",
+        "speciesName": "QiQi",
+        "speciesId": 14
+    },
+    {
+        "itemId": 14003,
+        "name": "QiQi",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_QiyanaDog_Qiqi_Tier3.9_22_Little_Legends.png",
+        "description": "Os hobbies de QiQi incluem ser linda e chamar a atenção para si. Quando o assunto é música, moda ou enfrentar poderosos inimigos, QiQi sempre está no centro dos holofotes.",
+        "speciesName": "QiQi",
+        "speciesId": 14
+    },
+    {
+        "itemId": 14009,
+        "name": "QiQi Solista",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_QiyanaDog_Soloist_Tier3.9_22_Little_Legends.png",
+        "description": "Os hobbies de QiQi incluem ser linda e chamar a atenção para si. Quando o assunto é música, moda ou enfrentar poderosos inimigos, QiQi sempre está no centro dos holofotes.",
+        "speciesName": "QiQi",
+        "speciesId": 14
+    },
+    {
+        "itemId": 10006,
+        "name": "Dango Chiclete",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SGCat_Bubblegum_Tier3.Little_Legends_Star_Guardian.png",
+        "description": "Dango é o mais faminto de todas as Pequenas Lendas.",
+        "speciesName": "Dango",
+        "speciesId": 10
+    },
+    {
+        "itemId": 10003,
+        "name": "Dango",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SGCat_Dango_Tier3.Little_Legends_Star_Guardian.png",
+        "description": "Dango é o mais faminto de todas as Pequenas Lendas.",
+        "speciesName": "Dango",
+        "speciesId": 10
+    },
+    {
+        "itemId": 10009,
+        "name": "Dango Gengibrito",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SGCat_Gingersnap_Tier3.Little_Legends_Star_Guardian.png",
+        "description": "Dango é o mais faminto de todas as Pequenas Lendas.",
+        "speciesName": "Dango",
+        "speciesId": 10
+    },
+    {
+        "itemId": 10012,
+        "name": "Dango Cítrico",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SGCat_Lemondrop_Tier3.Little_Legends_Star_Guardian.png",
+        "description": "Dango é o mais faminto de todas as Pequenas Lendas.",
+        "speciesName": "Dango",
+        "speciesId": 10
+    },
+    {
+        "itemId": 10015,
+        "name": "Dango Limonada",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SGCat_Limeberry_Tier3.Little_Legends_Star_Guardian.png",
+        "description": "Dango é o mais faminto de todas as Pequenas Lendas.",
+        "speciesName": "Dango",
+        "speciesId": 10
+    },
+    {
+        "itemId": 10018,
+        "name": "Dango Amorinha",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SGCat_SugarCrash_Tier3.Little_Legends_Star_Guardian.png",
+        "description": "Dango é o mais faminto de todas as Pequenas Lendas.",
+        "speciesName": "Dango",
+        "speciesId": 10
+    },
+    {
+        "itemId": 11018,
+        "name": "Fuwa Ensolarado",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SGPig_Daystar_Tier3.Little_Legends_Star_Guardian.png",
+        "description": "O sonho de Fuwa é um dia encontrar sua Guardiã predestinada.",
+        "speciesName": "Fuwa",
+        "speciesId": 11
+    },
+    {
+        "itemId": 11012,
+        "name": "Fuwa Eclipse",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SGPig_Eclipse_Tier3.Little_Legends_Star_Guardian.png",
+        "description": "O sonho de Fuwa é um dia encontrar sua Guardiã predestinada.",
+        "speciesName": "Fuwa",
+        "speciesId": 11
+    },
+    {
+        "itemId": 11015,
+        "name": "Fuwa Fogos de Artifício",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SGPig_Firecracker_Tier3.Little_Legends_Star_Guardian.png",
+        "description": "O sonho de Fuwa é um dia encontrar sua Guardiã predestinada.",
+        "speciesName": "Fuwa",
+        "speciesId": 11
+    },
+    {
+        "itemId": 11003,
+        "name": "Fuwa",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SGPig_Fuwa_Tier3.Little_Legends_Star_Guardian.png",
+        "description": "O sonho de Fuwa é um dia encontrar sua Guardiã predestinada.",
+        "speciesName": "Fuwa",
+        "speciesId": 11
+    },
+    {
+        "itemId": 11006,
+        "name": "Fuwa Último Desejo",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SGPig_LastWish_Tier3.Little_Legends_Star_Guardian.png",
+        "description": "O sonho de Fuwa é um dia encontrar sua Guardiã predestinada.",
+        "speciesName": "Fuwa",
+        "speciesId": 11
+    },
+    {
+        "itemId": 11009,
+        "name": "Fuwa Apaixonado",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SGPig_Lovestruck_Tier3.Little_Legends_Star_Guardian.png",
+        "description": "O sonho de Fuwa é um dia encontrar sua Guardiã predestinada.",
+        "speciesName": "Fuwa",
+        "speciesId": 11
+    },
+    {
+        "itemId": 11021,
+        "name": "Fuwa da Sorte",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SGPig_Journey_Fuwa_Tier3.LittleLegends_10_19.png",
+        "description": "O sonho de Fuwa é um dia encontrar sua Guardiã predestinada.",
+        "speciesName": "Fuwa",
+        "speciesId": 11
+    },
+    {
+        "itemId": 12018,
+        "name": "Shisa Corrompido",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SGShisa_Corrupted_Tier3.Little_Legends_Star_Guardian.png",
+        "description": "O objetivo de Shisa é proteger as Guardiãs Estelares e todos que estão sob os seus cuidados.",
+        "speciesName": "Shisa",
+        "speciesId": 12
+    },
+    {
+        "itemId": 12015,
+        "name": "Shisa Fogos de Artifício",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SGShisa_Firecracker_Tier3.Little_Legends_Star_Guardian.png",
+        "description": "O objetivo de Shisa é proteger as Guardiãs Estelares e todos que estão sob os seus cuidados.",
+        "speciesName": "Shisa",
+        "speciesId": 12
+    },
+    {
+        "itemId": 12006,
+        "name": "Shisa Heroico",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SGShisa_Heroic_Tier3.Little_Legends_Star_Guardian.png",
+        "description": "O objetivo de Shisa é proteger as Guardiãs Estelares e todos que estão sob os seus cuidados.",
+        "speciesName": "Shisa",
+        "speciesId": 12
+    },
+    {
+        "itemId": 12009,
+        "name": "Shisa Precioso",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SGShisa_Littlest_Tier3.Little_Legends_Star_Guardian.png",
+        "description": "O objetivo de Shisa é proteger as Guardiãs Estelares e todos que estão sob os seus cuidados.",
+        "speciesName": "Shisa",
+        "speciesId": 12
+    },
+    {
+        "itemId": 12024,
+        "name": "Shisa Fera Lunar",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SGShisa_Journeys_LunarBeast_Tier3.LittleLegends_11_2.png",
+        "description": "Shisa, o macaco mágico mais descolado de todos, só tem medo de uma coisa: um penteado sem graça.",
+        "speciesName": "Shisa",
+        "speciesId": 12
+    },
+    {
+        "itemId": 12021,
+        "name": "Shisa Festival Lunar",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SGShisa_Journeys_LunarRevel_Tier3.LittleLegends_11_2.png",
+        "description": "Shisa faz parte das comemorações do Ano-Novo Lunar há mais tempo do que qualquer pessoa consegue lembrar. Meio brincalhão e meio guerreiro, este rei macaquinho é o mais inteligente da galera!",
+        "speciesName": "Shisa",
+        "speciesId": 12
+    },
+    {
+        "itemId": 12003,
+        "name": "Shisa",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SGShisa_Shisa_Tier3.Little_Legends_Star_Guardian.png",
+        "description": "O objetivo de Shisa é proteger as Guardiãs Estelares e todos que estão sob os seus cuidados.",
+        "speciesName": "Shisa",
+        "speciesId": 12
+    },
+    {
+        "itemId": 12012,
+        "name": "Shisa Raio de Sol",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SGShisa_Sundrop_Tier3.Little_Legends_Star_Guardian.png",
+        "description": "O objetivo de Shisa é proteger as Guardiãs Estelares e todos que estão sob os seus cuidados.",
+        "speciesName": "Shisa",
+        "speciesId": 12
+    },
+    {
+        "itemId": 15012,
+        "name": "Melisma Compositora",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SennaBunny_Beatmaker_Tier3.9_22_Little_Legends.png",
+        "description": "Melisma está sempre antenada no ritmo. Não importa a ocasião, ela está sempre pronta para apresentar um som que você nunca imaginou que queria, até ouvi-lo.",
+        "speciesName": "Melisma",
+        "speciesId": 15
+    },
+    {
+        "itemId": 15006,
+        "name": "Melisma Batidão",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SennaBunny_Hardhitter_Tier3.9_22_Little_Legends.png",
+        "description": "Melisma está sempre antenada no ritmo. Não importa a ocasião, ela está sempre pronta para apresentar um som que você nunca imaginou que queria, até ouvi-lo.",
+        "speciesName": "Melisma",
+        "speciesId": 15
+    },
+    {
+        "itemId": 15003,
+        "name": "Melisma",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SennaBunny_Melisma_Tier3.9_22_Little_Legends.png",
+        "description": "Melisma está sempre antenada no ritmo. Não importa a ocasião, ela está sempre pronta para apresentar um som que você nunca imaginou que queria, até ouvi-lo.",
+        "speciesName": "Melisma",
+        "speciesId": 15
+    },
+    {
+        "itemId": 15009,
+        "name": "Melisma Rainha do Pop",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SennaBunny_Popqueen_Tier3.9_22_Little_Legends.png",
+        "description": "Melisma está sempre antenada no ritmo. Não importa a ocasião, ela está sempre pronta para apresentar um som que você nunca imaginou que queria, até ouvi-lo.",
+        "speciesName": "Melisma",
+        "speciesId": 15
+    },
+    {
+        "itemId": 15015,
+        "name": "Melisma Prodígio",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SennaBunny_Prodigy_Tier3.9_22_Little_Legends.png",
+        "description": "Melisma está sempre antenada no ritmo. Não importa a ocasião, ela está sempre pronta para apresentar um som que você nunca imaginou que queria, até ouvi-lo.",
+        "speciesName": "Melisma",
+        "speciesId": 15
+    },
+    {
+        "itemId": 15018,
+        "name": "Melisma Batidão Sombrio",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SennaBunny_ShadowBeat_Tier3.9_22_Little_Legends.png",
+        "description": "Melisma está sempre antenada no ritmo. Não importa a ocasião, ela está sempre pronta para apresentar um som que você nunca imaginou que queria, até ouvi-lo.",
+        "speciesName": "Melisma",
+        "speciesId": 15
+    },
+    {
+        "itemId": 15021,
+        "name": "Melisma Kanmei",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SennaBunny_SpiritBlossomKami_Tier3.LittleLegends_SpiritBlossom_10_16.png",
+        "description": "Melisma está sempre antenada no ritmo. Não importa a ocasião, ela está sempre pronta para apresentar um som que você nunca imaginou que queria, até ouvi-lo.",
+        "speciesName": "Melisma",
+        "speciesId": 15
+    },
+    {
+        "itemId": 15024,
+        "name": "Melisma Akana",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SennaBunny_SpiritBlossomYokai_Tier3.LittleLegends_SpiritBlossom_10_16.png",
+        "description": "Melisma está sempre antenada no ritmo. Não importa a ocasião, ela está sempre pronta para apresentar um som que você nunca imaginou que queria, até ouvi-lo.",
+        "speciesName": "Melisma",
+        "speciesId": 15
+    },
+    {
+        "itemId": 9018,
+        "name": "Felpina Eterna",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SpiritFox_Eternal_Tier3.png",
+        "description": "Uma mística Felpina.",
+        "speciesName": "Felpina",
+        "speciesId": 9
+    },
+    {
+        "itemId": 9006,
+        "name": "Felpina Feérica",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SpiritFox_Fae_Tier3.png",
+        "description": "Uma mística Felpina.",
+        "speciesName": "Felpina",
+        "speciesId": 9
+    },
+    {
+        "itemId": 9027,
+        "name": "Felpina K/DA ALL OUT",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SpiritFox_KDAAhri_KDA1_Tier3.LittleLegends_10_23.png",
+        "description": "Essa Felpina seguirá a Ahri em qualquer forma que a rainha assumir. Brilhando com o novo sucesso do grupo, ela esbanja conceito, coesão e aclamação!",
+        "speciesName": "Felpina",
+        "speciesId": 9
+    },
+    {
+        "itemId": 9030,
+        "name": "Felpina K/DA POP/STARS",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SpiritFox_KDAAhri_KDA2_Tier3.LittleLegends_10_23.png",
+        "description": "Essa Felpina tem uma afinidade tão especial com a Ahri que mudou suas próprias cores para combinar com o look clássico de POP/STARS. O maior sonho dela é acompanhar o K/DA em uma turnê.",
+        "speciesName": "Felpina",
+        "speciesId": 9
+    },
+    {
+        "itemId": 9012,
+        "name": "Felpina Tutti-frutti",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SpiritFox_Mistberry_Tier3.png",
+        "description": "Uma mística Felpina.",
+        "speciesName": "Felpina",
+        "speciesId": 9
+    },
+    {
+        "itemId": 9009,
+        "name": "Felpina Borboleta",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SpiritFox_Monarch_Tier3.png",
+        "description": "Uma mística Felpina.",
+        "speciesName": "Felpina",
+        "speciesId": 9
+    },
+    {
+        "itemId": 9003,
+        "name": "Felpina Minguante",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SpiritFox_Moontipped_Tier3.png",
+        "description": "Uma mística Felpina.",
+        "speciesName": "Felpina",
+        "speciesId": 9
+    },
+    {
+        "itemId": 9021,
+        "name": "Felpina Kanmei",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SpiritFox_SpiritBlossomKami_Tier3.LittleLegends_SpiritBlossom_10_16.png",
+        "description": "Uma mística Felpina.",
+        "speciesName": "Felpina",
+        "speciesId": 9
+    },
+    {
+        "itemId": 9024,
+        "name": "Felpina Akana",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SpiritFox_SpiritBlossomYokai_Tier3.LittleLegends_SpiritBlossom_10_16.png",
+        "description": "Uma mística Felpina.",
+        "speciesName": "Felpina",
+        "speciesId": 9
+    },
+    {
+        "itemId": 9015,
+        "name": "Felpina Indomada",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_SpiritFox_Untamed_Tier3.png",
+        "description": "Uma mística Felpina.",
+        "speciesName": "Felpina",
+        "speciesId": 9
+    },
+    {
+        "itemId": 6,
+        "name": "Espírito Caótico",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_TFTAvatar_Set5LaunchBattlePass_Chaos_Tier3.LittleLegends_11_9.png",
+        "description": "O Espírito Caótico nunca entendeu o Espírito do Rio. Mas eles seriam amigos se a água não apagasse o fogo tão facilmente.",
+        "speciesName": "Espírito do Rio",
+        "speciesId": 0
+    },
+    {
+        "itemId": 1,
+        "name": "Espírito do Rio",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_TFT_Avatar_Blue.LittleLegends_DarkStar.png",
+        "description": "Espírito do Rio",
+        "speciesName": "Espírito do Rio",
+        "speciesId": 0
+    },
+    {
+        "itemId": 5,
+        "name": "Espírito Bolinho",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_TFTAvatar_Set4UpdateBattlePass_Journeys_Tier3.LittleLegends_11_2.png",
+        "description": "Recheado com deliciosa carne de porco e saborosos camarões, este pequeno Espírito Bolinho certamente estará na mesa durante o Ano-Novo. Mas espera aí! Tá pensando que ele é de comer? Não! Você enlouqueceu?!",
+        "speciesName": "Espírito do Rio",
+        "speciesId": 0
+    },
+    {
+        "itemId": 4,
+        "name": "Espírito Imperador de Jade",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_TFTAvatar_Sprite_Tier3.LittleLegends_10_19.png",
+        "description": "Espírito do Rio.",
+        "speciesName": "Espírito do Rio",
+        "speciesId": 0
+    },
+    {
+        "itemId": 3,
+        "name": "Espírito Guardiã Estelar",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loot/Companions/TFT_Avatar/Loot_TFT_Avatar_StarGuardian.LittleLegends_Battlepass_10_12.png",
+        "description": "Espírito do Rio",
+        "speciesName": "Espírito do Rio",
+        "speciesId": 0
+    },
+    {
+        "itemId": 2,
+        "name": "Espírito Espacial",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loot/Companions/TFT_Avatar/Loot_TFT_Avatar_UFO.LittleLegends_DarkStar.png",
+        "description": "Espírito do Rio",
+        "speciesName": "Espírito do Rio",
+        "speciesId": 0
+    },
+    {
+        "itemId": 8009,
+        "name": "Taluga Vulcânica",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Turtle_Caldera_Tier3.png",
+        "description": "Uma sonolenta Taluga.",
+        "speciesName": "Taluga",
+        "speciesId": 8
+    },
+    {
+        "itemId": 8006,
+        "name": "Taluga Glamorosa",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Turtle_Glamorous_Tier3.png",
+        "description": "Uma sonolenta Taluga.",
+        "speciesName": "Taluga",
+        "speciesId": 8
+    },
+    {
+        "itemId": 8003,
+        "name": "Taluga de Jade",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Turtle_Jade_Tier3.png",
+        "description": "Uma sonolenta Taluga.",
+        "speciesName": "Taluga",
+        "speciesId": 8
+    },
+    {
+        "itemId": 8015,
+        "name": "Taluga Flora",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Turtle_Rosebloom_Tier3.png",
+        "description": "Uma sonolenta Taluga.",
+        "speciesName": "Taluga",
+        "speciesId": 8
+    },
+    {
+        "itemId": 8012,
+        "name": "Taluga Oceânica",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Turtle_Tidepool_Tier3.png",
+        "description": "Uma sonolenta Taluga.",
+        "speciesName": "Taluga",
+        "speciesId": 8
+    },
+    {
+        "itemId": 8018,
+        "name": "Taluga Reninha",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Turtle_Yuletide_Tier3.png",
+        "description": "Uma sonolenta Taluga.",
+        "speciesName": "Taluga",
+        "speciesId": 8
+    },
+    {
+        "itemId": 26006,
+        "name": "Umbra Névoa Negra",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Umbra_BlackMist_Tier3.LittleLegends_10_19.png",
+        "description": "Umbra, uma dragoa das sombras, aparenta ser cautelosa e reservada. Porém, quando um mortal conquista sua confiança, ela demonstra intenso carinho e dedicação, conjurando sombras e chamas para proteger seus aliados.",
+        "speciesName": "Umbra",
+        "speciesId": 26
+    },
+    {
+        "itemId": 26015,
+        "name": "Umbra Lua Sangrenta",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Umbra_BloodMoon_Tier3.LittleLegends_10_19.png",
+        "description": "Umbra, uma dragoa das sombras, aparenta ser cautelosa e reservada. Porém, quando um mortal conquista sua confiança, ela demonstra intenso carinho e dedicação, conjurando sombras e chamas para proteger seus aliados.",
+        "speciesName": "Umbra",
+        "speciesId": 26
+    },
+    {
+        "itemId": 26003,
+        "name": "Umbra",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Umbra_Classic_Tier3.LittleLegends_10_19.png",
+        "description": "Umbra, uma dragoa das sombras, aparenta ser cautelosa e reservada. Porém, quando um mortal conquista sua confiança, ela demonstra intenso carinho e dedicação, conjurando sombras e chamas para proteger seus aliados.",
+        "speciesName": "Umbra",
+        "speciesId": 26
+    },
+    {
+        "itemId": 26009,
+        "name": "Umbra Tutti-frutti",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Umbra_FruityTooty_Tier3.LittleLegends_10_19.png",
+        "description": "Umbra, uma dragoa das sombras, aparenta ser cautelosa e reservada. Porém, quando um mortal conquista sua confiança, ela demonstra intenso carinho e dedicação, conjurando sombras e chamas para proteger seus aliados.",
+        "speciesName": "Umbra",
+        "speciesId": 26
+    },
+    {
+        "itemId": 26018,
+        "name": "Umbra Hex Dourada",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Umbra_Hexgold_Tier3.LittleLegends_10_19.png",
+        "description": "Umbra, uma dragoa das sombras, aparenta ser cautelosa e reservada. Porém, quando um mortal conquista sua confiança, ela demonstra intenso carinho e dedicação, conjurando sombras e chamas para proteger seus aliados.",
+        "speciesName": "Umbra",
+        "speciesId": 26
+    },
+    {
+        "itemId": 26012,
+        "name": "Umbra Eletrofera",
+        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/Companions/Tooltip_Umbra_Thunderbeast_Tier3.LittleLegends_10_19.png",
+        "description": "Umbra, uma dragoa das sombras, aparenta ser cautelosa e reservada. Porém, quando um mortal conquista sua confiança, ela demonstra intenso carinho e dedicação, conjurando sombras e chamas para proteger seus aliados.",
+        "speciesName": "Umbra",
+        "speciesId": 26
+    }
+]
