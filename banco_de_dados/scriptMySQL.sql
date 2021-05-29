@@ -9,42 +9,42 @@ create table usuario(
 );
 
 create table especie(
-	idEspecie varchar(2) primary key,
+	idEspecie int primary key,
     nmEspecie varchar(45)
 );
 
 create table pequenaLenda(
-	idPequenaLenda varchar(5) primary key,
+	idPequenaLenda int primary key,
     nmPequenaLenda varchar(45),
     descr varchar(150),
     urlImgPequenaLenda varchar(150),
-    fkEspecie varchar(2),
+    fkEspecie int,
     foreign key(fkEspecie) references especie(idEspecie)
 );
 
 create table pequenaLendaFavorita(
 	fkUsuario int,
-    fkPequenaLenda varchar(5),
+    fkPequenaLenda int,
     foreign key(fkUsuario) references usuario(idUsuario),
     foreign key(fkPequenaLenda) references pequenaLenda(idPequenaLenda)
 );
 
 create table classe(
-	idClasse varchar(2) primary key,
+	idClasse int primary key,
     nmClasse varchar(45)
 );
 
 create table arena(
-	idArena varchar(4) primary key,
+	idArena int primary key,
     nmArena varchar(45),
     urlImgArena varchar(150),
-    fkClasse varchar(2),
+    fkClasse int,
     foreign key(fkClasse) references classe(idClasse)
 );
 
 create table arenaFavorita(
 	fkUsuario int,
-    fkArena varchar(4),
+    fkArena int,
     foreign key(fkUsuario) references usuario(idUsuario),
     foreign key(fkArena) references arena(idArena)
 );
