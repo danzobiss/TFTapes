@@ -31,10 +31,6 @@ router.post("/cadastrarClasse", (req, res) => {
             aux = arenasJSON[index].groupId;
         }
 
-        // instrucaoSql = `insert into classe values (${arenasJSON[index].groupId}, ${arenasJSON[index].groupName})`;
-
-
-
     }
 
 });
