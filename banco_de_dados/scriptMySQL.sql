@@ -16,7 +16,7 @@ create table especie(
 create table pequenaLenda(
 	idPequenaLenda int primary key,
     nmPequenaLenda varchar(45),
-    descr varchar(150),
+    descricao text,
     urlImgPequenaLenda varchar(150),
     fkEspecie int,
     foreign key(fkEspecie) references especie(idEspecie)

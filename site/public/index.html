@@ -301,4 +301,50 @@
 
         return false;
     }
+
+    function cadastrarEspecie() {
+        fetch("/lendas/cadastrarEspecie", {
+            method: "POST",
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                alert("Espécies cadastradas com sucesso")
+
+            } else {
+
+                console.log('Erro de cadastro!');
+                alert('Erro de cadastro!');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+
+    function cadastrarPequenaLenda() {
+        fetch("/lendas/cadastrarPequenaLenda", {
+            method: "POST",
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                alert("Pequenas Lendas cadastradas com sucesso")
+
+            } else {
+
+                console.log('Erro de cadastro!');
+                alert('Erro de cadastro!');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                });
+            }
+        });
+
+        return false;
+    }
 </script>
