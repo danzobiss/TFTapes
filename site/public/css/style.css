@@ -59,6 +59,7 @@ li a,
     margin-top: 16px;
     border-radius: 5px;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 .dropdownConteudo a {
@@ -185,6 +186,11 @@ li .dropdown {
     -webkit-appearance: none;
 }
 
+.label-float input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #172231 inset;
+    -webkit-text-fill-color: white !important;
+}
+
 .label-float input:focus {
     border: 2px solid #B1925D;
 }
@@ -197,7 +203,6 @@ li .dropdown {
     pointer-events: none;
     position: absolute;
     top: calc(50% - 8px);
-    font-family: 'Inter', sans-serif;
     font-size: 13.3333px;
     font-weight: 400;
     left: 6px;
@@ -224,6 +229,14 @@ li .dropdown {
     text-decoration: none;
 }
 
+#modalUsuario .conteudoModal {
+    min-width: 160px;
+}
+
+#modalUsuario h1 {
+    margin-bottom: 0;
+}
+
 .btnModal {
     width: 294px;
     height: 38px;
@@ -232,7 +245,7 @@ li .dropdown {
     border-radius: 5px;
     font-weight: bold;
     color: #172231;
-    margin-top: 25px;
+    margin-top: 24px;
     background-color: #B1925D;
     cursor: pointer;
 }
@@ -241,6 +254,20 @@ li .dropdown {
     color: #B1925D;
     margin-top: 3px;
     background-color: #172231;
+}
+
+#btnSair {
+    width: 96px;
+    height: 38px;
+    margin: 0;
+    border: #ff4848 2px solid;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    margin-top: 16px;
+    background-color: #ff4848;
+    cursor: pointer;
+    float: right;
 }
 
 

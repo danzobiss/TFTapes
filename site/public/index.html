@@ -30,9 +30,10 @@
                     </div>
                 </li>
                 <div class="separador"></div>
-                <li><a id="lblUserNavbar"><span>LOGIN</span><div style="height: 22px; width: 22px; float: right; margin-left: 6px;">
+                <li id="liLogin"><a id="lblLoginNavbar"><span>LOGIN</span><div style="height: 22px; width: 22px; float: right; margin-left: 6px;">
                     <span class="iconify" data-inline="false" data-icon="simple-line-icons:login" style="color: #ffffff; font-size: 24px;"></span>
                 </div></a></li>
+                <li id="liUsuario" style="display: none;"><a id="lblUsuarioNavbar">USER</a></li>
             </ul>
         </div>
     </div>
@@ -134,12 +135,20 @@
             <button id="btnLoginOnCadastro" class="btnModal btnModalBranco">Já tem uma conta? Faça seu login!</button>
         </div>
     </div>
+    <div id="modalUsuario" class="modal">
+        <div class="conteudoModal">
+            <span class="fechar" id="fecharUsuario">&cross;</span>
+            <h1 class="tituloModal titulo" id="lblNomeUsuario">User</h1>
+            <button id="btnSair" class="btnModal" onclick="">Sair</button>
+        </div>
+    </div>
 </body>
 
 </html>
 
 <script>
-    var lbUserNavbar = document.getElementById("lblUserNavbar");
+    var lblLoginNavbar = document.getElementById("lblLoginNavbar");
+    var lblUsuarioNavbar = document.getElementById("lblUsuarioNavbar");
 
     var modalLogin = document.getElementById("modalLogin");
     var spanLogin = document.getElementById("fecharLogin");
@@ -149,7 +158,12 @@
     var spanCadastro = document.getElementById("fecharCadastro");
     var btnLoginOnCadastro = document.getElementById("btnLoginOnCadastro");
 
-    lblUserNavbar.onclick = () => modalLogin.style.display = "block";
+    var modalUsuario = document.getElementById("modalUsuario");
+    var spanUsuario = document.getElementById("fecharUsuario");
+    var btnSair = document.getElementById("btnSair");
+
+    lblLoginNavbar.onclick = () => modalLogin.style.display = "block";
+    lblUsuarioNavbar.onclick = () => modalUsuario.style.display = "block";
 
     spanLogin.onclick = () => modalLogin.style.display = "none";
     btnCadastroOnLogin.onclick = () => {
@@ -163,6 +177,8 @@
         modalLogin.style.display = "block";
     }
 
+    spanUsuario.onclick = () => modalUsuario.style.display = "none";
+
     window.onclick = function(event) {
         if (event.target == modalLogin) {
             modalLogin.style.display = "none";
@@ -170,35 +186,42 @@
         if (event.target == modalCadastro) {
             modalCadastro.style.display = "none";
         }
+        if (event.target == modalUsuario) {
+            modalUsuario.style.display = "none";
+        }
     }
 
 
     function cadastrar() {
-        if (txtSenhaCadastro.value != txtConfirmarSenha.value) {
-            alert("Senhas não correspondem!");
+        if (txtUsuario.value == "" || txtSenhaCadastro.value == "" || txtConfirmarSenha.value == "") {
+            alert("Algum campo em branco! Tente novamente.");
         } else {
-            var formularioCadastro = new URLSearchParams(new FormData(formCadastro));
-            fetch("/usuarios/cadastrar", {
-                method: "POST",
-                body: formularioCadastro
-            }).then(function(response) {
+            if (txtSenhaCadastro.value != txtConfirmarSenha.value) {
+                alert("Senhas não correspondem!");
+            } else {
+                var formularioCadastro = new URLSearchParams(new FormData(formCadastro));
+                fetch("/usuarios/cadastrar", {
+                    method: "POST",
+                    body: formularioCadastro
+                }).then(function(response) {
 
-                if (response.ok) {
+                    if (response.ok) {
 
-                    alert('Usuário cadastrado com sucesso!')
-                    modalCadastro.style.display = "none";
-                    modalLogin.style.display = "block";
+                        alert('Usuário cadastrado com sucesso!');
+                        modalCadastro.style.display = "none";
+                        modalLogin.style.display = "block";
 
-                } else {
+                    } else {
 
-                    console.log('Erro de cadastro!');
-                    response.text().then(function(resposta) {
-                        alert(resposta);
-                    });
-                }
-            });
+                        console.log('Erro de cadastro!');
+                        response.text().then(function(resposta) {
+                            alert(resposta);
+                        });
+                    }
+                });
 
-            return false;
+                return false;
+            }
         }
     }
 
