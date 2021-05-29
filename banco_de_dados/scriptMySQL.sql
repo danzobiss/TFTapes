@@ -35,7 +35,7 @@ create table classe(
 );
 
 create table arena(
-	idArena varchar(2) primary key,
+	idArena varchar(4) primary key,
     nmArena varchar(45),
     urlImgArena varchar(150),
     fkClasse varchar(2),
@@ -44,7 +44,7 @@ create table arena(
 
 create table arenaFavorita(
 	fkUsuario int,
-    fkArena varchar(2),
+    fkArena varchar(4),
     foreign key(fkUsuario) references usuario(idUsuario),
     foreign key(fkArena) references arena(idArena)
 );
