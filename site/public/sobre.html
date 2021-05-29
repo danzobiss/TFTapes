@@ -30,9 +30,10 @@
                     </div>
                 </li>
                 <div class="separador"></div>
-                <li><a id="lblUserNavbar"><span>LOGIN</span><div style="height: 22px; width: 22px; float: right; margin-left: 6px;">
+                <li id="liLogin"><a id="lblUserNavbar"><span>LOGIN</span><div style="height: 22px; width: 22px; float: right; margin-left: 6px;">
                     <span class="iconify" data-inline="false" data-icon="simple-line-icons:login" style="color: #ffffff; font-size: 24px;"></span>
                 </div></a></li>
+                <li id="liUsuario" style="display: none;"><a id="lblUsuarioNavbar">USER</a></li>
             </ul>
         </div>
     </div>
@@ -70,42 +71,49 @@
     <div id="modalLogin" class="modal">
         <div class="conteudoModal">
             <span class="fechar" id="fecharLogin">&cross;</span>
-            <form>
+            <form id="formLogin" method="POST" onsubmit="return cadastrar()">
                 <h1 class="tituloModal titulo">Login</h1>
                 <div class="label-float">
-                    <input type="text" placeholder=" " id="txtLogin" />
+                    <input type="text" placeholder=" " id="txtLogin" name="loginHTML" />
                     <label>Nome de Usuário</label>
                 </div>
                 <div class="label-float">
-                    <input type="password" placeholder=" " id="txtSenha" />
+                    <input type="password" placeholder=" " id="txtSenhaLogin" name="senhaLoginHTML" />
                     <label>Senha</label>
                 </div>
                 <a href="./recuperarSenha.html"><b>Esqueceu a Senha?</b></a><br>
-                <button id="btnLoginOnLogin" class="btnModal" onclick="logar()">Entrar</button><br>
             </form>
+            <button id="btnLoginOnLogin" class="btnModal" onclick="entrar()">Entrar</button><br>
             <button id="btnCadastroOnLogin" class="btnModal btnModalBranco">Não tem uma conta? Cadastre-se!</button>
         </div>
     </div>
     <div id="modalCadastro" class="modal">
         <div class="conteudoModal">
             <span class="fechar" id="fecharCadastro">&cross;</span>
-            <form>
+            <form id="formCadastro" method="POST" onsubmit="return cadastrar()">
                 <h1 class="tituloModal titulo">Cadastro</h1>
                 <div class="label-float">
-                    <input type="text" placeholder=" " id="txtUsuario" />
+                    <input type="text" placeholder=" " id="txtUsuario" name="cadastroHTML" />
                     <label>Nome de Usuário</label>
                 </div>
                 <div class="label-float">
-                    <input type="password" placeholder=" " id="txtSenha" />
+                    <input type="password" placeholder=" " id="txtSenhaCadastro" name="senhaCadastroHTML" required minlength="8" maxlength="20" />
                     <label>Senha</label>
                 </div>
                 <div class="label-float">
-                    <input type="password" placeholder=" " id="txtConfirmarSenha" />
+                    <input type="password" placeholder=" " id="txtConfirmarSenha" name="confirmSenhaHTML" minlength="8" maxlength="20" required/>
                     <label>Confirmar Senha</label>
                 </div>
-                <button id="btnCadastroOnCadastro" class="btnModal" onclick="cadastrar()">Cadastrar</button><br>
             </form>
+            <button id="btnCadastroOnCadastro" class="btnModal" onclick="cadastrar()">Cadastrar</button><br>
             <button id="btnLoginOnCadastro" class="btnModal btnModalBranco">Já tem uma conta? Faça seu login!</button>
+        </div>
+    </div>
+    <div id="modalUsuario" class="modal">
+        <div class="conteudoModal">
+            <span class="fechar" id="fecharUsuario">&cross;</span>
+            <h1 class="tituloModal titulo" id="lblNomeUsuario">User</h1>
+            <button id="btnSair" class="btnModal" onclick="">Sair</button>
         </div>
     </div>
 </body>
@@ -113,7 +121,8 @@
 </html>
 
 <script>
-    var lbUserNavbar = document.getElementById("lblUserNavbar");
+    var lblLoginNavbar = document.getElementById("lblLoginNavbar");
+    var lblUsuarioNavbar = document.getElementById("lblUsuarioNavbar");
 
     var modalLogin = document.getElementById("modalLogin");
     var spanLogin = document.getElementById("fecharLogin");
@@ -123,7 +132,12 @@
     var spanCadastro = document.getElementById("fecharCadastro");
     var btnLoginOnCadastro = document.getElementById("btnLoginOnCadastro");
 
-    lblUserNavbar.onclick = () => modalLogin.style.display = "block";
+    var modalUsuario = document.getElementById("modalUsuario");
+    var spanUsuario = document.getElementById("fecharUsuario");
+    var btnSair = document.getElementById("btnSair");
+
+    lblLoginNavbar.onclick = () => modalLogin.style.display = "block";
+    lblUsuarioNavbar.onclick = () => modalUsuario.style.display = "block";
 
     spanLogin.onclick = () => modalLogin.style.display = "none";
     btnCadastroOnLogin.onclick = () => {
@@ -137,6 +151,8 @@
         modalLogin.style.display = "block";
     }
 
+    spanUsuario.onclick = () => modalUsuario.style.display = "none";
+
     window.onclick = function(event) {
         if (event.target == modalLogin) {
             modalLogin.style.display = "none";
@@ -144,5 +160,73 @@
         if (event.target == modalCadastro) {
             modalCadastro.style.display = "none";
         }
+        if (event.target == modalUsuario) {
+            modalUsuario.style.display = "none";
+        }
+    }
+
+
+    function cadastrar() {
+        if (txtUsuario.value == "" || txtSenhaCadastro.value == "" || txtConfirmarSenha.value == "") {
+            alert("Algum campo em branco! Tente novamente.");
+        } else {
+            if (txtSenhaCadastro.value != txtConfirmarSenha.value) {
+                alert("Senhas não correspondem!");
+            } else {
+                var formularioCadastro = new URLSearchParams(new FormData(formCadastro));
+                fetch("/usuarios/cadastrar", {
+                    method: "POST",
+                    body: formularioCadastro
+                }).then(function(response) {
+
+                    if (response.ok) {
+
+                        alert('Usuário cadastrado com sucesso!');
+                        modalCadastro.style.display = "none";
+                        modalLogin.style.display = "block";
+
+                    } else {
+
+                        console.log('Erro de cadastro!');
+                        response.text().then(function(resposta) {
+                            alert(resposta);
+                        });
+                    }
+                });
+
+                return false;
+            }
+        }
+    }
+
+
+    function entrar() {
+        var formularioLogin = new URLSearchParams(new FormData(formLogin));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formularioLogin
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    sessionStorage.sessaoLoginUsuario = json.login;
+
+                    window.location.href = './game.html';
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+                alert('Erro de login! Tente novamente.');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                });
+            }
+        });
+
+        return false;
     }
 </script>
