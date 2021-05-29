@@ -724,6 +724,7 @@ li .dropdown {
 .sobre {
     margin-top: 86px;
     padding-top: 32px;
+    min-height: calc(100vh - 86px);
 }
 
 .sobre h1 {
