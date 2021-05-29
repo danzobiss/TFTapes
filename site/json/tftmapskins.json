@@ -1,84 +1,84 @@
 [{
         "itemId": 1,
         "name": "Arena Padrão",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_Base.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_Base.png",
         "groupId": 0,
         "groupName": "Base"
     },
     {
         "itemId": 2,
         "name": "Arena Rúnica",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_BaseA.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_BaseA.png",
         "groupId": 0,
         "groupName": "Base"
     },
     {
         "itemId": 3,
         "name": "Arena Rift",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_BaseB.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_BaseB.png",
         "groupId": 0,
         "groupName": "Base"
     },
     {
         "itemId": 4,
         "name": "Arena Ponta de Flecha",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_BaseC.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_BaseC.png",
         "groupId": 0,
         "groupName": "Base"
     },
     {
         "itemId": 5,
         "name": "Arena Dracônica",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_BaseD.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_BaseD.png",
         "groupId": 0,
         "groupName": "Base"
     },
     {
         "itemId": 6,
         "name": "Arena Verdejante",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_BaseE.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_BaseE.png",
         "groupId": 0,
         "groupName": "Base"
     },
     {
         "itemId": 7,
         "name": "Summoner's Arena",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_BaseF.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_BaseF.png",
         "groupId": 0,
         "groupName": "Base"
     },
     {
         "itemId": 8,
         "name": "Arena Rift Tempestade",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_Base_Rift_Alternate.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_Base_Rift_Alternate.png",
         "groupId": 0,
         "groupName": "Base"
     },
     {
         "itemId": 14,
         "name": "Arena das Nuvens",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_Draconic_Cloud.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_Draconic_Cloud.png",
         "groupId": 2,
         "groupName": "Elemental"
     },
     {
         "itemId": 12,
         "name": "Arena da Montanha",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_Draconic_Mountain.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_Draconic_Mountain.png",
         "groupId": 2,
         "groupName": "Elemental"
     },
     {
         "itemId": 13,
         "name": "Arena Infernal",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_Draconic_Infernal.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_Draconic_Infernal.png",
         "groupId": 2,
         "groupName": "Elemental"
     },
     {
         "itemId": 15,
         "name": "Arena do Oceano",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_Draconic_Ocean.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_Draconic_Ocean.png",
         "groupId": 2,
         "groupName": "Elemental"
     },
@@ -86,210 +86,210 @@
     {
         "itemId": 17,
         "name": "Arena Buraco Negro",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_DarkStar_BlackHole.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_DarkStar_BlackHole.png",
         "groupId": 4,
         "groupName": "Estrela Negra"
     },
     {
         "itemId": 19,
         "name": "Arena Celestial",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_DarkStar_Celestial.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_DarkStar_Celestial.png",
         "groupId": 4,
         "groupName": "Estrela Negra"
     },
     {
         "itemId": 20,
         "name": "Arena Supernova",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_DarkStar_SuperNova.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_DarkStar_SuperNova.png",
         "groupId": 4,
         "groupName": "Estrela Negra"
     },
     {
         "itemId": 10,
         "name": "Arena Avarosa",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_Avarosa.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_Avarosa.png",
         "groupId": 1,
         "groupName": "Freljord"
     },
     {
         "itemId": 11,
         "name": "Arena Praeglacius",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_Frostguard.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_Frostguard.png",
         "groupId": 1,
         "groupName": "Freljord"
     },
     {
         "itemId": 9,
         "name": "Arena Garra do Inverno",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_Wintersclaw.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_Wintersclaw.png",
         "groupId": 1,
         "groupName": "Freljord"
     },
     {
         "itemId": 26,
         "name": "Arena Zona de Colisão",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_Galaxy_CrashSite.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_Galaxy_CrashSite.png",
         "groupId": 3,
         "groupName": "Galáxias"
     },
     {
         "itemId": 31,
         "name": "Arena Nova Temível",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_Galaxy_Dreadnova.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_Galaxy_Dreadnova.png",
         "groupId": 3,
         "groupName": "Galáxias"
     },
     {
         "itemId": 24,
         "name": "Arena Pit Stop",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_Galaxy_LandingSite.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_Galaxy_LandingSite.png",
         "groupId": 3,
         "groupName": "Galáxias"
     },
     {
         "itemId": 25,
         "name": "Arena Pista de Drift",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_Galaxy_SpaceTrees.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_Galaxy_SpaceTrees.png",
         "groupId": 3,
         "groupName": "Galáxias"
     },
     {
         "itemId": 32,
         "name": "Arena Espaçonave",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_Galaxy_Spaceship.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_Galaxy_Spaceship.png",
         "groupId": 3,
         "groupName": "Galáxias"
     },
     {
         "itemId": 33,
         "name": "Rumo",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_Journeys_Destination.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_Journeys_Destination.png",
         "groupId": 8,
         "groupName": "A Jornada"
     },
     {
         "itemId": 35,
         "name": "Começo",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_Journeys_Outset.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_Journeys_Outset.png",
         "groupId": 8,
         "groupName": "A Jornada"
     },
     {
         "itemId": 34,
         "name": "Caminho",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_Journeys_Path.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_Journeys_Path.png",
         "groupId": 8,
         "groupName": "A Jornada"
     },
     {
         "itemId": 36,
         "name": "Arena Clube 2",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_LunarRevel_Club2.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_LunarRevel_Club2.png",
         "groupId": 9,
         "groupName": "Festival Lunar"
     },
     {
         "itemId": 37,
         "name": "Arena Cidade Lunar",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_LunarRevel_LunarCity2057.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_LunarRevel_LunarCity2057.png",
         "groupId": 9,
         "groupName": "Festival Lunar"
     },
     {
         "itemId": 38,
         "name": "Alpendre do Festival Lunar",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_LunarRevel_OutsideBalcony.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_LunarRevel_OutsideBalcony.png",
         "groupId": 9,
         "groupName": "Festival Lunar"
     },
     {
         "itemId": 39,
         "name": "Praça do Festival Lunar",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_LunarRevel_OutsideClub.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_LunarRevel_OutsideClub.png",
         "groupId": 9,
         "groupName": "Festival Lunar"
     },
     {
         "itemId": 40,
         "name": "Cais do Festival Lunar",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_LunarRevel_OutsideDocks.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_LunarRevel_OutsideDocks.png",
         "groupId": 9,
         "groupName": "Festival Lunar"
     },
     {
         "itemId": 21,
         "name": "Arena Jinx Odisseia",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_Odyssey_Jinx.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_Odyssey_Jinx.png",
         "groupId": 6,
         "groupName": "Odisseia"
     },
     {
         "itemId": 23,
         "name": "Arena Malphite Odisseia",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_Odyssey_Malphite.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_Odyssey_Malphite.png",
         "groupId": 6,
         "groupName": "Odisseia"
     },
     {
         "itemId": 22,
         "name": "Arena Yasuo Odisseia",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_Odyssey_Yasuo.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_Odyssey_Yasuo.png",
         "groupId": 6,
         "groupName": "Odisseia"
     },
     {
         "itemId": 45,
         "name": "Arena Corte do Caos",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_Reckoning_CourtOfChaos.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_Reckoning_CourtOfChaos.png",
         "groupId": 10,
         "groupName": "Contestação"
     },
     {
         "itemId": 44,
         "name": "Arena Reino da Harmonia",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_Reckoning_RealmOfHarmony.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_Reckoning_RealmOfHarmony.png",
         "groupId": 10,
         "groupName": "Contestação"
     },
     {
         "itemId": 41,
         "name": "Arena do Conde Espátula",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_Reckoning_CountSpatula.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_Reckoning_CountSpatula.png",
         "groupId": 10,
         "groupName": "Contestação"
     },
     {
         "itemId": 43,
         "name": "Arena Santuário da Ordem",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_Reckoning_OrderOfSanctum.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_Reckoning_OrderOfSanctum.png",
         "groupId": 10,
         "groupName": "Contestação"
     },
     {
         "itemId": 42,
         "name": "Arena da Festa Tchibum",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_Reckoning_SplashParty.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_Reckoning_SplashParty.png",
         "groupId": 10,
         "groupName": "Contestação"
     },
     {
         "itemId": 29,
         "name": "Arena Kanmei",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_SpiritBlossom_Kami.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_SpiritBlossom_Kami.png",
         "groupId": 7,
         "groupName": "Destinos"
     },
     {
         "itemId": 28,
         "name": "Arena Festival",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_SpiritBlossom_Reality.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_SpiritBlossom_Reality.png",
         "groupId": 7,
         "groupName": "Destinos"
     },
     {
         "itemId": 30,
         "name": "Arena Akana",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loadouts/TFTMapSkins/Square_Battlefield_Lg_SpiritBlossom_Yokai.png",
+        "loadoutsIcon": "../assets/arenas/Square_Battlefield_Lg_SpiritBlossom_Yokai.png",
         "groupId": 7,
         "groupName": "Destinos"
     }

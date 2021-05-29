@@ -8,10 +8,6 @@ const arenasJSON = require("../json/tftmapskins.json");
 
 router.post("/cadastrarClasse", (req, res) => {
 
-    var instrucaoSql = "";
-
-    // Na variável abaixo, coloque o Insert que será executado no Workbench
-    // salvo exceções, é igual a SQL Server
     let aux = -1;
     for (let index = 0; index < arenasJSON.length; index++) {
         if (arenasJSON[index].groupId == aux) {
@@ -30,6 +26,28 @@ router.post("/cadastrarClasse", (req, res) => {
             console.log(`id: ${arenasJSON[index].groupId}   nome: ${arenasJSON[index].groupName}`);
             aux = arenasJSON[index].groupId;
         }
+
+    }
+
+});
+
+router.post("/cadastrarArena", (req, res) => {
+
+    for (let index = 0; index < arenasJSON.length; index++) {
+
+        Arena.create({
+            idArena: arenasJSON[index].itemId,
+            nmArena: arenasJSON[index].name,
+            urlImgArena: arenasJSON[index].loadoutsIcon,
+            fkClasse: arenasJSON[index].groupId
+        }).then(resultado => {
+            console.log(`Registro criado: ${resultado}`)
+            res.send(resultado);
+        }).catch(erro => {
+            console.error(erro);
+            res.status(500).send(erro.message);
+        });
+        console.log(`id: ${arenasJSON[index].itemId}\nnome: ${arenasJSON[index].name}\nurl: ${arenasJSON[index].loadoutsIcon}\nfk: ${arenasJSON[index].groupId}\n\n`);
 
     }
 

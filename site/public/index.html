@@ -278,4 +278,27 @@
 
         return false;
     }
+
+    function cadastrarArena() {
+        fetch("/arenas/cadastrarArena", {
+            method: "POST",
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                alert("Arenas cadastradas com sucesso")
+
+            } else {
+
+                console.log('Erro de cadastro!');
+                alert('Erro de cadastro!');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                });
+            }
+        });
+
+        return false;
+    }
 </script>
