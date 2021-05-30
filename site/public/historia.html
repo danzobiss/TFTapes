@@ -12,7 +12,7 @@
     <title>TFTapes</title>
 </head>
 
-<body>
+<body onload="logado()">
     <div class="header">
         <div class="container">
             <img src="./img/logo.svg" alt="Logo do TFTapes" class="logo">
@@ -20,9 +20,9 @@
             <ul class="navbar">
                 <li><a href="./index.html">HOME</a></li>
                 <li><a href="./historia.html"><span class="destaque">HISTÓRIA</span></a></li>
-                <li><a href="./game.html">GAME</a></li>
+                <li id="liGame"><a href="./game.html">GAME</a></li>
                 <li><a href="./dicas.html">DICAS</a></li>
-                <li class="dropdown">
+                <li id="liEnquetes" class="dropdown">
                     <p class="dropBtn">ENQUETES</p>
                     <div class="dropdownConteudo">
                         <a href="./arenas.html">ARENAS</a>
@@ -183,7 +183,7 @@
         <div class="conteudoModal">
             <span class="fechar" id="fecharUsuario">&cross;</span>
             <h1 class="tituloModal titulo" id="lblNomeUsuario">User</h1>
-            <button id="btnSair" class="btnModal" onclick="">Sair</button>
+            <button id="btnSair" class="btnModal" onclick="sair()">Sair</button>
         </div>
     </div>
 </body>
@@ -191,6 +191,11 @@
 </html>
 
 <script>
+    let liGame = document.getElementById("liGame");
+    let liEnquetes = document.getElementById("liEnquetes");
+    let liLogin = document.getElementById("liLogin");
+    let liUsuario = document.getElementById("liUsuario");
+
     let lblLoginNavbar = document.getElementById("lblLoginNavbar");
     let lblUsuarioNavbar = document.getElementById("lblUsuarioNavbar");
 
@@ -204,6 +209,7 @@
 
     let modalUsuario = document.getElementById("modalUsuario");
     let spanUsuario = document.getElementById("fecharUsuario");
+    let lblNomeUsuario = document.getElementById("lblNomeUsuario");
     let btnSair = document.getElementById("btnSair");
 
     lblLoginNavbar.onclick = () => modalLogin.style.display = "block";
@@ -281,9 +287,9 @@
 
                 resposta.json().then(json => {
 
-                    sessionStorage.sessaoLoginUsuario = json.login;
+                    sessionStorage.setItem("sessaoUsuario", json.nmUsuario);
+                    window.location.href = './historia.html';
 
-                    window.location.href = './game.html';
                 });
 
             } else {
@@ -298,5 +304,29 @@
         });
 
         return false;
+    }
+
+    function sair() {
+        sessionStorage.setItem("sessaoUsuario", "");
+        window.location.reload();
+    }
+
+    function logado() {
+        if (sessionStorage.getItem("sessaoUsuario") != "") {
+            liGame.style.display = "block";
+            liEnquetes.style.display = "block";
+
+            liLogin.style.display = "none";
+            liUsuario.style.display = "block";
+
+            lblUsuarioNavbar.innerHTML = sessionStorage.getItem("sessaoUsuario");
+            lblNomeUsuario.innerHTML = sessionStorage.getItem("sessaoUsuario");
+        } else {
+            liGame.style.display = "none";
+            liEnquetes.style.display = "none";
+
+            liLogin.style.display = "block";
+            liUsuario.style.display = "none";
+        }
     }
 </script>
