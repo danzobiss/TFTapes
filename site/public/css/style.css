@@ -613,7 +613,6 @@ li .dropdown {
 .imgArena {
     width: 192px;
     height: 192px;
-    background-image: url(../img/arenas.svg);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -693,7 +692,6 @@ li .dropdown {
 .imgLenda {
     width: 192px;
     height: 192px;
-    background-image: url(../img/arenas.svg);
     background-size: cover;
     display: flex;
     justify-content: center;

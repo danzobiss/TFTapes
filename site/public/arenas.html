@@ -12,7 +12,7 @@
     <title>TFTapes</title>
 </head>
 
-<body>
+<body onload="renderizarArenas()">
     <div class="header">
         <div class="container">
             <img src="./img/logo.svg" alt="Logo do TFTapes" class="logo">
@@ -39,7 +39,7 @@
     </div>
 
     <div class="arenas">
-        <div class="container">
+        <div id="divArenas" class="container">
             <h1 class="titulo">Arenas</h1>
             <div class="horizontal">
                 <p>Aqui estão todas as Arenas presentes no jogo até hoje, basta clicar em todas aquelas que você gosta para favoritá-las e subir suas posições de favoritismo no ranking.</p>
@@ -62,36 +62,6 @@
                             <div style="background-color: silver;"></div> <b id="secondArena">Arena</b><br>
                             <div style="background-color: chocolate;"></div> <b id="thirdArena">Arena</b>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="classe">
-                <h3 id="nmClasse">&rtrif; Base</h3>
-                <div class="arenasClasse">
-                    <div class="imgArena" class="imgArena">
-                        <span class="estrelaCheia">&starf;</span>
-                        <span class="estrela">&star;</span>
-                        <b id="nmArena" class="nmArena">Arena Padrão</b>
-                    </div>
-                    <div class="imgArena" class="imgArena">
-                        <span class="estrelaCheia">&starf;</span>
-                        <span class="estrela">&star;</span>
-                        <b id="nmArena" class="nmArena">Arena Padrão</b>
-                    </div>
-                </div>
-            </div>
-            <div class="classe">
-                <h3 id="nmClasse">&rtrif; Elemental</h3>
-                <div class="arenasClasse">
-                    <div class="imgArena" class="imgArena">
-                        <span class="estrelaCheia">&starf;</span>
-                        <span class="estrela">&star;</span>
-                        <b id="nmArena" class="nmArena">Arena das Nuvens</b>
-                    </div>
-                    <div class="imgArena" class="imgArena">
-                        <span class="estrelaCheia">&starf;</span>
-                        <span class="estrela">&star;</span>
-                        <b id="nmArena" class="nmArena">Alpendre do Festival Lunar</b>
                     </div>
                 </div>
             </div>
@@ -263,6 +233,58 @@
 
                 console.log('Erro de login!');
                 alert('Erro de login! Tente novamente.');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+
+    function renderizarArenas() {
+        fetch("/arenas/renderizarArenas", {
+            method: "POST"
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    console.log(json);
+                    let aux = -1;
+                    for (let index = 0; index < json.length; index++) {
+                        if (json[index].idClasse != aux) {
+
+                            divArenas.innerHTML += `<div class="classe">
+                                                        <h3 id="nmClasse">&rtrif; ${json[index].nmClasse}</h3>
+                                                        <div class="arenasClasse" id="classeId${json[index].idClasse}">
+                                                            <div class="imgArena" style="background-image: url('${json[index].urlImgArena}');">
+                                                                <span class="estrelaCheia">&starf;</span>
+                                                                <span class="estrela">&star;</span>
+                                                                <b id="nmArena" class="nmArena">${json[index].nmArena}</b>
+                                                            </div>
+                                                        </div>
+                                                    </div>`;
+
+                            aux = json[index].idClasse;
+
+                        } else {
+                            document.getElementById(`classeId${json[index].idClasse}`).innerHTML += `<div class="imgArena" style="background-image: url('${json[index].urlImgArena}');">
+                                                                <span class="estrelaCheia">&starf;</span>
+                                                                <span class="estrela">&star;</span>
+                                                                <b id="nmArena" class="nmArena">${json[index].nmArena}</b>
+                                                            </div>`;
+                        }
+
+                    }
+
+                });
+
+            } else {
+
+                console.log('Erro ao renderizar arenas!');
 
                 resposta.text().then(texto => {
                     console.error(texto);

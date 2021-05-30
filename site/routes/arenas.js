@@ -53,4 +53,23 @@ router.post("/cadastrarArena", (req, res) => {
 
 });
 
+router.post('/renderizarArenas', function(req, res, next) {
+    console.log('Renderizando arenas');
+
+    let instrucaoSql = `select b.idClasse, b.nmClasse, a.nmArena, a.urlImgArena from arena a join classe b on a.fkClasse = b.idClasse`;
+    console.log(instrucaoSql);
+
+    sequelize.query(instrucaoSql, {
+        model: Arena
+    }).then(resultado => {
+        console.log(`Encontrados: ${resultado.length}`);
+
+        res.json(resultado);
+
+    }).catch(erro => {
+        console.error(erro);
+        res.status(500).send(erro.message);
+    });
+});
+
 module.exports = router;
