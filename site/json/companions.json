@@ -969,7 +969,7 @@
     {
         "itemId": 4021,
         "name": "Territo Astronauta",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loot/Companions/Miner/Loot_Miner_Astronaut_Tier3.LittleLegends_DarkStar.png",
+        "loadoutsIcon": "../assets/companions/Loot_Miner_Astronaut_Tier3.LittleLegends_DarkStar.png",
         "description": "Ele cava muito bem.",
         "speciesName": "Territo",
         "speciesId": 4
@@ -1665,7 +1665,7 @@
     {
         "itemId": 3,
         "name": "Espírito Guardiã Estelar",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loot/Companions/TFT_Avatar/Loot_TFT_Avatar_StarGuardian.LittleLegends_Battlepass_10_12.png",
+        "loadoutsIcon": "../assets/companions/Loot_TFT_Avatar_StarGuardian.LittleLegends_Battlepass_10_12.png",
         "description": "Espírito do Rio",
         "speciesName": "Espírito do Rio",
         "speciesId": 0
@@ -1673,7 +1673,7 @@
     {
         "itemId": 2,
         "name": "Espírito Espacial",
-        "loadoutsIcon": "/lol-game-data/assets/ASSETS/Loot/Companions/TFT_Avatar/Loot_TFT_Avatar_UFO.LittleLegends_DarkStar.png",
+        "loadoutsIcon": "../assets/companions/Loot_TFT_Avatar_UFO.LittleLegends_DarkStar.png",
         "description": "Espírito do Rio",
         "speciesName": "Espírito do Rio",
         "speciesId": 0

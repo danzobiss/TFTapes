@@ -224,9 +224,10 @@
 
                 resposta.json().then(json => {
 
-                    sessionStorage.sessaoLoginUsuario = json.login;
+                    sessionStorage.setItem("sessaoUsuario", json.nmUsuario);
 
                     window.location.href = './game.html';
+                    console.log(json.nmUsuario);
                 });
 
             } else {
@@ -252,7 +253,6 @@
 
                 resposta.json().then(json => {
 
-                    console.log(json);
                     let aux = -1;
                     for (let index = 0; index < json.length; index++) {
                         if (json[index].idClasse != aux) {

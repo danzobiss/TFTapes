@@ -12,7 +12,7 @@
     <title>TFTapes</title>
 </head>
 
-<body>
+<body onload="renderizarPequenasLendas()">
     <div class="header">
         <div class="container">
             <img src="./img/logo.svg" alt="Logo do TFTapes" class="logo">
@@ -39,7 +39,7 @@
     </div>
 
     <div class="lendas">
-        <div class="container">
+        <div id="divLendas" class="container">
             <h1 class="titulo">Pequenas Lendas</h1>
             <div class="horizontal">
                 <p>Como não amar as Pequenas Lendas? Elas são tão pequenas, lindinhas e únicas, que é impossível não querer uma delas andando e dançando no seu tabuleiro. Aqui você pode ver todas elas e votar nas suas favoritas, mostrando no ranking ao lado
@@ -63,36 +63,6 @@
                             <div style="background-color: silver;"></div> <b id="secondArena">Pequena Lenda</b><br>
                             <div style="background-color: chocolate;"></div> <b id="thirdArena">Peqena Lenda</b>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="especie">
-                <h3 id="nmEspecie">&rtrif; Ossia</h3>
-                <div class="lendasEspecie">
-                    <div class="imgLenda" class="imgLenda">
-                        <span class="estrelaCheia">&starf;</span>
-                        <span class="estrela">&star;</span>
-                        <b id="nmLenda" class="nmLenda">Ossia Sla</b>
-                    </div>
-                    <div class="imgLenda" class="imgLenda">
-                        <span class="estrelaCheia">&starf;</span>
-                        <span class="estrela">&star;</span>
-                        <b id="nmLenda" class="nmLenda">Ossia Sla</b>
-                    </div>
-                </div>
-            </div>
-            <div class="especie">
-                <h3 id="nmEspecie">&rtrif; Qiqi</h3>
-                <div class="lendasEspecie">
-                    <div class="imgLenda" class="imgLenda">
-                        <span class="estrelaCheia">&starf;</span>
-                        <span class="estrela">&star;</span>
-                        <b id="nmLenda" class="nmLenda">Qiqi Batidão</b>
-                    </div>
-                    <div class="imgLenda" class="imgLenda">
-                        <span class="estrelaCheia">&starf;</span>
-                        <span class="estrela">&star;</span>
-                        <b id="nmLenda" class="nmLenda">Qiqi Pica Grande</b>
                     </div>
                 </div>
             </div>
@@ -264,6 +234,57 @@
 
                 console.log('Erro de login!');
                 alert('Erro de login! Tente novamente.');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+
+    function renderizarPequenasLendas() {
+        fetch("/lendas/renderizarPequenasLendas", {
+            method: "POST"
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    let aux = -1;
+                    for (let index = 0; index < json.length; index++) {
+                        if (json[index].idEspecie != aux) {
+
+                            divLendas.innerHTML += `<div class="especie">
+                                                        <h3 id="nmEspecie">&rtrif; ${json[index].nmEspecie}</h3>
+                                                        <div class="lendasEspecie" id="especieId${json[index].idEspecie}">
+                                                            <div class="imgLenda" style="background-image: url('${json[index].urlImgPequenaLenda}');">
+                                                                <span class="estrelaCheia">&starf;</span>
+                                                                <span class="estrela">&star;</span>
+                                                                <b id="nmLenda" class="nmLenda">${json[index].nmPequenaLenda}</b>
+                                                            </div>
+                                                        </div>
+                                                    </div>`;
+
+                            aux = json[index].idEspecie;
+
+                        } else {
+                            document.getElementById(`especieId${json[index].idEspecie}`).innerHTML += `<div class="imgLenda" style="background-image: url('${json[index].urlImgPequenaLenda}');">
+                                                                <span class="estrelaCheia">&starf;</span>
+                                                                <span class="estrela">&star;</span>
+                                                                <b id="nmLenda" class="nmLenda">${json[index].nmPequenaLenda}</b>
+                                                            </div>`;
+                        }
+
+                    }
+
+                });
+
+            } else {
+
+                console.log('Erro ao renderizar pequenas lendas!');
 
                 resposta.text().then(texto => {
                     console.error(texto);

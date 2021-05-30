@@ -55,4 +55,23 @@ router.post("/cadastrarPequenaLenda", (req, res) => {
 
 });
 
+router.post('/renderizarPequenasLendas', function(req, res, next) {
+    console.log('Renderizando pequenas lendas');
+
+    let instrucaoSql = `select b.idEspecie, b.nmEspecie, a.nmPequenaLenda, a.urlImgPequenaLenda from pequenaLenda a join especie b on a.fkEspecie = b.idEspecie`;
+    console.log(instrucaoSql);
+
+    sequelize.query(instrucaoSql, {
+        model: PequenaLenda
+    }).then(resultado => {
+        console.log(`Encontrados: ${resultado.length}`);
+
+        res.json(resultado);
+
+    }).catch(erro => {
+        console.error(erro);
+        res.status(500).send(erro.message);
+    });
+});
+
 module.exports = router;

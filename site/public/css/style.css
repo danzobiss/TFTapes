@@ -614,6 +614,7 @@ li .dropdown {
     width: 192px;
     height: 192px;
     background-size: cover;
+    background-position: center center;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -693,6 +694,7 @@ li .dropdown {
     width: 192px;
     height: 192px;
     background-size: cover;
+    background-position: center center;
     display: flex;
     justify-content: center;
     align-items: flex-end;
