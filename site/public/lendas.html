@@ -187,13 +187,13 @@
 
 
     function sair() {
-        sessionStorage.setItem("sessaoNomeUsuario", "");
-        sessionStorage.setItem("sessaoIdUsuario", 0);
+        sessionStorage.setItem("sessaoNomeUsuario", null);
+        sessionStorage.setItem("sessaoIdUsuario", null);
         window.location.href = './index.html';
     }
 
     function logado() {
-        if (sessionStorage.getItem("sessaoNomeUsuario") != "") {
+        if (sessionStorage.getItem("sessaoNomeUsuario") != null) {
             liGame.style.display = "block";
             liEnquetes.style.display = "block";
 
@@ -208,6 +208,9 @@
 
             liLogin.style.display = "block";
             liUsuario.style.display = "none";
+
+            alert("Desculpa, essa página só é acessível por usuários logados. Retorne para a Home!");
+            window.location.href = './index.html';
         }
     }
 

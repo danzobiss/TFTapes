@@ -308,13 +308,13 @@
     }
 
     function sair() {
-        sessionStorage.setItem("sessaoNomeUsuario", "");
-        sessionStorage.setItem("sessaoIdUsuario", 0);
+        sessionStorage.setItem("sessaoNomeUsuario", null);
+        sessionStorage.setItem("sessaoIdUsuario", null);
         window.location.reload();
     }
 
     function logado() {
-        if (sessionStorage.getItem("sessaoNomeUsuario") != "") {
+        if (sessionStorage.getItem("sessaoNomeUsuario") != null) {
             liGame.style.display = "block";
             liEnquetes.style.display = "block";
 

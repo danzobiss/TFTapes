@@ -73,6 +73,27 @@ router.post('/renderizarArenas', function(req, res, next) {
     });
 });
 
+router.post('/renderizarArenasFavoritadas/idUsuario/:idUsuario', function(req, res, next) {
+    console.log('Renderizando estrelas');
+
+    const { idUsuario } = req.params;
+
+    let instrucaoSql = `select * from arenaFavorita where fkUsuario = ${idUsuario}`;
+    console.log(instrucaoSql);
+
+    sequelize.query(instrucaoSql, {
+        model: ArenaFavorita
+    }).then(resultado => {
+        console.log(`Encontrados: ${resultado.length}`);
+
+        res.json(resultado);
+
+    }).catch(erro => {
+        console.error(erro);
+        res.status(500).send(erro.message);
+    });
+});
+
 router.post("/favoritarArena/idUsuario/:idUsuario/idArena/:idArena", (req, res) => {
 
     console.log(req.params);

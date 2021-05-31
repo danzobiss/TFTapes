@@ -186,13 +186,13 @@
 
 
     function sair() {
-        sessionStorage.setItem("sessaoNomeUsuario", "");
-        sessionStorage.setItem("sessaoIdUsuario", 0);
+        sessionStorage.setItem("sessaoNomeUsuario", null);
+        sessionStorage.setItem("sessaoIdUsuario", null);
         window.location.href = './index.html';
     }
 
     function logado() {
-        if (sessionStorage.getItem("sessaoNomeUsuario") != "") {
+        if (sessionStorage.getItem("sessaoNomeUsuario") != null) {
             liGame.style.display = "block";
             liEnquetes.style.display = "block";
 
@@ -207,6 +207,9 @@
 
             liLogin.style.display = "block";
             liUsuario.style.display = "none";
+
+            alert("Desculpa, essa página só é acessível por usuários logados. Retorne para a Home!");
+            window.location.href = './index.html';
         }
     }
 
@@ -227,8 +230,8 @@
                                                         <h3 id="nmClasse">&rtrif; ${json[index].nmClasse}</h3>
                                                         <div class="arenasClasse" id="classeId${json[index].idClasse}">
                                                             <div class="imgArena" style="background-image: url('${json[index].urlImgArena}');" onclick="favoritarArena(${json[index].idArena})">
-                                                                <span class="estrelaCheia">&starf;</span>
-                                                                <span class="estrela">&star;</span>
+                                                                <span id="estrelaCheia${json[index].idArena}" class="estrelaCheia">&starf;</span>
+                                                                <span id="estrelaVazia${json[index].idArena}" class="estrela">&star;</span>
                                                                 <b id="nmArena" class="nmArena">${json[index].nmArena}</b>
                                                             </div>
                                                         </div>
@@ -237,11 +240,12 @@
                             aux = json[index].idClasse;
 
                         } else {
-                            document.getElementById(`classeId${json[index].idClasse}`).innerHTML += `<div class="imgArena" style="background-image: url('${json[index].urlImgArena}');" onclick="favoritarArena(${json[index].idArena})">
-                                                                <span class="estrelaCheia">&starf;</span>
-                                                                <span class="estrela">&star;</span>
-                                                                <b id="nmArena" class="nmArena">${json[index].nmArena}</b>
-                                                            </div>`;
+                            document.getElementById(`classeId${json[index].idClasse}`).innerHTML +=
+                                `<div class="imgArena" style="background-image: url('${json[index].urlImgArena}');" onclick="favoritarArena(${json[index].idArena})">
+                                    <span id="estrelaCheia${json[index].idArena}" class="estrelaCheia">&starf;</span>
+                                    <span id="estrelaVazia${json[index].idArena}" class="estrela">&star;</span>
+                                    <b id="nmArena" class="nmArena">${json[index].nmArena}</b>
+                                </div>`;
                         }
 
                     }
@@ -258,17 +262,45 @@
             }
         });
 
-        return false;
-    }
-
-    function favoritarArena(idArenaClicada) {
-        fetch(`/arenas/favoritarArena/idUsuario/${sessionStorage.getItem("sessaoIdUsuario")}/idArena/${idArenaClicada}`, {
+        fetch(`/arenas/renderizarArenasFavoritadas/idUsuario/${sessionStorage.getItem("sessaoIdUsuario")}`, {
             method: "POST"
         }).then(resposta => {
 
             if (resposta.ok) {
 
-                console.log("deu bom")
+                resposta.json().then(json => {
+
+                    for (let index = 0; index < json.length; index++) {
+                        document.getElementById(`estrelaCheia${json[index].fkArena}`).style.display = "block";
+                        document.getElementById(`estrelaVazia${json[index].fkArena}`).style.display = "none";
+
+                    }
+
+                });
+
+            } else {
+
+                console.log('Erro ao renderizar arenas favoritadas!');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+
+    function favoritarArena(idArenaClicada) {
+
+        document.getElementById(`estrelaCheia${idArenaClicada}`).style.display = "none";
+        document.getElementById(`estrelaVazia${idArenaClicada}`).style.display = "block";
+        fetch(`/arenas/favoritarArena/idUsuario/${sessionStorage.getItem("sessaoIdUsuario")}/idArena/${idArenaClicada}`, {
+            method: "POST"
+        }).then(resposta => {
+            if (resposta.ok) {
+
+
 
             } else {
 
@@ -277,8 +309,11 @@
                 resposta.text().then(texto => {
                     console.error(texto);
                 });
+                document.getElementById(`estrelaCheia${idArenaClicada}`).style.display = "block";
+                document.getElementById(`estrelaVazia${idArenaClicada}`).style.display = "none";
             }
         });
+
 
         return false;
     }
