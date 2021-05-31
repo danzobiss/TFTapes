@@ -3,6 +3,7 @@ var router = express.Router();
 var sequelize = require('../models').sequelize;
 var Especie = require('../models').Especie;
 var PequenaLenda = require('../models').PequenaLenda;
+var PequenaLendaFavorita = require('../models').PequenaLendaFavorita;
 
 const lendasJSON = require("../json/companions.json");
 
@@ -58,7 +59,7 @@ router.post("/cadastrarPequenaLenda", (req, res) => {
 router.post('/renderizarPequenasLendas', function(req, res, next) {
     console.log('Renderizando pequenas lendas');
 
-    let instrucaoSql = `select b.idEspecie, b.nmEspecie, a.nmPequenaLenda, a.urlImgPequenaLenda from pequenaLenda a join especie b on a.fkEspecie = b.idEspecie`;
+    let instrucaoSql = `select b.idEspecie, b.nmEspecie, a.idPequenaLenda, a.nmPequenaLenda, a.urlImgPequenaLenda from pequenaLenda a join especie b on a.fkEspecie = b.idEspecie`;
     console.log(instrucaoSql);
 
     sequelize.query(instrucaoSql, {
@@ -72,6 +73,76 @@ router.post('/renderizarPequenasLendas', function(req, res, next) {
         console.error(erro);
         res.status(500).send(erro.message);
     });
+});
+
+router.post('/renderizarPequenasLendasFavoritadas/idUsuario/:idUsuario', function(req, res, next) {
+    console.log('Renderizando estrelas');
+
+    const { idUsuario } = req.params;
+
+    let instrucaoSql = `select * from pequenaLendaFavorita where fkUsuario = ${idUsuario}`;
+    console.log(instrucaoSql);
+
+    sequelize.query(instrucaoSql, {
+        model: PequenaLendaFavorita
+    }).then(resultado => {
+        console.log(`Encontrados: ${resultado.length}`);
+
+        res.json(resultado);
+
+    }).catch(erro => {
+        console.error(erro);
+        res.status(500).send(erro.message);
+    });
+});
+
+router.post("/favoritarPequenaLenda/idUsuario/:idUsuario/idPequenaLenda/:idPequenaLenda", (req, res) => {
+
+    console.log(req.params);
+    const { idPequenaLenda, idUsuario } = req.params;
+
+
+    let instrucaoSql = `select * from pequenaLendaFavorita where fkUsuario = '${idUsuario}' and fkPequenaLenda ='${idPequenaLenda}'`;
+    console.log(instrucaoSql);
+
+    sequelize.query(instrucaoSql, {
+        model: PequenaLendaFavorita
+    }).then(resultado => {
+        console.log(`Encontrados: ${resultado.length}`);
+
+        if (resultado.length == 1) {
+
+            let deleteSql = `delete from pequenaLendaFavorita where fkUsuario = '${idUsuario}' and fkPequenaLenda ='${idPequenaLenda}'`;
+
+            sequelize.query(deleteSql, { model: PequenaLendaFavorita });
+
+        } else if (resultado.length == 0) {
+
+            let insertSql = `insert into pequenaLendaFavorita values ('${idUsuario}', '${idPequenaLenda}')`
+
+            sequelize.query(insertSql, {
+                model: PequenaLendaFavorita
+            }).then(resultado2 => {
+                console.log(`Registro criado: ${resultado2}`)
+                res.send(resultado2);
+            }).catch(erro => {
+                console.error(erro);
+                res.status(500).send(erro.message);
+            });
+
+        } else {
+            res.status(403).send('Usuário votou mais de uma vez na mesma pequena lenda');
+        }
+
+    }).catch(erro => {
+        console.error(erro);
+        res.status(500).send(erro.message);
+    });
+
+    console.log(``);
+
+
+
 });
 
 module.exports = router;

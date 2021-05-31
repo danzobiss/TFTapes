@@ -230,9 +230,9 @@
                             divLendas.innerHTML += `<div class="especie">
                                                         <h3 id="nmEspecie">&rtrif; ${json[index].nmEspecie}</h3>
                                                         <div class="lendasEspecie" id="especieId${json[index].idEspecie}">
-                                                            <div class="imgLenda" style="background-image: url('${json[index].urlImgPequenaLenda}');">
-                                                                <span class="estrelaCheia">&starf;</span>
-                                                                <span class="estrela">&star;</span>
+                                                            <div class="imgLenda" style="background-image: url('${json[index].urlImgPequenaLenda}');" onclick="favoritarPequenaLenda(${json[index].idPequenaLenda})">
+                                                                <span id="estrelaCheia${json[index].idPequenaLenda}" class="estrelaCheia">&starf;</span>
+                                                                <span id="estrelaVazia${json[index].idPequenaLenda}" class="estrela">&star;</span>
                                                                 <b id="nmLenda" class="nmLenda">${json[index].nmPequenaLenda}</b>
                                                             </div>
                                                         </div>
@@ -241,11 +241,12 @@
                             aux = json[index].idEspecie;
 
                         } else {
-                            document.getElementById(`especieId${json[index].idEspecie}`).innerHTML += `<div class="imgLenda" style="background-image: url('${json[index].urlImgPequenaLenda}');">
-                                                                <span class="estrelaCheia">&starf;</span>
-                                                                <span class="estrela">&star;</span>
-                                                                <b id="nmLenda" class="nmLenda">${json[index].nmPequenaLenda}</b>
-                                                            </div>`;
+                            document.getElementById(`especieId${json[index].idEspecie}`).innerHTML +=
+                                `<div class="imgLenda" style="background-image: url('${json[index].urlImgPequenaLenda}');" onclick="favoritarPequenaLenda(${json[index].idPequenaLenda})">
+                                    <span id="estrelaCheia${json[index].idPequenaLenda}" class="estrelaCheia">&starf;</span>
+                                    <span id="estrelaVazia${json[index].idPequenaLenda}" class="estrela">&star;</span>
+                                    <b id="nmLenda" class="nmLenda">${json[index].nmPequenaLenda}</b>
+                                </div>`;
                         }
 
                     }
@@ -261,6 +262,59 @@
                 });
             }
         });
+
+        fetch(`/lendas/renderizarPequenasLendasFavoritadas/idUsuario/${sessionStorage.getItem("sessaoIdUsuario")}`, {
+            method: "POST"
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    for (let index = 0; index < json.length; index++) {
+                        document.getElementById(`estrelaCheia${json[index].fkPequenaLenda}`).style.display = "block";
+                        document.getElementById(`estrelaVazia${json[index].fkPequenaLenda}`).style.display = "none";
+
+                    }
+
+                });
+
+            } else {
+
+                console.log('Erro ao renderizar arenas favoritadas!');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+
+    function favoritarPequenaLenda(idPequenaLendaClicada) {
+
+        document.getElementById(`estrelaCheia${idPequenaLendaClicada}`).style.display = "none";
+        document.getElementById(`estrelaVazia${idPequenaLendaClicada}`).style.display = "block";
+        fetch(`/lendas/favoritarPequenaLenda/idUsuario/${sessionStorage.getItem("sessaoIdUsuario")}/idPequenaLenda/${idPequenaLendaClicada}`, {
+            method: "POST"
+        }).then(resposta => {
+            if (resposta.ok) {
+
+
+
+            } else {
+
+                console.log('Erro ao favoritar pequena lenda!');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                });
+                document.getElementById(`estrelaCheia${idPequenaLendaClicada}`).style.display = "block";
+                document.getElementById(`estrelaVazia${idPequenaLendaClicada}`).style.display = "none";
+            }
+        });
+
 
         return false;
     }
