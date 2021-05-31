@@ -611,8 +611,8 @@ li .dropdown {
 }
 
 .imgArena {
-    width: 192px;
-    height: 192px;
+    width: 200px;
+    height: 200px;
     background-size: cover;
     background-position: center center;
     display: flex;
