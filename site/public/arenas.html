@@ -186,20 +186,21 @@
 
 
     function sair() {
-        sessionStorage.setItem("sessaoUsuario", "");
+        sessionStorage.setItem("sessaoNomeUsuario", "");
+        sessionStorage.setItem("sessaoIdUsuario", 0);
         window.location.href = './index.html';
     }
 
     function logado() {
-        if (sessionStorage.getItem("sessaoUsuario") != "") {
+        if (sessionStorage.getItem("sessaoNomeUsuario") != "") {
             liGame.style.display = "block";
             liEnquetes.style.display = "block";
 
             liLogin.style.display = "none";
             liUsuario.style.display = "block";
 
-            lblUsuarioNavbar.innerHTML = sessionStorage.getItem("sessaoUsuario");
-            lblNomeUsuario.innerHTML = sessionStorage.getItem("sessaoUsuario");
+            lblUsuarioNavbar.innerHTML = sessionStorage.getItem("sessaoNomeUsuario");
+            lblNomeUsuario.innerHTML = sessionStorage.getItem("sessaoNomeUsuario");
         } else {
             liGame.style.display = "none";
             liEnquetes.style.display = "none";
@@ -225,7 +226,7 @@
                             divArenas.innerHTML += `<div class="classe">
                                                         <h3 id="nmClasse">&rtrif; ${json[index].nmClasse}</h3>
                                                         <div class="arenasClasse" id="classeId${json[index].idClasse}">
-                                                            <div class="imgArena" style="background-image: url('${json[index].urlImgArena}');">
+                                                            <div class="imgArena" style="background-image: url('${json[index].urlImgArena}');" onclick="favoritarArena(${json[index].idArena})">
                                                                 <span class="estrelaCheia">&starf;</span>
                                                                 <span class="estrela">&star;</span>
                                                                 <b id="nmArena" class="nmArena">${json[index].nmArena}</b>
@@ -236,7 +237,7 @@
                             aux = json[index].idClasse;
 
                         } else {
-                            document.getElementById(`classeId${json[index].idClasse}`).innerHTML += `<div class="imgArena" style="background-image: url('${json[index].urlImgArena}');">
+                            document.getElementById(`classeId${json[index].idClasse}`).innerHTML += `<div class="imgArena" style="background-image: url('${json[index].urlImgArena}');" onclick="favoritarArena(${json[index].idArena})">
                                                                 <span class="estrelaCheia">&starf;</span>
                                                                 <span class="estrela">&star;</span>
                                                                 <b id="nmArena" class="nmArena">${json[index].nmArena}</b>
@@ -250,6 +251,28 @@
             } else {
 
                 console.log('Erro ao renderizar arenas!');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+
+    function favoritarArena(idArenaClicada) {
+        fetch(`/arenas/favoritarArena/idUsuario/${sessionStorage.getItem("sessaoIdUsuario")}/idArena/${idArenaClicada}`, {
+            method: "POST"
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                console.log("deu bom")
+
+            } else {
+
+                console.log('Erro ao favoritar arena!');
 
                 resposta.text().then(texto => {
                     console.error(texto);

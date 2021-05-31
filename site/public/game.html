@@ -191,20 +191,21 @@
 
 
     function sair() {
-        sessionStorage.setItem("sessaoUsuario", "");
+        sessionStorage.setItem("sessaoNomeUsuario", "");
+        sessionStorage.setItem("sessaoIdUsuario", 0);
         window.location.href = './index.html';
     }
 
     function logado() {
-        if (sessionStorage.getItem("sessaoUsuario") != "") {
+        if (sessionStorage.getItem("sessaoNomeUsuario") != "") {
             liGame.style.display = "block";
             liEnquetes.style.display = "block";
 
             liLogin.style.display = "none";
             liUsuario.style.display = "block";
 
-            lblUsuarioNavbar.innerHTML = sessionStorage.getItem("sessaoUsuario");
-            lblNomeUsuario.innerHTML = sessionStorage.getItem("sessaoUsuario");
+            lblUsuarioNavbar.innerHTML = sessionStorage.getItem("sessaoNomeUsuario");
+            lblNomeUsuario.innerHTML = sessionStorage.getItem("sessaoNomeUsuario");
         } else {
             liGame.style.display = "none";
             liEnquetes.style.display = "none";

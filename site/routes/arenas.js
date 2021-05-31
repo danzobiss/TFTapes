@@ -3,6 +3,7 @@ var router = express.Router();
 var sequelize = require('../models').sequelize;
 var Classe = require('../models').Classe;
 var Arena = require('../models').Arena;
+var ArenaFavorita = require('../models').ArenaFavorita;
 
 const arenasJSON = require("../json/tftmapskins.json");
 
@@ -56,7 +57,7 @@ router.post("/cadastrarArena", (req, res) => {
 router.post('/renderizarArenas', function(req, res, next) {
     console.log('Renderizando arenas');
 
-    let instrucaoSql = `select b.idClasse, b.nmClasse, a.nmArena, a.urlImgArena from arena a join classe b on a.fkClasse = b.idClasse`;
+    let instrucaoSql = `select b.idClasse, b.nmClasse, a.idArena, a.nmArena, a.urlImgArena from arena a join classe b on a.fkClasse = b.idClasse`;
     console.log(instrucaoSql);
 
     sequelize.query(instrucaoSql, {
@@ -70,6 +71,55 @@ router.post('/renderizarArenas', function(req, res, next) {
         console.error(erro);
         res.status(500).send(erro.message);
     });
+});
+
+router.post("/favoritarArena/idUsuario/:idUsuario/idArena/:idArena", (req, res) => {
+
+    console.log(req.params);
+    const { idArena, idUsuario } = req.params;
+
+
+    let instrucaoSql = `select * from arenaFavorita where fkUsuario = '${idUsuario}' and fkArena ='${idArena}'`;
+    console.log(instrucaoSql);
+
+    sequelize.query(instrucaoSql, {
+        model: ArenaFavorita
+    }).then(resultado => {
+        console.log(`Encontrados: ${resultado.length}`);
+
+        if (resultado.length == 1) {
+
+            let deleteSql = `delete from arenaFavorita where fkUsuario = '${idUsuario}' and fkArena ='${idArena}'`;
+
+            sequelize.query(deleteSql, { model: ArenaFavorita });
+
+        } else if (resultado.length == 0) {
+
+            let insertSql = `insert into arenaFavorita values ('${idUsuario}', '${idArena}')`
+
+            sequelize.query(insertSql, {
+                model: ArenaFavorita
+            }).then(resultado2 => {
+                console.log(`Registro criado: ${resultado2}`)
+                res.send(resultado2);
+            }).catch(erro => {
+                console.error(erro);
+                res.status(500).send(erro.message);
+            });
+
+        } else {
+            res.status(403).send('Usuário votou mais de uma vez na mesma arena');
+        }
+
+    }).catch(erro => {
+        console.error(erro);
+        res.status(500).send(erro.message);
+    });
+
+    console.log(``);
+
+
+
 });
 
 module.exports = router;
