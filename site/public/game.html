@@ -12,7 +12,7 @@
     <title>TFTapes</title>
 </head>
 
-<body onload="logado()">
+<body onload="logado(), renderizarPontos()">
     <div class="header">
         <div class="container">
             <img src="./img/logo.svg" alt="Logo do TFTapes" class="logo">
@@ -220,6 +220,8 @@
 
 
     //Timer
+    var maxPontos = 0;
+
     function startTimer(duracao, elemento) {
         var timer = duracao,
             minutos, segundos;
@@ -248,9 +250,12 @@
                     botoesAlimentos[2].classList.add("btnDesativado");
                 }, 5000)
 
-                maxPontos = Number(lblMaxPontos.textContent) < pontos ? pontos : maxPontos;
+                if (Number(lblMaxPontos.textContent) < pontos) {
+                    maxPontos = pontos
+                    enviarPontos();
+                }
+                document.getElementById("lblMaxPontos").innerHTML = maxPontos;
 
-                document.getElementById("lblMaxPontos").innerHTML = maxPontos
             }
         }, 1000);
     }
@@ -275,7 +280,7 @@
 
         var umMinuto = 59;
         startTimer(umMinuto, document.getElementById("lblTimer"));
-        document.body.onkeypress = () => {
+        document.body.onkeydown = () => {
             switch (event.keyCode) {
                 case 49:
                     btnMorangos.click();
@@ -323,5 +328,44 @@
             botoesAlimentos[2].disabled = false
             botoesAlimentos[2].classList.remove("btnDesativado");
         }, 5000);
+    }
+
+
+    function enviarPontos() {
+        fetch(`/usuarios/atualizarPontuacao/idUsuario/${sessionStorage.getItem("sessaoIdUsuario")}/maiorPont/${maxPontos}`, {
+            method: "POST"
+        }).then(function(resposta) {
+
+            if (resposta.ok) {
+
+
+            } else {
+
+
+            }
+        });
+
+        return false;
+    }
+
+    function renderizarPontos() {
+        fetch(`/usuarios/renderizarPontuacao/idUsuario/${sessionStorage.getItem("sessaoIdUsuario")}`, {
+            method: "POST"
+        }).then(function(resposta) {
+
+            if (resposta.ok) {
+                resposta.json().then(json => {
+                    maxPontos = json[0].maiorPont;
+                    document.getElementById("lblMaxPontos").innerHTML = maxPontos;
+
+                });
+
+            } else {
+
+
+            }
+        });
+
+        return false;
     }
 </script>
