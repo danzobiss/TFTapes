@@ -127,7 +127,7 @@
         <div class="conteudoModal">
             <span class="fechar" id="fecharUsuario">&cross;</span>
             <h1 class="tituloModal titulo" id="lblNomeUsuario">User</h1>
-            <button id="btnSair" class="btnModal" onclick="">Sair</button>
+            <button id="btnSair" class="btnModal" onclick="sair()">Sair</button>
         </div>
     </div>
 </body>
@@ -187,8 +187,8 @@
 
 
     function sair() {
-        sessionStorage.setItem("sessaoNomeUsuario", null);
-        sessionStorage.setItem("sessaoIdUsuario", null);
+        sessionStorage.removeItem("sessaoNomeUsuario");
+        sessionStorage.removeItem("sessaoIdUsuario");
         window.location.href = './index.html';
     }
 

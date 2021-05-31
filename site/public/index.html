@@ -264,8 +264,8 @@
     }
 
     function sair() {
-        sessionStorage.setItem("sessaoNomeUsuario", null);
-        sessionStorage.setItem("sessaoIdUsuario", null);
+        sessionStorage.removeItem("sessaoNomeUsuario");
+        sessionStorage.removeItem("sessaoIdUsuario");
         window.location.reload();
     }
 
