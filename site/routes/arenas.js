@@ -4,6 +4,7 @@ var sequelize = require('../models').sequelize;
 var Classe = require('../models').Classe;
 var Arena = require('../models').Arena;
 var ArenaFavorita = require('../models').ArenaFavorita;
+var env = process.env.NODE_ENV || 'development';
 
 const arenasJSON = require("../json/tftmapskins.json");
 
@@ -141,6 +142,31 @@ router.post("/favoritarArena/idUsuario/:idUsuario/idArena/:idArena", (req, res) 
 
 
 
+});
+
+router.post('/atualizarRankingArenas', function(req, res, next) {
+    console.log('Atualizando ranking');
+    let instrucaoSql;
+
+    if (env == 'dev') {
+        instrucaoSql = `select count(fkArena), nmArena from arenaFavorita join arena on fkArena = idArena group by fkArena order by count(fkArena) desc limit 3`;
+
+    } else {
+        instrucaoSql = `select top 3 count(fkArena), nmArena from arenaFavorita join arena on fkArena = idArena group by fkArena order by count(fkArena) desc`;
+    }
+    console.log(instrucaoSql);
+
+    sequelize.query(instrucaoSql, {
+        model: ArenaFavorita
+    }).then(resultado => {
+        console.log(`Encontrados: ${resultado.length}`);
+
+        res.json(resultado);
+
+    }).catch(erro => {
+        console.error(erro);
+        res.status(500).send(erro.message);
+    });
 });
 
 module.exports = router;

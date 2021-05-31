@@ -4,6 +4,7 @@ var sequelize = require('../models').sequelize;
 var Especie = require('../models').Especie;
 var PequenaLenda = require('../models').PequenaLenda;
 var PequenaLendaFavorita = require('../models').PequenaLendaFavorita;
+var env = process.env.NODE_ENV || 'development';
 
 const lendasJSON = require("../json/companions.json");
 
@@ -143,6 +144,31 @@ router.post("/favoritarPequenaLenda/idUsuario/:idUsuario/idPequenaLenda/:idPeque
 
 
 
+});
+
+router.post('/atualizarRankingPequenasLendas', function(req, res, next) {
+    console.log('Atualizando ranking');
+    let instrucaoSql;
+
+    if (env == 'dev') {
+        instrucaoSql = `select count(fkPequenaLenda), nmPequenaLenda from pequenaLendaFavorita join pequenaLenda on fkPequenaLenda = idPequenaLenda group by fkPequenaLenda order by count(fkPequenaLenda) desc limit 3`;
+
+    } else {
+        instrucaoSql = `select top 3 count(fkPequenaLenda), nmPequenaLenda from pequenaLendaFavorita join pequenaLenda on fkPequenaLenda = idPequenaLenda group by fkPequenaLenda order by count(fkPequenaLenda) desc`;
+    }
+    console.log(instrucaoSql);
+
+    sequelize.query(instrucaoSql, {
+        model: PequenaLendaFavorita
+    }).then(resultado => {
+        console.log(`Encontrados: ${resultado.length}`);
+
+        res.json(resultado);
+
+    }).catch(erro => {
+        console.error(erro);
+        res.status(500).send(erro.message);
+    });
 });
 
 module.exports = router;

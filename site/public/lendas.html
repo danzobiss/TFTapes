@@ -12,7 +12,7 @@
     <title>TFTapes</title>
 </head>
 
-<body onload="renderizarPequenasLendas(), logado()">
+<body onload="renderizarPequenasLendas(), logado(), atualizarRanking()">
     <div class="header">
         <div class="container">
             <img src="./img/logo.svg" alt="Logo do TFTapes" class="logo">
@@ -59,9 +59,9 @@
                             </div>
                         </div>
                         <div class="legendaRanking">
-                            <div style="background-color: gold;"></div> <b id="firstArena">Pequena Lenda</b><br>
-                            <div style="background-color: silver;"></div> <b id="secondArena">Pequena Lenda</b><br>
-                            <div style="background-color: chocolate;"></div> <b id="thirdArena">Peqena Lenda</b>
+                            <div style="background-color: gold;"></div> <b id="firstPequenaLenda">Pequena Lenda</b><br>
+                            <div style="background-color: silver;"></div> <b id="secondPequenaLenda">Pequena Lenda</b><br>
+                            <div style="background-color: chocolate;"></div> <b id="thirdPequenaLenda">Peqena Lenda</b>
                         </div>
                     </div>
                 </div>
@@ -315,7 +315,36 @@
             }
         });
 
+        atualizarRanking();
+
 
         return false;
+    }
+
+
+    function atualizarRanking() {
+        fetch("/lendas/atualizarRankingPequenasLendas", {
+            method: "POST"
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    document.getElementById("firstPequenaLenda").innerHTML = json[0].nmPequenaLenda;
+                    document.getElementById("secondPequenaLenda").innerHTML = json[1].nmPequenaLenda;
+                    document.getElementById("thirdPequenaLenda").innerHTML = json[2].nmPequenaLenda;
+
+                });
+
+            } else {
+
+                console.log('Erro ao renderizar ranking das pequenas lendas!');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                });
+            }
+        });
     }
 </script>
