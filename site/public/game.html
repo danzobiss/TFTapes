@@ -41,8 +41,8 @@
     <div class="game">
         <div class="container">
             <h1 class="titulo">Choncc's Hungry</h1>
-            <p>O objetivo do jogo é alimentar Choncc o máximo que conseguir antes que o tempo acabe.<br><br>Clique nos botões para oferecer morangos, cenoura ou carne e assim aumentar sua pontuação. Cada alimento enche a barriga do Choncc em valores diferentes
-                (morangos: 2pts, cenoura: 15pts, carne: 50pts), mas alguns deles possuem <i>cooldown</i> para serem utilizados novamente.<br><br>Pronto para encher a barriga?</p>
+            <p>O objetivo do jogo é alimentar Choncc o máximo que conseguir antes que o tempo acabe.<br><br>Clique nos botões ou use as teclas 1, 2 e 3 para oferecer morangos, cenoura ou carne e assim aumentar sua pontuação. Cada alimento enche a barriga
+                do Choncc em valores diferentes (morangos: 2pts, cenoura: 15pts, carne: 50pts), mas alguns deles possuem <i>cooldown</i> para serem utilizados novamente.<br><br>Pronto para encher a barriga?</p>
             <div class="jogo">
                 <div style="display: flex; justify-content: space-between;">
                     <b>Maior Pontuação: <span id="lblMaxPontos">0</span></b>
@@ -56,17 +56,17 @@
                     <div class="cardAlimento">
                         <img src="./img/morangos.png" alt="Imagem de Morangos"><br>
                         <b>Morangos</b><br>
-                        <button class="btnAlimento btnDesativado" onclick="morangos()" disabled>Oferecer</button>
+                        <button id="btnMorangos" class="btnAlimento btnDesativado" onclick="morangos()" disabled>Oferecer</button>
                     </div>
                     <div class="cardAlimento">
                         <img src="./img/cenoura.png" alt="Imagem de Cenoura"><br>
                         <b>Cenoura</b><br>
-                        <button class="btnAlimento btnDesativado" onclick="cenoura()" disabled>Oferecer</button>
+                        <button id="btnCenoura" class="btnAlimento btnDesativado" onclick="cenoura()" disabled>Oferecer</button>
                     </div>
                     <div class="cardAlimento">
                         <img src="./img/carne.png" alt="Imagem de Carne"><br>
                         <b>Carne</b><br>
-                        <button class="btnAlimento btnDesativado" onclick="carne()" disabled>Oferecer</button>
+                        <button id="btnCarne" class="btnAlimento btnDesativado" onclick="carne()" disabled>Oferecer</button>
                     </div>
                 </div>
             </div>
@@ -256,6 +256,9 @@
     }
 
     var botoesAlimentos = document.getElementsByClassName("btnAlimento");
+    let btnMorangos = document.getElementById("btnMorangos");
+    let btnCenoura = document.getElementById("btnCenoura");
+    let btnCarne = document.getElementById("btnCarne");
 
     btnJogar.onclick = function() {
         document.getElementById("btnJogar").style.display = "none";
@@ -272,6 +275,21 @@
 
         var umMinuto = 59;
         startTimer(umMinuto, document.getElementById("lblTimer"));
+        document.body.onkeypress = () => {
+            switch (event.keyCode) {
+                case 49:
+                    btnMorangos.click();
+                    break;
+                case 50:
+                    btnCenoura.click();
+                    break;
+                case 51:
+                    btnCarne.click();
+                    break;
+                default:
+                    break;
+            }
+        };
     };
 
     var pontos = 0;
