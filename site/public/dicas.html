@@ -193,28 +193,33 @@
             if (txtSenhaCadastro.value != txtConfirmarSenha.value) {
                 alert("Senhas não correspondem!");
             } else {
-                var formularioCadastro = new URLSearchParams(new FormData(formCadastro));
-                fetch("/usuarios/cadastrar", {
-                    method: "POST",
-                    body: formularioCadastro
-                }).then(function(response) {
+                if (txtSenhaCadastro.value.length < 8) {
+                    alert("Sua senha deve conter no mínimo 8 caracteres! Tente outra senha.");
+                } else {
+                    var formularioCadastro = new URLSearchParams(new FormData(formCadastro));
+                    fetch("/usuarios/cadastrar", {
+                        method: "POST",
+                        body: formularioCadastro
+                    }).then(function(response) {
 
-                    if (response.ok) {
+                        if (response.ok) {
 
-                        alert('Usuário cadastrado com sucesso!');
-                        modalCadastro.style.display = "none";
-                        modalLogin.style.display = "block";
+                            alert('Usuário cadastrado com sucesso!');
+                            modalCadastro.style.display = "none";
+                            modalLogin.style.display = "block";
 
-                    } else {
+                        } else {
 
-                        console.log('Erro de cadastro!');
-                        response.text().then(function(resposta) {
-                            alert(resposta);
-                        });
-                    }
-                });
+                            console.log('Erro de cadastro!');
+                            response.text().then(function(resposta) {
+                                alert(resposta);
+                            });
+                        }
+                    });
 
-                return false;
+                    return false;
+
+                }
             }
         }
     }
