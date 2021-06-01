@@ -301,7 +301,9 @@
         }).then(resposta => {
             if (resposta.ok) {
 
-
+                document.getElementById(`estrelaCheia${idPequenaLendaClicada}`).style.display = "block";
+                document.getElementById(`estrelaVazia${idPequenaLendaClicada}`).style.display = "none";
+                atualizarRanking();
 
             } else {
 
@@ -310,12 +312,9 @@
                 resposta.text().then(texto => {
                     console.error(texto);
                 });
-                document.getElementById(`estrelaCheia${idPequenaLendaClicada}`).style.display = "block";
-                document.getElementById(`estrelaVazia${idPequenaLendaClicada}`).style.display = "none";
             }
         });
 
-        atualizarRanking();
 
 
         return false;

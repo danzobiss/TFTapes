@@ -300,7 +300,9 @@
         }).then(resposta => {
             if (resposta.ok) {
 
-
+                document.getElementById(`estrelaCheia${idArenaClicada}`).style.display = "block";
+                document.getElementById(`estrelaVazia${idArenaClicada}`).style.display = "none";
+                atualizarRanking();
 
             } else {
 
@@ -309,12 +311,9 @@
                 resposta.text().then(texto => {
                     console.error(texto);
                 });
-                document.getElementById(`estrelaCheia${idArenaClicada}`).style.display = "block";
-                document.getElementById(`estrelaVazia${idArenaClicada}`).style.display = "none";
             }
         });
 
-        atualizarRanking();
 
 
         return false;

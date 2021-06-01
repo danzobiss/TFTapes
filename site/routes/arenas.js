@@ -58,7 +58,7 @@ router.post("/cadastrarArena", (req, res) => {
 router.post('/renderizarArenas', function(req, res, next) {
     console.log('Renderizando arenas');
 
-    let instrucaoSql = `select b.idClasse, b.nmClasse, a.idArena, a.nmArena, a.urlImgArena from arena a join classe b on a.fkClasse = b.idClasse`;
+    let instrucaoSql = `select b.idClasse, b.nmClasse, a.idArena, a.nmArena, a.urlImgArena from arena a join classe b on a.fkClasse = b.idClasse order by a.fkClasse`;
     console.log(instrucaoSql);
 
     sequelize.query(instrucaoSql, {
@@ -152,7 +152,7 @@ router.post('/atualizarRankingArenas', function(req, res, next) {
         instrucaoSql = `select count(fkArena), nmArena from arenaFavorita join arena on fkArena = idArena group by fkArena order by count(fkArena) desc limit 3`;
 
     } else {
-        instrucaoSql = `select top 3 count(fkArena), nmArena from arenaFavorita join arena on fkArena = idArena group by fkArena order by count(fkArena) desc`;
+        instrucaoSql = `select top 3 count(fkArena), nmArena from arenaFavorita join arena on fkArena = idArena group by nmArena order by count(fkArena) desc`;
     }
     console.log(instrucaoSql);
 

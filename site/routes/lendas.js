@@ -35,32 +35,35 @@ router.post("/cadastrarEspecie", (req, res) => {
 
 router.post("/cadastrarPequenaLenda", (req, res) => {
 
-    for (let index = 0; index < lendasJSON.length; index++) {
-        setTimeout(() => {
-            PequenaLenda.create({
-                idPequenaLenda: lendasJSON[index].itemId,
-                nmPequenaLenda: lendasJSON[index].name,
-                descricao: lendasJSON[index].description,
-                urlImgPequenaLenda: lendasJSON[index].loadoutsIcon,
-                fkEspecie: lendasJSON[index].speciesId
-            }).then(resultado => {
-                console.log(`Registro criado: ${resultado}`)
-                res.send(resultado);
-            }).catch(erro => {
-                console.error(erro);
-                res.status(500).send(erro.message);
-            });
-            console.log(`id: ${lendasJSON[index].itemId}\nnome: ${lendasJSON[index].name}\ndesc: ${lendasJSON[index].description}\nurl: ${lendasJSON[index].loadoutsIcon}\nfk: ${lendasJSON[index].speciesId}\n\n`);
-        }, 1000);
 
-    }
+    let index = 0;
+
+    let cadastrando = setInterval(() => {
+        let insertSql = `insert into pequenaLenda values ('${lendasJSON[index].itemId}', '${lendasJSON[index].name}','${lendasJSON[index].description}','${lendasJSON[index].loadoutsIcon}','${lendasJSON[index].speciesId}')`;
+
+        sequelize.query(insertSql, {
+            model: PequenaLenda
+        }).then(resultado => {
+            console.log(`Registro criado: ${resultado}`)
+            res.send(resultado);
+        }).catch(erro => {
+            console.error(erro);
+            res.status(500).send(erro.message);
+        });
+
+        index++;
+    }, 2000)
+
+
+
+
 
 });
 
 router.post('/renderizarPequenasLendas', function(req, res, next) {
     console.log('Renderizando pequenas lendas');
 
-    let instrucaoSql = `select b.idEspecie, b.nmEspecie, a.idPequenaLenda, a.nmPequenaLenda, a.urlImgPequenaLenda from pequenaLenda a join especie b on a.fkEspecie = b.idEspecie`;
+    let instrucaoSql = `select b.idEspecie, b.nmEspecie, a.idPequenaLenda, a.nmPequenaLenda, a.urlImgPequenaLenda from pequenaLenda a join especie b on a.fkEspecie = b.idEspecie order by b.idEspecie`;
     console.log(instrucaoSql);
 
     sequelize.query(instrucaoSql, {
@@ -154,7 +157,7 @@ router.post('/atualizarRankingPequenasLendas', function(req, res, next) {
         instrucaoSql = `select count(fkPequenaLenda), nmPequenaLenda from pequenaLendaFavorita join pequenaLenda on fkPequenaLenda = idPequenaLenda group by fkPequenaLenda order by count(fkPequenaLenda) desc limit 3`;
 
     } else {
-        instrucaoSql = `select top 3 count(fkPequenaLenda), nmPequenaLenda from pequenaLendaFavorita join pequenaLenda on fkPequenaLenda = idPequenaLenda group by fkPequenaLenda order by count(fkPequenaLenda) desc`;
+        instrucaoSql = `select top 3 count(fkPequenaLenda), nmPequenaLenda from pequenaLendaFavorita join pequenaLenda on fkPequenaLenda = idPequenaLenda group by nmPequenaLenda order by count(fkPequenaLenda) desc`;
     }
     console.log(instrucaoSql);
 

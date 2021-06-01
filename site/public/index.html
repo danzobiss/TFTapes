@@ -363,6 +363,9 @@
         }).then(resposta => {
 
             if (resposta.ok) {
+                resposta.json().then(json => {
+                    console.log(json)
+                });
 
                 alert("Pequenas Lendas cadastradas com sucesso")
 
