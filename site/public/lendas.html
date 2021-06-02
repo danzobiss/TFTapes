@@ -304,7 +304,6 @@
 
                 document.getElementById(`estrelaCheia${idPequenaLendaClicada}`).style.display = "block";
                 document.getElementById(`estrelaVazia${idPequenaLendaClicada}`).style.display = "none";
-                atualizarRanking();
 
             } else {
 
@@ -315,6 +314,7 @@
                 });
             }
         });
+        atualizarRanking();
 
 
 
@@ -323,28 +323,30 @@
 
 
     function atualizarRanking() {
-        fetch("/lendas/atualizarRankingPequenasLendas", {
-            method: "POST"
-        }).then(resposta => {
+        setTimeout(() => {
+            fetch("/lendas/atualizarRankingPequenasLendas", {
+                method: "POST"
+            }).then(resposta => {
 
-            if (resposta.ok) {
+                if (resposta.ok) {
 
-                resposta.json().then(json => {
+                    resposta.json().then(json => {
 
-                    document.getElementById("firstPequenaLenda").innerHTML = `${json[0].nmPequenaLenda} - ${json[0].contagemVotos} votos`;
-                    document.getElementById("secondPequenaLenda").innerHTML = `${json[1].nmPequenaLenda} - ${json[1].contagemVotos} votos`;
-                    document.getElementById("thirdPequenaLenda").innerHTML = `${json[2].nmPequenaLenda} - ${json[2].contagemVotos} votos`;
+                        document.getElementById("firstPequenaLenda").innerHTML = `${json[0].nmPequenaLenda} - ${json[0].contagemVotos} votos`;
+                        document.getElementById("secondPequenaLenda").innerHTML = `${json[1].nmPequenaLenda} - ${json[1].contagemVotos} votos`;
+                        document.getElementById("thirdPequenaLenda").innerHTML = `${json[2].nmPequenaLenda} - ${json[2].contagemVotos} votos`;
 
-                });
+                    });
 
-            } else {
+                } else {
 
-                console.log('Erro ao renderizar ranking das pequenas lendas!');
+                    console.log('Erro ao renderizar ranking das pequenas lendas!');
 
-                resposta.text().then(texto => {
-                    console.error(texto);
-                });
-            }
-        });
+                    resposta.text().then(texto => {
+                        console.error(texto);
+                    });
+                }
+            });
+        }, 1500)
     }
 </script>
