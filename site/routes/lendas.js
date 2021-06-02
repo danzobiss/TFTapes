@@ -154,10 +154,10 @@ router.post('/atualizarRankingPequenasLendas', function(req, res, next) {
     let instrucaoSql;
 
     if (env == 'dev') {
-        instrucaoSql = `select count(fkPequenaLenda), nmPequenaLenda from pequenaLendaFavorita join pequenaLenda on fkPequenaLenda = idPequenaLenda group by fkPequenaLenda order by count(fkPequenaLenda) desc limit 3`;
+        instrucaoSql = `select count(fkPequenaLenda) as contagemVotos, nmPequenaLenda from pequenaLendaFavorita join pequenaLenda on fkPequenaLenda = idPequenaLenda group by fkPequenaLenda order by count(fkPequenaLenda) desc limit 3`;
 
     } else {
-        instrucaoSql = `select top 3 count(fkPequenaLenda), nmPequenaLenda from pequenaLendaFavorita join pequenaLenda on fkPequenaLenda = idPequenaLenda group by nmPequenaLenda order by count(fkPequenaLenda) desc`;
+        instrucaoSql = `select top 3 count(fkPequenaLenda) as contagemVotos, nmPequenaLenda from pequenaLendaFavorita join pequenaLenda on fkPequenaLenda = idPequenaLenda group by nmPequenaLenda order by count(fkPequenaLenda) desc`;
     }
     console.log(instrucaoSql);
 

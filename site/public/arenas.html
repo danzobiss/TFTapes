@@ -330,9 +330,9 @@
 
                 resposta.json().then(json => {
 
-                    document.getElementById("firstArena").innerHTML = json[0].nmArena;
-                    document.getElementById("secondArena").innerHTML = json[1].nmArena;
-                    document.getElementById("thirdArena").innerHTML = json[2].nmArena;
+                    document.getElementById("firstArena").innerHTML = `${json[0].nmArena} - ${json[0].contagemVotos} votos`;
+                    document.getElementById("secondArena").innerHTML = `${json[1].nmArena} - ${json[1].contagemVotos} votos`;
+                    document.getElementById("thirdArena").innerHTML = `${json[2].nmArena} - ${json[2].contagemVotos} votos`;
 
                 });
 

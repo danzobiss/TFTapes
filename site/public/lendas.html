@@ -331,9 +331,9 @@
 
                 resposta.json().then(json => {
 
-                    document.getElementById("firstPequenaLenda").innerHTML = json[0].nmPequenaLenda;
-                    document.getElementById("secondPequenaLenda").innerHTML = json[1].nmPequenaLenda;
-                    document.getElementById("thirdPequenaLenda").innerHTML = json[2].nmPequenaLenda;
+                    document.getElementById("firstPequenaLenda").innerHTML = `${json[0].nmPequenaLenda} - ${json[0].contagemVotos} votos`;
+                    document.getElementById("secondPequenaLenda").innerHTML = `${json[1].nmPequenaLenda} - ${json[1].contagemVotos} votos`;
+                    document.getElementById("thirdPequenaLenda").innerHTML = `${json[2].nmPequenaLenda} - ${json[2].contagemVotos} votos`;
 
                 });
 

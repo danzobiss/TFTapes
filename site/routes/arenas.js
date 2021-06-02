@@ -149,10 +149,10 @@ router.post('/atualizarRankingArenas', function(req, res, next) {
     let instrucaoSql;
 
     if (env == 'dev') {
-        instrucaoSql = `select count(fkArena), nmArena from arenaFavorita join arena on fkArena = idArena group by fkArena order by count(fkArena) desc limit 3`;
+        instrucaoSql = `select count(fkArena) as contagemVotos, nmArena from arenaFavorita join arena on fkArena = idArena group by fkArena order by count(fkArena) desc limit 3`;
 
     } else {
-        instrucaoSql = `select top 3 count(fkArena), nmArena from arenaFavorita join arena on fkArena = idArena group by nmArena order by count(fkArena) desc`;
+        instrucaoSql = `select top 3 count(fkArena) as contagemVotos, nmArena from arenaFavorita join arena on fkArena = idArena group by nmArena order by count(fkArena) desc`;
     }
     console.log(instrucaoSql);
 
