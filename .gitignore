@@ -79,4 +79,4 @@ typings/
 package-lock.json
 
 .directory
-config.js
+dadosConfidenciais.json
