@@ -94,31 +94,48 @@ $ cadastrarEspecie();
 $ cadastrarPequenaLenda();
 ```
 
+
 <img src="./site/public/assets/readme/printHome.png">
 
 ## Utilização <a name = "utilizacao"></a>
 
 Logo na "Home" você é apresentado a todos as abas que podem ser acessadas no site.
+
 <img src="./site/public/assets/readme/printHome.png">
 
+
 Acessando a aba "História", é possível ler sobre o começo do TFT até os dias de hoje.
+
 <img src="./site/public/assets/readme/printHistoria.png">
+
 
 A aba "Dicas" apresenta meios de aprimorar suas habilidades no jogo.
+
 <img src="./site/public/assets/readme/printHistoria.png">
 
+
 Para ter acesso as outras abas é necessário realizar o cadastro e login.
+
 <img src="./site/public/assets/readme/printCadastro.png">
 <img src="./site/public/assets/readme/printLogin.png">
 
+
 Após realizar o seu login, você poderá acessar a aba "Game" e jogar um mini-game para passar seu tempo.
+
 <img src="./site/public/assets/readme/printGame.png">
 
+
 Uma das abas de enquetes é a de "Arenas", que podem ser favoritadas e, consequentemente, subindo sua posição no ranking.
+
 <img src="./site/public/assets/readme/printArena.png">
 
+
 A outra aba de enquetes é a das "Pequenas Lendas", que faz basicamente as mesmas funções da aba "Arenas".
+
 <img src="./site/public/assets/readme/printLenda.png">
 
+
 Por fim, o usuário pode sair a qualquer momento clicando no seu nome na barra de navegação e em seguida em "Sair".
+
 <img src="./site/public/assets/readme/printSair.png">
+
