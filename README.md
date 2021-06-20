@@ -111,7 +111,7 @@ Acessando a aba "História", é possível ler sobre o começo do TFT até os dia
 
 A aba "Dicas" apresenta meios de aprimorar suas habilidades no jogo.
 
-<img src="./site/public/assets/readme/printHistoria.png">
+<img src="./site/public/assets/readme/printDicas.png">
 
 
 Para ter acesso as outras abas é necessário realizar o cadastro e login.
